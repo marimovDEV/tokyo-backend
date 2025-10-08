@@ -1,0 +1,39 @@
+# Production Requirements
+# Core Django
+Django==4.2.7
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+django-filter==23.3
+python-decouple==3.8
+
+# Database
+psycopg2-binary==2.9.7
+
+# Admin Interface
+django-unfold==0.18.0
+
+# Image Processing
+Pillow==10.0.1
+
+# Production Server
+gunicorn==21.2.0
+
+# Caching
+redis==5.0.1
+django-redis==5.4.0
+
+# Background Tasks
+celery==5.3.4
+
+# Monitoring
+sentry-sdk==1.38.0
+
+# Security
+django-ratelimit==4.1.0
+
+# File Storage (for cloud storage)
+boto3==1.28.85
+django-storages==1.14.1
+
+# Environment
+python-dotenv==1.0.0
