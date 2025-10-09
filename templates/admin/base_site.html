@@ -1,0 +1,89 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="/media/site/logo.png" alt="Logo" style="height: 30px; margin-right: 10px; vertical-align: middle;">
+        {{ site_header|default:_('Django administration') }}
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">Home</a>
+    {% if title %} &rsaquo; {{ title }}{% endif %}
+</div>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom-admin.css' %}">
+{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    #header {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+    
+    #header h1, #header h1 a:link, #header h1 a:visited {
+        color: white;
+    }
+    
+    .module h2, .module caption, .inline-group h2 {
+        background: #28a745;
+        color: white;
+    }
+    
+    .button, input[type=submit], input[type=button], .submit-row input, a.button {
+        background: #28a745;
+        border: 1px solid #28a745;
+    }
+    
+    .button:hover, input[type=submit]:hover, input[type=button]:hover, .submit-row input:hover, a.button:hover {
+        background: #218838;
+        border: 1px solid #218838;
+    }
+    
+    .logo-preview {
+        margin: 10px 0;
+        padding: 15px;
+        border: 2px solid #e9ecef;
+        border-radius: 8px;
+        background: #f8f9fa;
+        text-align: center;
+    }
+    
+    .logo-preview img {
+        max-width: 200px;
+        max-height: 100px;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .favicon-preview {
+        margin: 10px 0;
+        padding: 15px;
+        border: 2px solid #e9ecef;
+        border-radius: 8px;
+        background: #f8f9fa;
+        text-align: center;
+    }
+    
+    .favicon-preview img {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+</style>
+{% endblock %}
+
+{% block extrajs %}
+{{ block.super }}
+<script src="{% static 'js/custom-admin.js' %}"></script>
+{% endblock %}
