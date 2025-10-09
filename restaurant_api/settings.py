@@ -50,13 +50,16 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',  # Cache middleware
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.gzip.GZipMiddleware',  # Compression
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',  # Cache middleware
 ]
 
 ROOT_URLCONF = 'restaurant_api.urls'
@@ -189,6 +192,28 @@ CORS_ALLOW_ALL_ORIGINS = True  # Only for development
 SESSION_COOKIE_HTTPONLY = False  # Allow JavaScript access for debugging
 SESSION_COOKIE_SAMESITE = 'Lax'  # Allow cross-site requests
 SESSION_COOKIE_SECURE = False  # Allow HTTP in development
+
+# Cache settings for better performance
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+        'TIMEOUT': 300,  # 5 minutes default
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000,
+        }
+    }
+}
+
+# Cache timeout settings
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_SECONDS = 300  # 5 minutes
+CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
+# Performance settings
+CONN_MAX_AGE = 60  # Database connection pooling
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB max upload size
+FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB max file size
 
 # CSRF settings
 CSRF_COOKIE_HTTPONLY = False  # Allow JavaScript access to CSRF token

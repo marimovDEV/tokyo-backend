@@ -10,6 +10,7 @@ from django.middleware.csrf import get_token
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
 from rest_framework.permissions import AllowAny
 
 from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, TextContent, RestaurantInfo, Cart, CartItem
@@ -28,7 +29,7 @@ def get_csrf_token(request):
     return JsonResponse({'csrfToken': token})
 
 
-@method_decorator(csrf_exempt, name='dispatch')
+@method_decorator([csrf_exempt, cache_page(60 * 30)], name='dispatch')  # 30 daqiqa cache
 class CategoryListView(generics.ListCreateAPIView):
     queryset = Category.objects.filter(is_active=True)
     serializer_class = CategorySerializer
@@ -109,6 +110,7 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
+@method_decorator(cache_page(60 * 15), name='dispatch')  # 15 daqiqa cache
 class MenuItemListView(generics.ListCreateAPIView):
     queryset = MenuItem.objects.filter(is_active=True, category__is_active=True)
     serializer_class = MenuItemSerializer
@@ -214,6 +216,7 @@ class MenuItemByCategoryView(generics.ListAPIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
+@method_decorator(cache_page(60 * 10), name='dispatch')  # 10 daqiqa cache
 class PromotionListView(generics.ListCreateAPIView):
     queryset = Promotion.objects.filter(is_active=True)
     serializer_class = PromotionSerializer
@@ -241,6 +244,7 @@ class PromotionDetailView(generics.RetrieveUpdateDestroyAPIView):
     parser_classes = (MultiPartParser, FormParser)
 
 
+@method_decorator(cache_page(60 * 5), name='dispatch')  # 5 daqiqa cache
 class ReviewListView(generics.ListCreateAPIView):
     queryset = Review.objects.filter(approved=True, deleted=False)
     serializer_class = ReviewSerializer
