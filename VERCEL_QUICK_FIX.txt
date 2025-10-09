@@ -1,0 +1,298 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║      🚀 TOKYO KAFE - VERCEL + BEGET TEZKOR YECHIM 🚀          ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+📍 ARXITEKTURA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Frontend:  https://tokyokafe.vercel.app  (Next.js)
+             ↓
+  Backend:   https://tokyokafe.uz          (Django + Beget)
+
+
+❌ SIZNING MUAMMOLARINGIZ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. ❌ CSRF Error (403 Forbidden)
+     → "Origin does not match any trusted origins"
+
+  2. ❌ CORS Error
+     → "No 'Access-Control-Allow-Origin' header"
+
+  3. ❌ Too Many Requests (ERR_INSUFFICIENT_RESOURCES)
+     → Fetch loop
+
+  4. ❌ 404 logo.png
+     → Static files muammosi
+
+  5. ❌ Rasmlar sekin
+     → Optimization kerak
+
+
+✅ YECHIM - 2 QADAMDA (10 DAQIQA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+═══════════════════════════════════════════════════════════════════
+1️⃣  BACKEND (Beget) - 8 daqiqa
+═══════════════════════════════════════════════════════════════════
+
+ssh u1234567@tokyokafe.uz
+cd ~/public_html/backend
+
+# A. django-cors-headers o'rnatish
+source venv/bin/activate
+pip install django-cors-headers
+pip freeze > requirements.txt
+
+# B. settings.py ni tahrirlash
+nano restaurant_api/settings.py
+
+# Quyidagilarni qo'shing yoki almashtiring:
+# ─────────────────────────────────────────────────────────────────
+
+# 1. INSTALLED_APPS ga qo'shing:
+INSTALLED_APPS = [
+    'corsheaders',  # ← YANGI
+    ...
+]
+
+# 2. MIDDLEWARE ga qo'shing (eng yuqorida):
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # ← YANGI, ENG YUQORI
+    'django.middleware.common.CommonMiddleware',
+    ...
+]
+
+# 3. CSRF Settings:
+CSRF_TRUSTED_ORIGINS = [
+    "https://tokyokafe.uz",
+    "https://tokyokafe.vercel.app",   # ← YANGI
+    "https://*.vercel.app",            # ← Preview URLs uchun
+]
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = False      # ← FALSE qiling
+CSRF_COOKIE_SAMESITE = 'None'     # ← 'None' qiling
+
+# 4. Session Settings:
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'None'  # ← 'None' qiling
+
+# 5. CORS Settings:
+CORS_ALLOWED_ORIGINS = [
+    "https://tokyokafe.vercel.app",
+    "https://*.vercel.app",
+    "http://localhost:3000",  # Development
+]
+
+CORS_ALLOW_CREDENTIALS = True     # ← MUHIM!
+
+# ─────────────────────────────────────────────────────────────────
+
+# C. CSRF endpoint yaratish
+nano views.py
+
+# Qo'shing:
+from django.views.decorators.csrf import ensure_csrf_cookie
+from django.http import JsonResponse
+
+@ensure_csrf_cookie
+def get_csrf_token(request):
+    return JsonResponse({'csrfToken': request.META.get('CSRF_COOKIE')})
+
+# urls.py ga:
+path('api/csrf/', views.get_csrf_token, name='csrf'),
+
+# D. Backend restart
+bash restart_beget.sh
+
+# E. Test
+curl https://tokyokafe.uz/api/menu/
+
+
+═══════════════════════════════════════════════════════════════════
+2️⃣  FRONTEND (Vercel) - 2 daqiqa
+═══════════════════════════════════════════════════════════════════
+
+# A. Environment Variable (Vercel dashboard)
+Settings → Environment Variables → Add:
+
+  NEXT_PUBLIC_API_URL = https://tokyokafe.uz
+
+# B. Barcha fetch ga qo'shing:
+
+fetch('https://tokyokafe.uz/api/...', {
+  credentials: 'include',  // ← MUHIM!
+})
+
+# C. POST request uchun CSRF token:
+
+const csrfToken = getCookie('csrftoken')
+
+fetch('https://tokyokafe.uz/api/cart/add/', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'X-CSRFToken': csrfToken,  // ← Qo'shing
+  },
+  credentials: 'include',      // ← MUHIM!
+  body: JSON.stringify(data),
+})
+
+# D. useEffect dependency to'g'rilash:
+
+useEffect(() => {
+  fetchMenu()
+}, [])  // ← [] qo'ying (loop bo'lmasligi uchun)
+
+# E. Deploy
+git add .
+git commit -m "Fix CORS and CSRF"
+git push origin main
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🧪 TEKSHIRISH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 1. Backend API test
+curl https://tokyokafe.uz/api/menu/
+# Natija: 200 OK, JSON data
+
+# 2. CSRF token test
+curl https://tokyokafe.uz/api/csrf/
+# Natija: {"csrfToken": "..."}
+
+# 3. Frontend test (Browser console)
+fetch('https://tokyokafe.uz/api/menu/', {credentials: 'include'})
+  .then(r => r.json())
+  .then(d => console.log(d))
+# Natija: Menu data
+
+# 4. Browser DevTools → Network
+# Headers da ko'ring:
+#   - Request: Cookie, X-CSRFToken
+#   - Response: Set-Cookie
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📚 TO'LIQ QOLLANMALAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  📖 VERCEL_BEGET_GUIDE.md
+     → To'liq qo'llanma (10 daqiqa)
+
+  📄 settings_vercel.py
+     → Django settings to'liq versiya (copy-paste qiling)
+
+  🌐 nginx_vercel.conf
+     → Nginx konfiguratsiya (CORS headers bilan)
+
+  💻 frontend_fetch_examples.js
+     → Frontend kod misollar (SWR, React Query)
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🔥 MASLAHATLAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. credentials: 'include' ni HAMMA fetch ga qo'shing
+  
+  2. CSRF_COOKIE_SAMESITE = 'None' bo'lishi KERAK
+     (Lax yoki Strict cross-domain ishlamaydi)
+  
+  3. corsheaders.middleware.CorsMiddleware
+     MIDDLEWARE ning eng yuqorisida bo'lishi kerak
+  
+  4. useEffect(() => {...}, []) dependency [] bo'lishi kerak
+     (bo'lmasa cheksiz loop)
+  
+  5. Vercel Environment Variables ga API_URL qo'shing
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🐛 AGAR HALI HAM ISHLAMASA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 1. Backend logs tekshirish
+tail -50 ~/public_html/backend/logs/gunicorn_error.log
+
+# 2. Browser DevTools → Network
+# Birinchi request: /api/csrf/ (cookie olish)
+# Keyingi requests: X-CSRFToken header bormi?
+
+# 3. CORS test (Browser console)
+fetch('https://tokyokafe.uz/api/menu/', {credentials: 'include'})
+
+# 4. Backend restart
+bash restart_beget.sh
+
+# 5. Browser cache tozalash
+Ctrl+Shift+R (yoki Cmd+Shift+R)
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📊 MONITORING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Backend logs
+tail -f ~/public_html/backend/logs/gunicorn_error.log
+
+# Server resources
+bash check_resources.sh
+
+# Backend restart
+bash restart_beget.sh
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+✅ YAKUNIY CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Backend (Beget):
+  □ django-cors-headers o'rnatilgan
+  □ CSRF_TRUSTED_ORIGINS ga Vercel URL qo'shilgan
+  □ CSRF_COOKIE_SAMESITE = 'None'
+  □ SESSION_COOKIE_SAMESITE = 'None'
+  □ CORS_ALLOW_CREDENTIALS = True
+  □ corsheaders MIDDLEWARE da
+  □ /api/csrf/ endpoint yaratilgan
+  □ Backend restart qilingan
+
+Frontend (Vercel):
+  □ NEXT_PUBLIC_API_URL environment variable
+  □ credentials: 'include' barcha fetch da
+  □ X-CSRFToken header POST da
+  □ useEffect dependency []
+  □ Deploy qilingan
+
+Test:
+  □ curl https://tokyokafe.uz/api/menu/ → 200 OK
+  □ Browser da fetch test → data keladi
+  □ CORS error yo'q
+  □ CSRF error yo'q
+
+
+═══════════════════════════════════════════════════════════════════
+
+              MUVAFFAQIYATLI DEPLOY! 🎉
+
+           Tokyo Kafe 🍽️ | Vercel + Beget | 2025
+
+═══════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,1467 @@
+2025-07-21 14:52:40,643 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 14:52:40,644 [INFO] Start polling
+2025-07-21 14:52:40,853 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 14:52:42,269 [INFO] /start from user_id=412216093
+2025-07-21 14:52:42,272 [INFO] /start from user_id=1212795522
+2025-07-21 14:52:42,273 [INFO] /start from user_id=1212795522
+2025-07-21 14:52:42,274 [INFO] /start from user_id=412216093
+2025-07-21 14:52:42,276 [INFO] /start from user_id=1212795522
+2025-07-21 14:52:42,277 [INFO] /start from user_id=1212795522
+2025-07-21 14:52:43,060 [INFO] Update id=464818899 is handled. Duration 791 ms by bot id=7706560271
+2025-07-21 14:52:43,061 [INFO] Update id=464818901 is handled. Duration 787 ms by bot id=7706560271
+2025-07-21 14:52:43,073 [INFO] Update id=464818904 is handled. Duration 795 ms by bot id=7706560271
+2025-07-21 14:52:43,084 [INFO] Update id=464818902 is handled. Duration 809 ms by bot id=7706560271
+2025-07-21 14:52:43,109 [INFO] Update id=464818900 is handled. Duration 836 ms by bot id=7706560271
+2025-07-21 14:52:43,136 [INFO] Update id=464818903 is handled. Duration 860 ms by bot id=7706560271
+2025-07-21 14:52:47,124 [INFO] Update id=464818905 is handled. Duration 393 ms by bot id=7706560271
+2025-07-21 14:52:49,567 [INFO] Update id=464818906 is handled. Duration 627 ms by bot id=7706560271
+2025-07-21 14:52:52,257 [INFO] Update id=464818907 is handled. Duration 1167 ms by bot id=7706560271
+2025-07-21 14:53:07,513 [WARNING] Received SIGINT signal
+2025-07-21 14:53:07,517 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 14:53:07,518 [INFO] Polling stopped
+2025-07-21 14:53:10,667 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 14:53:10,667 [INFO] Start polling
+2025-07-21 14:53:11,658 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 14:53:14,076 [INFO] Update id=464818908 is not handled. Duration 2 ms by bot id=7706560271
+2025-07-21 14:53:17,924 [INFO] /start from user_id=1212795522
+2025-07-21 14:53:20,298 [INFO] Update id=464818909 is handled. Duration 2373 ms by bot id=7706560271
+2025-07-21 14:53:23,459 [INFO] Update id=464818910 is handled. Duration 1917 ms by bot id=7706560271
+2025-07-21 14:53:26,927 [INFO] Update id=464818911 is handled. Duration 2025 ms by bot id=7706560271
+2025-07-21 14:53:28,374 [INFO] Update id=464818912 is handled. Duration 1078 ms by bot id=7706560271
+2025-07-21 14:53:31,507 [INFO] Update id=464818913 is handled. Duration 569 ms by bot id=7706560271
+2025-07-21 14:54:34,932 [INFO] Update id=464818914 is handled. Duration 2854 ms by bot id=7706560271
+2025-07-21 14:54:38,936 [INFO] Update id=464818915 is handled. Duration 1409 ms by bot id=7706560271
+2025-07-21 14:54:43,128 [INFO] Update id=464818916 is handled. Duration 2783 ms by bot id=7706560271
+2025-07-21 14:54:46,208 [INFO] Update id=464818917 is handled. Duration 279 ms by bot id=7706560271
+2025-07-21 14:54:48,251 [INFO] Update id=464818918 is handled. Duration 557 ms by bot id=7706560271
+2025-07-21 14:54:50,909 [INFO] Update id=464818919 is handled. Duration 1234 ms by bot id=7706560271
+2025-07-21 14:55:09,470 [WARNING] Received SIGINT signal
+2025-07-21 14:55:09,484 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 14:55:09,485 [INFO] Polling stopped
+2025-07-21 14:55:30,314 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 14:55:30,314 [INFO] Start polling
+2025-07-21 14:55:30,505 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 14:55:36,950 [INFO] /start from user_id=1212795522
+2025-07-21 14:55:40,670 [INFO] Update id=464818920 is handled. Duration 3720 ms by bot id=7706560271
+2025-07-21 14:55:47,178 [INFO] Update id=464818921 is handled. Duration 358 ms by bot id=7706560271
+2025-07-21 14:55:48,878 [INFO] Update id=464818922 is handled. Duration 520 ms by bot id=7706560271
+2025-07-21 14:55:49,805 [INFO] Update id=464818923 is handled. Duration 344 ms by bot id=7706560271
+2025-07-21 14:55:52,795 [INFO] Update id=464818924 is handled. Duration 2350 ms by bot id=7706560271
+2025-07-21 14:55:58,414 [INFO] Update id=464818925 is handled. Duration 200 ms by bot id=7706560271
+2025-07-21 14:56:01,253 [INFO] Update id=464818926 is handled. Duration 1258 ms by bot id=7706560271
+2025-07-21 14:56:03,158 [INFO] Update id=464818927 is handled. Duration 980 ms by bot id=7706560271
+2025-07-21 14:56:06,937 [INFO] Update id=464818928 is handled. Duration 458 ms by bot id=7706560271
+2025-07-21 14:56:08,938 [INFO] Update id=464818929 is handled. Duration 513 ms by bot id=7706560271
+2025-07-21 14:56:11,603 [INFO] Update id=464818930 is handled. Duration 1562 ms by bot id=7706560271
+2025-07-21 14:56:39,967 [INFO] Update id=464818931 is not handled. Duration 3 ms by bot id=7706560271
+2025-07-21 15:05:09,669 [WARNING] Received SIGINT signal
+2025-07-21 15:05:09,674 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:05:09,674 [INFO] Polling stopped
+2025-07-21 15:09:55,213 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:09:55,214 [INFO] Start polling
+2025-07-21 15:09:56,097 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:10:17,209 [WARNING] Received SIGINT signal
+2025-07-21 15:10:17,212 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:10:17,212 [INFO] Polling stopped
+2025-07-21 15:10:19,824 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:10:19,824 [INFO] Start polling
+2025-07-21 15:10:20,336 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:10:27,988 [INFO] Update id=464818932 is not handled. Duration 2 ms by bot id=7706560271
+2025-07-21 15:10:29,984 [INFO] /start from user_id=1212795522
+2025-07-21 15:10:31,948 [INFO] Update id=464818933 is handled. Duration 1963 ms by bot id=7706560271
+2025-07-21 15:10:37,676 [INFO] /admin from user_id=1212795522
+2025-07-21 15:10:38,194 [INFO] Update id=464818934 is handled. Duration 518 ms by bot id=7706560271
+2025-07-21 15:17:29,281 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 15:17:29,283 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 15:17:41,118 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-21 15:23:56,211 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 15:23:56,214 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 15:23:57,224 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:23:57,224 [WARNING] Sleep for 1.262576 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-21 15:23:58,491 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:23:58,491 [WARNING] Sleep for 1.626106 seconds and try again... (tryings = 2, bot id = 7706560271)
+2025-07-21 15:24:00,121 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:00,121 [WARNING] Sleep for 2.023116 seconds and try again... (tryings = 3, bot id = 7706560271)
+2025-07-21 15:24:02,148 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:02,149 [WARNING] Sleep for 2.621588 seconds and try again... (tryings = 4, bot id = 7706560271)
+2025-07-21 15:24:04,774 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:04,774 [WARNING] Sleep for 3.350755 seconds and try again... (tryings = 5, bot id = 7706560271)
+2025-07-21 15:24:08,128 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:08,129 [WARNING] Sleep for 4.146159 seconds and try again... (tryings = 6, bot id = 7706560271)
+2025-07-21 15:24:12,276 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:12,276 [WARNING] Sleep for 4.980504 seconds and try again... (tryings = 7, bot id = 7706560271)
+2025-07-21 15:24:17,259 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:17,260 [WARNING] Sleep for 4.966962 seconds and try again... (tryings = 8, bot id = 7706560271)
+2025-07-21 15:24:22,231 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:22,231 [WARNING] Sleep for 5.018291 seconds and try again... (tryings = 9, bot id = 7706560271)
+2025-07-21 15:24:27,254 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:27,255 [WARNING] Sleep for 4.934236 seconds and try again... (tryings = 10, bot id = 7706560271)
+2025-07-21 15:24:32,194 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:32,194 [WARNING] Sleep for 5.043462 seconds and try again... (tryings = 11, bot id = 7706560271)
+2025-07-21 15:24:37,241 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:37,241 [WARNING] Sleep for 5.044874 seconds and try again... (tryings = 12, bot id = 7706560271)
+2025-07-21 15:24:42,289 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:42,289 [WARNING] Sleep for 5.019553 seconds and try again... (tryings = 13, bot id = 7706560271)
+2025-07-21 15:24:47,312 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:47,312 [WARNING] Sleep for 4.948003 seconds and try again... (tryings = 14, bot id = 7706560271)
+2025-07-21 15:24:52,263 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:52,264 [WARNING] Sleep for 5.106519 seconds and try again... (tryings = 15, bot id = 7706560271)
+2025-07-21 15:24:57,373 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:24:57,373 [WARNING] Sleep for 5.141895 seconds and try again... (tryings = 16, bot id = 7706560271)
+2025-07-21 15:25:02,519 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:02,519 [WARNING] Sleep for 4.936581 seconds and try again... (tryings = 17, bot id = 7706560271)
+2025-07-21 15:25:07,457 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:07,457 [WARNING] Sleep for 5.029139 seconds and try again... (tryings = 18, bot id = 7706560271)
+2025-07-21 15:25:12,490 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:12,490 [WARNING] Sleep for 4.899137 seconds and try again... (tryings = 19, bot id = 7706560271)
+2025-07-21 15:25:17,392 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:17,393 [WARNING] Sleep for 4.982186 seconds and try again... (tryings = 20, bot id = 7706560271)
+2025-07-21 15:25:22,378 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:22,378 [WARNING] Sleep for 4.906194 seconds and try again... (tryings = 21, bot id = 7706560271)
+2025-07-21 15:25:27,304 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:27,305 [WARNING] Sleep for 4.946667 seconds and try again... (tryings = 22, bot id = 7706560271)
+2025-07-21 15:25:32,254 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:32,255 [WARNING] Sleep for 5.060473 seconds and try again... (tryings = 23, bot id = 7706560271)
+2025-07-21 15:25:37,320 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:37,321 [WARNING] Sleep for 5.170321 seconds and try again... (tryings = 24, bot id = 7706560271)
+2025-07-21 15:25:42,494 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:42,495 [WARNING] Sleep for 5.096828 seconds and try again... (tryings = 25, bot id = 7706560271)
+2025-07-21 15:25:47,595 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:47,596 [WARNING] Sleep for 4.965888 seconds and try again... (tryings = 26, bot id = 7706560271)
+2025-07-21 15:25:52,565 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:52,565 [WARNING] Sleep for 4.887052 seconds and try again... (tryings = 27, bot id = 7706560271)
+2025-07-21 15:25:57,455 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:25:57,456 [WARNING] Sleep for 4.957375 seconds and try again... (tryings = 28, bot id = 7706560271)
+2025-07-21 15:26:02,417 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:02,417 [WARNING] Sleep for 4.848703 seconds and try again... (tryings = 29, bot id = 7706560271)
+2025-07-21 15:26:07,270 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:07,270 [WARNING] Sleep for 5.011311 seconds and try again... (tryings = 30, bot id = 7706560271)
+2025-07-21 15:26:12,286 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:12,287 [WARNING] Sleep for 5.062861 seconds and try again... (tryings = 31, bot id = 7706560271)
+2025-07-21 15:26:17,352 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:17,352 [WARNING] Sleep for 5.140615 seconds and try again... (tryings = 32, bot id = 7706560271)
+2025-07-21 15:26:22,494 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:22,495 [WARNING] Sleep for 4.780627 seconds and try again... (tryings = 33, bot id = 7706560271)
+2025-07-21 15:26:27,278 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:27,279 [WARNING] Sleep for 5.130988 seconds and try again... (tryings = 34, bot id = 7706560271)
+2025-07-21 15:26:32,411 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:32,413 [WARNING] Sleep for 4.941316 seconds and try again... (tryings = 35, bot id = 7706560271)
+2025-07-21 15:26:37,359 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:37,360 [WARNING] Sleep for 4.903293 seconds and try again... (tryings = 36, bot id = 7706560271)
+2025-07-21 15:26:42,266 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:42,267 [WARNING] Sleep for 4.971797 seconds and try again... (tryings = 37, bot id = 7706560271)
+2025-07-21 15:26:47,242 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:47,243 [WARNING] Sleep for 5.141118 seconds and try again... (tryings = 38, bot id = 7706560271)
+2025-07-21 15:26:52,387 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:52,387 [WARNING] Sleep for 5.075049 seconds and try again... (tryings = 39, bot id = 7706560271)
+2025-07-21 15:26:57,465 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:26:57,465 [WARNING] Sleep for 4.911618 seconds and try again... (tryings = 40, bot id = 7706560271)
+2025-07-21 15:27:02,380 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:02,380 [WARNING] Sleep for 4.880109 seconds and try again... (tryings = 41, bot id = 7706560271)
+2025-07-21 15:27:07,263 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:07,264 [WARNING] Sleep for 5.055475 seconds and try again... (tryings = 42, bot id = 7706560271)
+2025-07-21 15:27:12,323 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:12,323 [WARNING] Sleep for 5.029631 seconds and try again... (tryings = 43, bot id = 7706560271)
+2025-07-21 15:27:17,357 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:17,358 [WARNING] Sleep for 4.917883 seconds and try again... (tryings = 44, bot id = 7706560271)
+2025-07-21 15:27:22,280 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:22,281 [WARNING] Sleep for 5.051283 seconds and try again... (tryings = 45, bot id = 7706560271)
+2025-07-21 15:27:27,336 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:27,337 [WARNING] Sleep for 4.920470 seconds and try again... (tryings = 46, bot id = 7706560271)
+2025-07-21 15:27:32,261 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:32,261 [WARNING] Sleep for 4.783447 seconds and try again... (tryings = 47, bot id = 7706560271)
+2025-07-21 15:27:37,048 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:37,048 [WARNING] Sleep for 4.728659 seconds and try again... (tryings = 48, bot id = 7706560271)
+2025-07-21 15:27:41,780 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:41,780 [WARNING] Sleep for 5.045059 seconds and try again... (tryings = 49, bot id = 7706560271)
+2025-07-21 15:27:46,828 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:46,829 [WARNING] Sleep for 5.110893 seconds and try again... (tryings = 50, bot id = 7706560271)
+2025-07-21 15:27:51,944 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:51,945 [WARNING] Sleep for 5.094581 seconds and try again... (tryings = 51, bot id = 7706560271)
+2025-07-21 15:27:57,043 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:27:57,043 [WARNING] Sleep for 5.037772 seconds and try again... (tryings = 52, bot id = 7706560271)
+2025-07-21 15:28:02,083 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:02,084 [WARNING] Sleep for 4.792245 seconds and try again... (tryings = 53, bot id = 7706560271)
+2025-07-21 15:28:06,880 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:06,881 [WARNING] Sleep for 4.993082 seconds and try again... (tryings = 54, bot id = 7706560271)
+2025-07-21 15:28:11,879 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:11,879 [WARNING] Sleep for 4.959553 seconds and try again... (tryings = 55, bot id = 7706560271)
+2025-07-21 15:28:16,843 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:16,843 [WARNING] Sleep for 4.905644 seconds and try again... (tryings = 56, bot id = 7706560271)
+2025-07-21 15:28:21,755 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:21,756 [WARNING] Sleep for 5.068508 seconds and try again... (tryings = 57, bot id = 7706560271)
+2025-07-21 15:28:26,828 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:26,829 [WARNING] Sleep for 4.949131 seconds and try again... (tryings = 58, bot id = 7706560271)
+2025-07-21 15:28:31,782 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:31,782 [WARNING] Sleep for 5.179352 seconds and try again... (tryings = 59, bot id = 7706560271)
+2025-07-21 15:28:36,964 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:36,965 [WARNING] Sleep for 4.920353 seconds and try again... (tryings = 60, bot id = 7706560271)
+2025-07-21 15:28:41,889 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:41,890 [WARNING] Sleep for 5.085732 seconds and try again... (tryings = 61, bot id = 7706560271)
+2025-07-21 15:28:46,979 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:46,981 [WARNING] Sleep for 5.066168 seconds and try again... (tryings = 62, bot id = 7706560271)
+2025-07-21 15:28:52,050 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:52,050 [WARNING] Sleep for 5.101413 seconds and try again... (tryings = 63, bot id = 7706560271)
+2025-07-21 15:28:57,156 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:28:57,157 [WARNING] Sleep for 4.867919 seconds and try again... (tryings = 64, bot id = 7706560271)
+2025-07-21 15:29:02,029 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:02,030 [WARNING] Sleep for 5.099434 seconds and try again... (tryings = 65, bot id = 7706560271)
+2025-07-21 15:29:07,132 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:07,132 [WARNING] Sleep for 5.150335 seconds and try again... (tryings = 66, bot id = 7706560271)
+2025-07-21 15:29:12,287 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:12,288 [WARNING] Sleep for 5.060550 seconds and try again... (tryings = 67, bot id = 7706560271)
+2025-07-21 15:29:17,351 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:17,351 [WARNING] Sleep for 5.026082 seconds and try again... (tryings = 68, bot id = 7706560271)
+2025-07-21 15:29:22,382 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:22,383 [WARNING] Sleep for 4.988890 seconds and try again... (tryings = 69, bot id = 7706560271)
+2025-07-21 15:29:27,375 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:27,376 [WARNING] Sleep for 4.930445 seconds and try again... (tryings = 70, bot id = 7706560271)
+2025-07-21 15:29:32,326 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:32,327 [WARNING] Sleep for 4.864912 seconds and try again... (tryings = 71, bot id = 7706560271)
+2025-07-21 15:29:37,195 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:37,195 [WARNING] Sleep for 4.974048 seconds and try again... (tryings = 72, bot id = 7706560271)
+2025-07-21 15:29:42,174 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:42,174 [WARNING] Sleep for 5.119759 seconds and try again... (tryings = 73, bot id = 7706560271)
+2025-07-21 15:29:47,297 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:47,298 [WARNING] Sleep for 5.100368 seconds and try again... (tryings = 74, bot id = 7706560271)
+2025-07-21 15:29:52,402 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:52,402 [WARNING] Sleep for 4.960285 seconds and try again... (tryings = 75, bot id = 7706560271)
+2025-07-21 15:29:57,367 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:29:57,367 [WARNING] Sleep for 5.029768 seconds and try again... (tryings = 76, bot id = 7706560271)
+2025-07-21 15:30:02,401 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:02,401 [WARNING] Sleep for 4.946149 seconds and try again... (tryings = 77, bot id = 7706560271)
+2025-07-21 15:30:07,352 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:07,353 [WARNING] Sleep for 4.834663 seconds and try again... (tryings = 78, bot id = 7706560271)
+2025-07-21 15:30:12,191 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:12,191 [WARNING] Sleep for 4.838435 seconds and try again... (tryings = 79, bot id = 7706560271)
+2025-07-21 15:30:17,033 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:17,033 [WARNING] Sleep for 4.919712 seconds and try again... (tryings = 80, bot id = 7706560271)
+2025-07-21 15:30:21,958 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:21,958 [WARNING] Sleep for 4.995314 seconds and try again... (tryings = 81, bot id = 7706560271)
+2025-07-21 15:30:26,958 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:26,959 [WARNING] Sleep for 4.863530 seconds and try again... (tryings = 82, bot id = 7706560271)
+2025-07-21 15:30:31,826 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:31,827 [WARNING] Sleep for 4.977291 seconds and try again... (tryings = 83, bot id = 7706560271)
+2025-07-21 15:30:36,807 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:36,808 [WARNING] Sleep for 4.840862 seconds and try again... (tryings = 84, bot id = 7706560271)
+2025-07-21 15:30:41,652 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:41,652 [WARNING] Sleep for 5.068163 seconds and try again... (tryings = 85, bot id = 7706560271)
+2025-07-21 15:30:46,725 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:46,726 [WARNING] Sleep for 4.965950 seconds and try again... (tryings = 86, bot id = 7706560271)
+2025-07-21 15:30:51,696 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:51,696 [WARNING] Sleep for 5.017693 seconds and try again... (tryings = 87, bot id = 7706560271)
+2025-07-21 15:30:56,719 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:30:56,720 [WARNING] Sleep for 4.856869 seconds and try again... (tryings = 88, bot id = 7706560271)
+2025-07-21 15:31:01,580 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:01,581 [WARNING] Sleep for 5.216204 seconds and try again... (tryings = 89, bot id = 7706560271)
+2025-07-21 15:31:06,801 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:06,802 [WARNING] Sleep for 4.941445 seconds and try again... (tryings = 90, bot id = 7706560271)
+2025-07-21 15:31:11,746 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:11,746 [WARNING] Sleep for 5.194592 seconds and try again... (tryings = 91, bot id = 7706560271)
+2025-07-21 15:31:16,949 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:16,950 [WARNING] Sleep for 4.930944 seconds and try again... (tryings = 92, bot id = 7706560271)
+2025-07-21 15:31:21,889 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:21,890 [WARNING] Sleep for 5.031895 seconds and try again... (tryings = 93, bot id = 7706560271)
+2025-07-21 15:31:26,925 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:26,926 [WARNING] Sleep for 5.112347 seconds and try again... (tryings = 94, bot id = 7706560271)
+2025-07-21 15:31:32,041 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:32,042 [WARNING] Sleep for 4.831070 seconds and try again... (tryings = 95, bot id = 7706560271)
+2025-07-21 15:31:36,877 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:36,878 [WARNING] Sleep for 5.071272 seconds and try again... (tryings = 96, bot id = 7706560271)
+2025-07-21 15:31:41,953 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:41,954 [WARNING] Sleep for 5.004389 seconds and try again... (tryings = 97, bot id = 7706560271)
+2025-07-21 15:31:46,962 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:46,962 [WARNING] Sleep for 5.016230 seconds and try again... (tryings = 98, bot id = 7706560271)
+2025-07-21 15:31:51,981 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 15:31:51,982 [WARNING] Sleep for 4.942823 seconds and try again... (tryings = 99, bot id = 7706560271)
+2025-07-21 15:32:07,454 [INFO] Connection established (tryings = 100, bot id = 7706560271)
+2025-07-21 15:32:21,930 [WARNING] Received SIGINT signal
+2025-07-21 15:32:21,933 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:32:21,934 [INFO] Polling stopped
+2025-07-21 15:32:24,590 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:32:24,591 [INFO] Start polling
+2025-07-21 15:32:25,063 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:32:26,729 [INFO] /admin from user_id=1212795522
+2025-07-21 15:32:27,207 [INFO] Update id=464818935 is handled. Duration 479 ms by bot id=7706560271
+2025-07-21 15:32:28,711 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-21 15:32:28,712 [INFO] Update id=464818936 is not handled. Duration 1 ms by bot id=7706560271
+2025-07-21 15:32:28,712 [ERROR] Cause exception while process update id=464818936 by bot id=7706560271
+NameError: name 'load_settings' is not defined
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 244, in admin_actions
+    await safe_answer("Sana kiritish usulini tanlang:", reply_markup=get_date_settings_kb())
+                                                                     ~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 38, in get_date_settings_kb
+    settings = load_settings()
+               ^^^^^^^^^^^^^
+NameError: name 'load_settings' is not defined
+2025-07-21 15:33:33,130 [WARNING] Received SIGINT signal
+2025-07-21 15:33:33,133 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:33:33,133 [INFO] Polling stopped
+2025-07-21 15:33:36,181 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:33:36,182 [INFO] Start polling
+2025-07-21 15:33:36,368 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:33:39,667 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-21 15:33:40,217 [INFO] Update id=464818937 is handled. Duration 551 ms by bot id=7706560271
+2025-07-21 15:33:45,211 [INFO] Update id=464818938 is handled. Duration 1662 ms by bot id=7706560271
+2025-07-21 15:34:47,671 [INFO] /start from user_id=1212795522
+2025-07-21 15:34:48,590 [INFO] Update id=464818939 is handled. Duration 921 ms by bot id=7706560271
+2025-07-21 15:35:49,824 [INFO] Update id=464818940 is not handled. Duration 4 ms by bot id=7706560271
+2025-07-21 15:35:49,824 [ERROR] Cause exception while process update id=464818940 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 144, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {datetime.date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:35:49,835 [INFO] Update id=464818941 is not handled. Duration 14 ms by bot id=7706560271
+2025-07-21 15:35:49,835 [ERROR] Cause exception while process update id=464818941 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 144, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {datetime.date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:35:49,838 [INFO] Update id=464818942 is not handled. Duration 17 ms by bot id=7706560271
+2025-07-21 15:35:49,838 [ERROR] Cause exception while process update id=464818942 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 144, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {datetime.date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:35:50,134 [INFO] Update id=464818943 is not handled. Duration 2 ms by bot id=7706560271
+2025-07-21 15:35:50,135 [ERROR] Cause exception while process update id=464818943 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 144, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {datetime.date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:35:53,183 [INFO] /start from user_id=1212795522
+2025-07-21 15:35:54,038 [INFO] Update id=464818944 is handled. Duration 855 ms by bot id=7706560271
+2025-07-21 15:35:55,503 [INFO] Update id=464818945 is not handled. Duration 1 ms by bot id=7706560271
+2025-07-21 15:35:55,503 [ERROR] Cause exception while process update id=464818945 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 144, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {datetime.date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:37:17,992 [WARNING] Received SIGINT signal
+2025-07-21 15:37:17,996 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:37:17,997 [INFO] Polling stopped
+2025-07-21 15:37:20,677 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:37:20,678 [INFO] Start polling
+2025-07-21 15:37:20,864 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:37:23,682 [INFO] /start from user_id=1212795522
+2025-07-21 15:37:24,861 [INFO] Update id=464818946 is handled. Duration 1179 ms by bot id=7706560271
+2025-07-21 15:37:25,773 [INFO] Update id=464818947 is not handled. Duration 1 ms by bot id=7706560271
+2025-07-21 15:37:25,773 [ERROR] Cause exception while process update id=464818947 by bot id=7706560271
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/handlers.py", line 313, in choose_direction
+    reply_markup=create_calendar_kb()
+  File "/Users/ogabek/Documents/projects/data/Новая папка 2/Shablon_for_django-main/only_bot/keyboards.py", line 145, in create_calendar_kb
+    row = [InlineKeyboardButton(f"{year} - {date(year, month, 1).strftime('%B')}", callback_data="ignore")]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-07-21 15:38:23,607 [WARNING] Received SIGINT signal
+2025-07-21 15:38:23,612 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:38:23,612 [INFO] Polling stopped
+2025-07-21 15:38:26,126 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:38:26,127 [INFO] Start polling
+2025-07-21 15:38:26,277 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:38:28,773 [INFO] /start from user_id=1212795522
+2025-07-21 15:38:29,603 [INFO] Update id=464818948 is handled. Duration 830 ms by bot id=7706560271
+2025-07-21 15:38:31,026 [INFO] Update id=464818949 is handled. Duration 471 ms by bot id=7706560271
+2025-07-21 15:42:10,021 [WARNING] Received SIGINT signal
+2025-07-21 15:42:10,027 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:42:10,028 [INFO] Polling stopped
+2025-07-21 15:42:12,675 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:42:12,676 [INFO] Start polling
+2025-07-21 15:42:12,869 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:42:14,786 [INFO] /start from user_id=1212795522
+2025-07-21 15:42:15,495 [INFO] Update id=464818950 is handled. Duration 710 ms by bot id=7706560271
+2025-07-21 15:42:16,983 [INFO] Update id=464818951 is handled. Duration 417 ms by bot id=7706560271
+2025-07-21 15:42:18,221 [INFO] Update id=464818952 is handled. Duration 525 ms by bot id=7706560271
+2025-07-21 15:42:20,246 [INFO] Update id=464818953 is handled. Duration 474 ms by bot id=7706560271
+2025-07-21 15:42:22,863 [INFO] Update id=464818954 is handled. Duration 629 ms by bot id=7706560271
+2025-07-21 15:42:28,955 [INFO] Update id=464818955 is handled. Duration 211 ms by bot id=7706560271
+2025-07-21 15:42:31,841 [INFO] Update id=464818956 is handled. Duration 776 ms by bot id=7706560271
+2025-07-21 15:42:33,664 [INFO] Update id=464818957 is handled. Duration 684 ms by bot id=7706560271
+2025-07-21 15:42:38,800 [INFO] Update id=464818958 is handled. Duration 206 ms by bot id=7706560271
+2025-07-21 15:42:40,907 [INFO] Update id=464818959 is handled. Duration 384 ms by bot id=7706560271
+2025-07-21 15:42:42,745 [INFO] Update id=464818960 is handled. Duration 765 ms by bot id=7706560271
+2025-07-21 15:43:37,174 [WARNING] Received SIGINT signal
+2025-07-21 15:43:37,176 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:43:37,177 [INFO] Polling stopped
+2025-07-21 15:43:39,752 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:43:39,752 [INFO] Start polling
+2025-07-21 15:43:39,909 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:43:42,669 [INFO] /start from user_id=1212795522
+2025-07-21 15:43:43,456 [INFO] Update id=464818961 is handled. Duration 788 ms by bot id=7706560271
+2025-07-21 15:43:44,844 [INFO] Update id=464818962 is handled. Duration 356 ms by bot id=7706560271
+2025-07-21 15:43:45,858 [INFO] Update id=464818963 is handled. Duration 369 ms by bot id=7706560271
+2025-07-21 15:43:48,017 [INFO] Update id=464818964 is handled. Duration 397 ms by bot id=7706560271
+2025-07-21 15:43:50,033 [INFO] Update id=464818965 is handled. Duration 600 ms by bot id=7706560271
+2025-07-21 15:43:53,780 [INFO] Update id=464818966 is handled. Duration 231 ms by bot id=7706560271
+2025-07-21 15:43:56,340 [INFO] Update id=464818967 is handled. Duration 769 ms by bot id=7706560271
+2025-07-21 15:43:57,967 [INFO] Update id=464818968 is handled. Duration 618 ms by bot id=7706560271
+2025-07-21 15:44:02,562 [INFO] Update id=464818969 is handled. Duration 250 ms by bot id=7706560271
+2025-07-21 15:44:05,457 [INFO] Update id=464818970 is handled. Duration 393 ms by bot id=7706560271
+2025-07-21 15:44:11,227 [INFO] Update id=464818971 is handled. Duration 742 ms by bot id=7706560271
+2025-07-21 15:45:21,833 [WARNING] Received SIGINT signal
+2025-07-21 15:45:21,836 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:45:21,836 [INFO] Polling stopped
+2025-07-21 15:45:24,326 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-21 15:45:24,327 [INFO] Start polling
+2025-07-21 15:45:24,492 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-21 15:45:27,168 [INFO] /start from user_id=1212795522
+2025-07-21 15:45:27,858 [INFO] Update id=464818972 is handled. Duration 691 ms by bot id=7706560271
+2025-07-21 15:45:29,209 [INFO] Update id=464818973 is handled. Duration 354 ms by bot id=7706560271
+2025-07-21 15:45:30,378 [INFO] Update id=464818974 is handled. Duration 548 ms by bot id=7706560271
+2025-07-21 15:45:31,387 [INFO] Update id=464818975 is handled. Duration 386 ms by bot id=7706560271
+2025-07-21 15:45:32,726 [INFO] Update id=464818976 is handled. Duration 553 ms by bot id=7706560271
+2025-07-21 15:45:36,426 [INFO] Update id=464818977 is handled. Duration 236 ms by bot id=7706560271
+2025-07-21 15:45:38,535 [INFO] Update id=464818978 is handled. Duration 581 ms by bot id=7706560271
+2025-07-21 15:45:40,097 [INFO] Update id=464818979 is handled. Duration 605 ms by bot id=7706560271
+2025-07-21 15:45:45,214 [INFO] Update id=464818980 is handled. Duration 298 ms by bot id=7706560271
+2025-07-21 15:45:48,087 [INFO] Update id=464818981 is handled. Duration 1439 ms by bot id=7706560271
+2025-07-21 15:45:49,293 [INFO] Update id=464818982 is handled. Duration 1056 ms by bot id=7706560271
+2025-07-21 15:46:11,353 [INFO] /admin from user_id=1212795522
+2025-07-21 15:46:11,563 [INFO] Update id=464818983 is handled. Duration 210 ms by bot id=7706560271
+2025-07-21 15:46:12,806 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-21 15:46:13,009 [INFO] Update id=464818984 is handled. Duration 203 ms by bot id=7706560271
+2025-07-21 15:46:14,723 [INFO] Update id=464818985 is handled. Duration 399 ms by bot id=7706560271
+2025-07-21 15:46:18,420 [INFO] /start from user_id=1212795522
+2025-07-21 15:46:18,882 [INFO] Update id=464818986 is handled. Duration 462 ms by bot id=7706560271
+2025-07-21 15:46:21,173 [INFO] Update id=464818987 is handled. Duration 1090 ms by bot id=7706560271
+2025-07-21 16:41:45,849 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 16:41:45,851 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 16:41:46,871 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:41:46,871 [WARNING] Sleep for 1.484176 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-21 16:41:48,360 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:41:48,360 [WARNING] Sleep for 1.936285 seconds and try again... (tryings = 2, bot id = 7706560271)
+2025-07-21 16:41:50,299 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:41:50,299 [WARNING] Sleep for 2.449974 seconds and try again... (tryings = 3, bot id = 7706560271)
+2025-07-21 16:41:52,753 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:41:52,755 [WARNING] Sleep for 3.336266 seconds and try again... (tryings = 4, bot id = 7706560271)
+2025-07-21 16:41:56,095 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:41:56,095 [WARNING] Sleep for 4.204241 seconds and try again... (tryings = 5, bot id = 7706560271)
+2025-07-21 16:42:00,304 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:42:00,304 [WARNING] Sleep for 5.039499 seconds and try again... (tryings = 6, bot id = 7706560271)
+2025-07-21 16:57:19,710 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 16:57:19,710 [WARNING] Sleep for 4.976751 seconds and try again... (tryings = 7, bot id = 7706560271)
+2025-07-21 17:10:47,132 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:10:47,133 [WARNING] Sleep for 5.091689 seconds and try again... (tryings = 8, bot id = 7706560271)
+2025-07-21 17:10:52,238 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:10:52,239 [WARNING] Sleep for 4.927052 seconds and try again... (tryings = 9, bot id = 7706560271)
+2025-07-21 17:10:57,170 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:10:57,171 [WARNING] Sleep for 4.886103 seconds and try again... (tryings = 10, bot id = 7706560271)
+2025-07-21 17:11:02,060 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:02,060 [WARNING] Sleep for 5.109044 seconds and try again... (tryings = 11, bot id = 7706560271)
+2025-07-21 17:11:07,172 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:07,173 [WARNING] Sleep for 4.912259 seconds and try again... (tryings = 12, bot id = 7706560271)
+2025-07-21 17:11:12,088 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:12,089 [WARNING] Sleep for 5.046877 seconds and try again... (tryings = 13, bot id = 7706560271)
+2025-07-21 17:11:17,138 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:17,138 [WARNING] Sleep for 5.113074 seconds and try again... (tryings = 14, bot id = 7706560271)
+2025-07-21 17:11:22,253 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:22,254 [WARNING] Sleep for 4.798838 seconds and try again... (tryings = 15, bot id = 7706560271)
+2025-07-21 17:11:27,055 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:27,055 [WARNING] Sleep for 4.921104 seconds and try again... (tryings = 16, bot id = 7706560271)
+2025-07-21 17:11:31,978 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:31,979 [WARNING] Sleep for 4.951650 seconds and try again... (tryings = 17, bot id = 7706560271)
+2025-07-21 17:11:36,933 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:36,933 [WARNING] Sleep for 4.922865 seconds and try again... (tryings = 18, bot id = 7706560271)
+2025-07-21 17:11:41,858 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:41,859 [WARNING] Sleep for 4.886868 seconds and try again... (tryings = 19, bot id = 7706560271)
+2025-07-21 17:11:46,748 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:46,748 [WARNING] Sleep for 5.093097 seconds and try again... (tryings = 20, bot id = 7706560271)
+2025-07-21 17:11:51,844 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:51,845 [WARNING] Sleep for 4.979667 seconds and try again... (tryings = 21, bot id = 7706560271)
+2025-07-21 17:11:56,828 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:11:56,828 [WARNING] Sleep for 5.084779 seconds and try again... (tryings = 22, bot id = 7706560271)
+2025-07-21 17:12:01,915 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:01,915 [WARNING] Sleep for 5.141098 seconds and try again... (tryings = 23, bot id = 7706560271)
+2025-07-21 17:12:07,058 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:07,060 [WARNING] Sleep for 4.928571 seconds and try again... (tryings = 24, bot id = 7706560271)
+2025-07-21 17:12:11,992 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:11,992 [WARNING] Sleep for 4.885132 seconds and try again... (tryings = 25, bot id = 7706560271)
+2025-07-21 17:12:16,881 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:16,881 [WARNING] Sleep for 4.885845 seconds and try again... (tryings = 26, bot id = 7706560271)
+2025-07-21 17:12:21,771 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:21,771 [WARNING] Sleep for 5.017628 seconds and try again... (tryings = 27, bot id = 7706560271)
+2025-07-21 17:12:26,794 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:26,794 [WARNING] Sleep for 4.875137 seconds and try again... (tryings = 28, bot id = 7706560271)
+2025-07-21 17:12:31,672 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:31,673 [WARNING] Sleep for 4.842137 seconds and try again... (tryings = 29, bot id = 7706560271)
+2025-07-21 17:12:36,518 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:36,519 [WARNING] Sleep for 5.068175 seconds and try again... (tryings = 30, bot id = 7706560271)
+2025-07-21 17:12:41,591 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-21 17:12:41,592 [WARNING] Sleep for 5.105362 seconds and try again... (tryings = 31, bot id = 7706560271)
+2025-07-21 17:12:57,059 [INFO] Connection established (tryings = 32, bot id = 7706560271)
+2025-07-21 18:12:40,568 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 18:12:40,574 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 18:12:51,972 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-21 19:14:36,777 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 19:14:36,779 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 20:36:33,634 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 20:36:33,638 [WARNING] Sleep for 1.379973 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-21 20:36:45,449 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-21 21:06:53,607 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 21:06:53,609 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 21:22:31,122 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-21 21:22:47,346 [INFO] Update id=464818988 is not handled. Duration 3 ms by bot id=7706560271
+2025-07-21 21:57:36,979 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 21:57:36,980 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 21:57:48,305 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-21 22:14:44,672 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 22:14:44,674 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 22:14:56,009 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-21 22:42:24,995 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-21 22:42:24,996 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-21 22:42:36,458 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 01:34:07,178 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 01:34:07,182 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 01:34:18,613 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 02:06:39,839 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 02:06:39,841 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 02:06:51,191 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 02:30:01,244 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 02:30:01,255 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 02:30:12,696 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 03:02:23,888 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 03:02:23,891 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 03:02:35,241 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 03:31:01,427 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 03:31:01,429 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 03:31:12,770 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 04:03:09,603 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 04:03:09,604 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 04:03:20,931 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 04:32:06,269 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 04:32:06,271 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 04:32:17,608 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 04:59:47,042 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 04:59:47,044 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 04:59:58,470 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 05:32:29,105 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 05:32:29,115 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 05:32:40,481 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 06:04:52,482 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 06:04:52,483 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 06:05:03,812 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 06:33:29,497 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 06:33:29,500 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 06:33:40,850 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 07:05:52,019 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 07:05:52,021 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 07:06:03,369 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 07:34:22,447 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 07:34:22,449 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 07:34:33,781 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 08:08:10,163 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 08:08:10,164 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 08:08:21,482 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 08:25:50,240 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 08:25:50,244 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 08:32:52,661 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 09:31:03,686 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 09:31:03,689 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 09:31:41,838 [WARNING] Received SIGINT signal
+2025-07-22 09:31:41,856 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 09:31:41,856 [INFO] Polling stopped
+2025-07-22 09:31:44,772 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-22 09:31:44,772 [INFO] Start polling
+2025-07-22 09:31:44,889 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 09:31:52,834 [INFO] /start from user_id=1212795522
+2025-07-22 09:31:53,320 [INFO] Update id=464818989 is handled. Duration 488 ms by bot id=7706560271
+2025-07-22 09:31:54,523 [INFO] Update id=464818990 is handled. Duration 250 ms by bot id=7706560271
+2025-07-22 09:32:02,442 [INFO] Update id=464818991 is handled. Duration 136 ms by bot id=7706560271
+2025-07-22 09:32:14,554 [INFO] Update id=464818992 is handled. Duration 133 ms by bot id=7706560271
+2025-07-22 09:32:38,666 [INFO] Update id=464818993 is handled. Duration 244 ms by bot id=7706560271
+2025-07-22 09:32:40,850 [INFO] Update id=464818994 is handled. Duration 398 ms by bot id=7706560271
+2025-07-22 09:32:42,246 [INFO] Update id=464818995 is handled. Duration 381 ms by bot id=7706560271
+2025-07-22 09:32:53,863 [INFO] Update id=464818996 is handled. Duration 130 ms by bot id=7706560271
+2025-07-22 09:32:56,031 [INFO] Update id=464818997 is handled. Duration 262 ms by bot id=7706560271
+2025-07-22 09:32:58,417 [INFO] Update id=464818998 is handled. Duration 758 ms by bot id=7706560271
+2025-07-22 09:44:21,092 [WARNING] Received SIGINT signal
+2025-07-22 09:44:21,105 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 09:44:21,106 [INFO] Polling stopped
+2025-07-22 09:47:07,872 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-22 09:47:07,872 [INFO] Start polling
+2025-07-22 09:47:07,991 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 09:47:13,567 [INFO] /start from user_id=1212795522
+2025-07-22 09:47:14,159 [INFO] Update id=464818999 is handled. Duration 591 ms by bot id=7706560271
+2025-07-22 09:47:49,804 [INFO] /start from user_id=7102675435
+2025-07-22 09:47:50,164 [INFO] Update id=464819000 is handled. Duration 362 ms by bot id=7706560271
+2025-07-22 09:48:12,709 [INFO] Update id=464819001 is handled. Duration 955 ms by bot id=7706560271
+2025-07-22 09:48:23,168 [INFO] Update id=464819002 is handled. Duration 152 ms by bot id=7706560271
+2025-07-22 09:48:27,952 [INFO] Update id=464819003 is handled. Duration 172 ms by bot id=7706560271
+2025-07-22 09:48:30,400 [INFO] Update id=464819004 is handled. Duration 518 ms by bot id=7706560271
+2025-07-22 09:48:32,102 [INFO] Update id=464819005 is handled. Duration 525 ms by bot id=7706560271
+2025-07-22 09:48:36,501 [INFO] Update id=464819006 is handled. Duration 136 ms by bot id=7706560271
+2025-07-22 09:48:38,075 [INFO] Update id=464819007 is handled. Duration 248 ms by bot id=7706560271
+2025-07-22 09:48:39,701 [INFO] Update id=464819008 is handled. Duration 551 ms by bot id=7706560271
+2025-07-22 09:48:55,003 [INFO] /admin from user_id=1212795522
+2025-07-22 09:48:55,138 [INFO] Update id=464819009 is handled. Duration 136 ms by bot id=7706560271
+2025-07-22 09:48:56,825 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 09:48:57,025 [INFO] Update id=464819010 is handled. Duration 200 ms by bot id=7706560271
+2025-07-22 09:48:58,752 [INFO] Update id=464819011 is handled. Duration 251 ms by bot id=7706560271
+2025-07-22 09:49:06,119 [INFO] /start from user_id=7102675435
+2025-07-22 09:49:06,370 [INFO] Update id=464819012 is handled. Duration 257 ms by bot id=7706560271
+2025-07-22 09:49:07,657 [INFO] Update id=464819013 is handled. Duration 245 ms by bot id=7706560271
+2025-07-22 09:49:09,531 [INFO] Update id=464819014 is handled. Duration 248 ms by bot id=7706560271
+2025-07-22 09:49:10,615 [INFO] Update id=464819015 is handled. Duration 254 ms by bot id=7706560271
+2025-07-22 09:49:11,716 [INFO] Update id=464819016 is handled. Duration 416 ms by bot id=7706560271
+2025-07-22 09:49:16,670 [INFO] Update id=464819017 is handled. Duration 130 ms by bot id=7706560271
+2025-07-22 09:49:18,254 [INFO] Update id=464819018 is handled. Duration 409 ms by bot id=7706560271
+2025-07-22 09:49:19,450 [INFO] Update id=464819019 is handled. Duration 424 ms by bot id=7706560271
+2025-07-22 09:49:25,313 [INFO] Update id=464819020 is handled. Duration 130 ms by bot id=7706560271
+2025-07-22 09:49:26,558 [INFO] Update id=464819021 is handled. Duration 359 ms by bot id=7706560271
+2025-07-22 09:49:27,834 [INFO] Update id=464819022 is handled. Duration 631 ms by bot id=7706560271
+2025-07-22 09:49:38,649 [INFO] /stats from user_id=1212795522
+2025-07-22 09:49:38,803 [INFO] Update id=464819023 is handled. Duration 154 ms by bot id=7706560271
+2025-07-22 09:49:41,779 [INFO] /users from user_id=1212795522
+2025-07-22 09:49:41,919 [INFO] Update id=464819024 is handled. Duration 141 ms by bot id=7706560271
+2025-07-22 09:49:48,107 [INFO] /start from user_id=1212795522
+2025-07-22 09:49:48,382 [INFO] Update id=464819025 is handled. Duration 283 ms by bot id=7706560271
+2025-07-22 09:49:50,985 [INFO] Update id=464819026 is handled. Duration 259 ms by bot id=7706560271
+2025-07-22 09:49:51,858 [INFO] Update id=464819027 is handled. Duration 272 ms by bot id=7706560271
+2025-07-22 09:49:52,570 [INFO] Update id=464819028 is handled. Duration 255 ms by bot id=7706560271
+2025-07-22 09:49:53,502 [INFO] Update id=464819029 is handled. Duration 373 ms by bot id=7706560271
+2025-07-22 09:49:59,932 [INFO] Update id=464819030 is handled. Duration 134 ms by bot id=7706560271
+2025-07-22 09:50:01,887 [INFO] Update id=464819031 is handled. Duration 439 ms by bot id=7706560271
+2025-07-22 09:50:03,209 [INFO] Update id=464819032 is handled. Duration 512 ms by bot id=7706560271
+2025-07-22 09:50:06,930 [INFO] Update id=464819033 is handled. Duration 167 ms by bot id=7706560271
+2025-07-22 09:50:08,599 [INFO] Update id=464819034 is handled. Duration 299 ms by bot id=7706560271
+2025-07-22 09:50:11,663 [INFO] Update id=464819035 is handled. Duration 526 ms by bot id=7706560271
+2025-07-22 09:50:13,571 [INFO] /stats from user_id=1212795522
+2025-07-22 09:50:13,747 [INFO] Update id=464819036 is handled. Duration 177 ms by bot id=7706560271
+2025-07-22 10:37:56,302 [WARNING] Received SIGINT signal
+2025-07-22 10:37:56,327 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 10:37:56,328 [INFO] Polling stopped
+2025-07-22 10:37:59,331 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-22 10:37:59,332 [INFO] Start polling
+2025-07-22 10:37:59,455 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-22 10:37:59,579 [INFO] /start from user_id=1750686339
+2025-07-22 10:38:00,232 [INFO] Update id=464819037 is handled. Duration 652 ms by bot id=7706560271
+2025-07-22 10:38:19,093 [INFO] Update id=464819038 is handled. Duration 277 ms by bot id=7706560271
+2025-07-22 10:38:20,561 [INFO] Update id=464819039 is handled. Duration 251 ms by bot id=7706560271
+2025-07-22 10:38:23,829 [INFO] Update id=464819040 is handled. Duration 250 ms by bot id=7706560271
+2025-07-22 10:38:36,108 [INFO] /start from user_id=1750686339
+2025-07-22 10:38:36,397 [INFO] Update id=464819041 is handled. Duration 292 ms by bot id=7706560271
+2025-07-22 10:38:37,925 [INFO] Update id=464819042 is handled. Duration 376 ms by bot id=7706560271
+2025-07-22 10:38:39,969 [INFO] Update id=464819043 is handled. Duration 269 ms by bot id=7706560271
+2025-07-22 10:38:41,441 [INFO] Update id=464819044 is handled. Duration 252 ms by bot id=7706560271
+2025-07-22 10:38:44,949 [INFO] Update id=464819045 is handled. Duration 420 ms by bot id=7706560271
+2025-07-22 10:39:08,086 [INFO] Update id=464819046 is handled. Duration 163 ms by bot id=7706560271
+2025-07-22 10:39:12,042 [INFO] Update id=464819047 is handled. Duration 390 ms by bot id=7706560271
+2025-07-22 10:39:19,099 [INFO] Update id=464819048 is handled. Duration 389 ms by bot id=7706560271
+2025-07-22 10:40:26,436 [INFO] Update id=464819049 is handled. Duration 306 ms by bot id=7706560271
+2025-07-22 10:40:56,572 [INFO] Update id=464819050 is handled. Duration 149 ms by bot id=7706560271
+2025-07-22 10:41:19,529 [INFO] Update id=464819051 is handled. Duration 638 ms by bot id=7706560271
+2025-07-22 10:41:35,547 [INFO] /admin from user_id=1212795522
+2025-07-22 10:41:35,736 [INFO] Update id=464819052 is handled. Duration 188 ms by bot id=7706560271
+2025-07-22 10:41:37,160 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 10:41:37,315 [INFO] Update id=464819053 is handled. Duration 157 ms by bot id=7706560271
+2025-07-22 10:42:04,636 [INFO] Update id=464819054 is handled. Duration 251 ms by bot id=7706560271
+2025-07-22 10:51:09,557 [INFO] /start from user_id=1212795522
+2025-07-22 10:51:09,833 [INFO] Update id=464819055 is handled. Duration 276 ms by bot id=7706560271
+2025-07-22 10:51:17,326 [INFO] Update id=464819056 is handled. Duration 252 ms by bot id=7706560271
+2025-07-22 10:51:28,574 [INFO] /admin from user_id=1212795522
+2025-07-22 10:51:28,716 [INFO] Update id=464819057 is handled. Duration 142 ms by bot id=7706560271
+2025-07-22 10:51:30,261 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 10:51:30,394 [INFO] Update id=464819058 is handled. Duration 133 ms by bot id=7706560271
+2025-07-22 10:53:58,985 [INFO] /admin from user_id=1212795522
+2025-07-22 10:53:59,146 [INFO] Update id=464819059 is handled. Duration 162 ms by bot id=7706560271
+2025-07-22 10:54:07,999 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 10:54:08,181 [INFO] Update id=464819060 is handled. Duration 182 ms by bot id=7706560271
+2025-07-22 10:54:27,272 [INFO] Update id=464819061 is handled. Duration 257 ms by bot id=7706560271
+2025-07-22 10:54:29,070 [INFO] Update id=464819062 is handled. Duration 330 ms by bot id=7706560271
+2025-07-22 10:54:30,409 [INFO] Update id=464819063 is handled. Duration 444 ms by bot id=7706560271
+2025-07-22 10:54:37,653 [INFO] /start from user_id=1212795522
+2025-07-22 10:54:37,919 [INFO] Update id=464819064 is handled. Duration 265 ms by bot id=7706560271
+2025-07-22 10:54:40,277 [INFO] Update id=464819065 is handled. Duration 417 ms by bot id=7706560271
+2025-07-22 10:54:42,602 [INFO] Update id=464819066 is handled. Duration 258 ms by bot id=7706560271
+2025-07-22 10:54:44,173 [INFO] Update id=464819067 is handled. Duration 251 ms by bot id=7706560271
+2025-07-22 10:54:47,412 [INFO] Update id=464819068 is handled. Duration 394 ms by bot id=7706560271
+2025-07-22 10:54:53,839 [INFO] Update id=464819069 is handled. Duration 171 ms by bot id=7706560271
+2025-07-22 10:54:55,758 [INFO] Update id=464819070 is handled. Duration 504 ms by bot id=7706560271
+2025-07-22 10:54:57,571 [INFO] Update id=464819071 is handled. Duration 385 ms by bot id=7706560271
+2025-07-22 10:55:02,620 [INFO] Update id=464819072 is handled. Duration 405 ms by bot id=7706560271
+2025-07-22 10:55:04,735 [INFO] Update id=464819073 is handled. Duration 260 ms by bot id=7706560271
+2025-07-22 10:55:06,862 [INFO] Update id=464819074 is handled. Duration 701 ms by bot id=7706560271
+2025-07-22 10:59:34,688 [INFO] /admin from user_id=1212795522
+2025-07-22 10:59:35,059 [INFO] Update id=464819075 is handled. Duration 373 ms by bot id=7706560271
+2025-07-22 10:59:39,750 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 10:59:39,898 [INFO] Update id=464819076 is handled. Duration 150 ms by bot id=7706560271
+2025-07-22 10:59:47,985 [INFO] /admin from user_id=1212795522
+2025-07-22 10:59:48,116 [INFO] Update id=464819077 is handled. Duration 131 ms by bot id=7706560271
+2025-07-22 10:59:56,040 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 10:59:56,178 [INFO] Update id=464819078 is handled. Duration 139 ms by bot id=7706560271
+2025-07-22 11:00:03,047 [INFO] Update id=464819079 is handled. Duration 497 ms by bot id=7706560271
+2025-07-22 11:00:04,665 [INFO] /start from user_id=1212795522
+2025-07-22 11:00:04,975 [INFO] Update id=464819080 is handled. Duration 310 ms by bot id=7706560271
+2025-07-22 11:00:07,121 [INFO] Update id=464819081 is handled. Duration 432 ms by bot id=7706560271
+2025-07-22 11:00:18,621 [INFO] Update id=464819082 is handled. Duration 150 ms by bot id=7706560271
+2025-07-22 11:00:27,541 [INFO] Update id=464819083 is handled. Duration 260 ms by bot id=7706560271
+2025-07-22 11:00:30,513 [INFO] Update id=464819084 is handled. Duration 404 ms by bot id=7706560271
+2025-07-22 11:00:31,931 [INFO] Update id=464819085 is handled. Duration 398 ms by bot id=7706560271
+2025-07-22 11:00:34,932 [INFO] Update id=464819086 is handled. Duration 153 ms by bot id=7706560271
+2025-07-22 11:00:37,431 [INFO] Update id=464819087 is handled. Duration 264 ms by bot id=7706560271
+2025-07-22 11:00:41,089 [INFO] Update id=464819088 is handled. Duration 838 ms by bot id=7706560271
+2025-07-22 11:00:48,224 [INFO] /admin from user_id=1212795522
+2025-07-22 11:00:48,365 [INFO] Update id=464819089 is handled. Duration 141 ms by bot id=7706560271
+2025-07-22 11:00:50,614 [INFO] Admin action: admin_date_settings from user_id=1212795522
+2025-07-22 11:00:50,759 [INFO] Update id=464819090 is handled. Duration 146 ms by bot id=7706560271
+2025-07-22 11:00:54,180 [INFO] Update id=464819091 is handled. Duration 257 ms by bot id=7706560271
+2025-07-22 11:00:56,826 [INFO] /start from user_id=1212795522
+2025-07-22 11:00:57,079 [INFO] Update id=464819092 is handled. Duration 253 ms by bot id=7706560271
+2025-07-22 11:00:59,220 [INFO] Update id=464819093 is handled. Duration 249 ms by bot id=7706560271
+2025-07-22 11:01:00,711 [INFO] Update id=464819094 is handled. Duration 246 ms by bot id=7706560271
+2025-07-22 11:01:02,181 [INFO] Update id=464819095 is handled. Duration 252 ms by bot id=7706560271
+2025-07-22 11:01:04,189 [INFO] Update id=464819096 is handled. Duration 561 ms by bot id=7706560271
+2025-07-22 11:49:30,202 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 11:49:30,204 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 11:49:31,221 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-22 11:49:31,221 [WARNING] Sleep for 1.299279 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-22 11:49:32,962 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-22 11:49:32,964 [INFO] /start from user_id=1212795522
+2025-07-22 11:49:33,492 [INFO] Update id=464819097 is handled. Duration 528 ms by bot id=7706560271
+2025-07-22 11:58:11,681 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 11:58:11,684 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 11:58:23,082 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 13:33:55,039 [INFO] Update id=464819098 is handled. Duration 422 ms by bot id=7706560271
+2025-07-22 15:39:04,430 [INFO] Update id=464819099 is not handled. Duration 11 ms by bot id=7706560271
+2025-07-22 19:02:35,007 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:02:35,010 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:03:37,620 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2025-07-22 19:03:37,621 [WARNING] Sleep for 1.447961 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-22 19:04:50,002 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:04:50,005 [WARNING] Sleep for 1.923046 seconds and try again... (tryings = 2, bot id = 7706560271)
+2025-07-22 19:05:49,781 [INFO] Connection established (tryings = 3, bot id = 7706560271)
+2025-07-22 19:09:32,996 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:09:32,999 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:09:49,224 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 19:11:24,995 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:11:24,998 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:12:28,406 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2025-07-22 19:12:28,407 [WARNING] Sleep for 1.308855 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-22 19:13:33,311 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-07-22 19:13:33,312 [WARNING] Sleep for 1.653128 seconds and try again... (tryings = 2, bot id = 7706560271)
+2025-07-22 19:13:53,781 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connection reset by peer]
+2025-07-22 19:13:53,783 [WARNING] Sleep for 2.112027 seconds and try again... (tryings = 3, bot id = 7706560271)
+2025-07-22 19:15:05,990 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:15:05,992 [WARNING] Sleep for 2.724962 seconds and try again... (tryings = 4, bot id = 7706560271)
+2025-07-22 19:16:18,988 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:16:18,990 [WARNING] Sleep for 3.533816 seconds and try again... (tryings = 5, bot id = 7706560271)
+2025-07-22 19:16:33,622 [INFO] Connection established (tryings = 6, bot id = 7706560271)
+2025-07-22 19:18:29,989 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:18:29,992 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:19:04,764 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 19:22:42,987 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:22:42,989 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:23:54,978 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:23:54,980 [WARNING] Sleep for 1.491233 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-22 19:24:19,822 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-22 19:28:05,978 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 19:28:05,979 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 19:29:11,727 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2025-07-22 19:29:11,728 [WARNING] Sleep for 1.289730 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-22 19:29:26,927 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-22 20:33:59,289 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 20:33:59,293 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 20:34:10,676 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 21:38:00,483 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 21:38:00,485 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 21:38:11,842 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 21:57:18,940 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 21:57:18,942 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 21:57:20,296 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 21:57:20,298 [INFO] /start from user_id=6076971093
+2025-07-22 21:57:20,313 [INFO] /start from user_id=6076971093
+2025-07-22 21:57:20,766 [INFO] Update id=464819100 is handled. Duration 468 ms by bot id=7706560271
+2025-07-22 21:57:20,809 [INFO] Update id=464819101 is handled. Duration 495 ms by bot id=7706560271
+2025-07-22 22:31:32,445 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 22:31:32,447 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 22:31:43,805 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 22:51:29,008 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 22:51:29,011 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 23:04:29,540 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 23:36:51,588 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 23:36:51,589 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 23:37:02,964 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-22 23:56:24,934 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-22 23:56:24,935 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-22 23:56:36,298 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 00:38:11,592 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 00:38:11,598 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 00:38:22,920 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 01:06:39,348 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 01:06:39,351 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 01:06:50,727 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 01:38:56,969 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 01:38:56,970 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 01:39:08,323 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 01:56:04,665 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 01:56:04,668 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 01:56:16,050 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 03:52:04,639 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 03:52:04,641 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 04:24:09,054 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 04:24:09,055 [WARNING] Sleep for 1.200814 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-23 04:24:20,730 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-23 04:52:42,202 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 04:52:42,205 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 04:52:53,671 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 05:27:20,860 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 05:27:20,862 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 05:27:32,193 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 05:53:43,265 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 05:53:43,266 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 05:53:54,617 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 06:26:06,719 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 06:26:06,721 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 06:26:18,144 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 06:54:42,229 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 06:54:42,230 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 06:54:53,575 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 07:26:47,178 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 07:26:47,180 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 07:26:58,570 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 07:55:43,766 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 07:55:43,769 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 07:55:55,116 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 08:29:13,539 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 08:29:13,541 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 08:29:25,020 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 08:44:14,164 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 08:44:14,166 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 09:16:17,715 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 09:16:17,717 [WARNING] Sleep for 1.364959 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-23 09:16:29,403 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-23 09:41:14,333 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 09:41:14,336 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 09:41:25,669 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 10:17:39,110 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 10:17:39,112 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 10:17:50,449 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 10:42:28,064 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 10:42:28,067 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 10:42:39,574 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 10:59:03,304 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 10:59:03,307 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 10:59:14,643 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 11:38:33,549 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 11:38:33,552 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 11:38:44,938 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 11:45:59,531 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 11:45:59,533 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 11:46:00,541 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:00,541 [WARNING] Sleep for 1.310183 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-23 11:46:01,855 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:01,855 [WARNING] Sleep for 1.752349 seconds and try again... (tryings = 2, bot id = 7706560271)
+2025-07-23 11:46:03,610 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:03,611 [WARNING] Sleep for 2.309766 seconds and try again... (tryings = 3, bot id = 7706560271)
+2025-07-23 11:46:05,924 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:05,924 [WARNING] Sleep for 3.086742 seconds and try again... (tryings = 4, bot id = 7706560271)
+2025-07-23 11:46:09,072 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:09,073 [WARNING] Sleep for 4.100845 seconds and try again... (tryings = 5, bot id = 7706560271)
+2025-07-23 11:46:13,177 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:13,177 [WARNING] Sleep for 5.231377 seconds and try again... (tryings = 6, bot id = 7706560271)
+2025-07-23 11:46:18,411 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:18,412 [WARNING] Sleep for 4.883684 seconds and try again... (tryings = 7, bot id = 7706560271)
+2025-07-23 11:46:23,299 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:23,300 [WARNING] Sleep for 4.991847 seconds and try again... (tryings = 8, bot id = 7706560271)
+2025-07-23 11:46:28,294 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:28,295 [WARNING] Sleep for 4.788656 seconds and try again... (tryings = 9, bot id = 7706560271)
+2025-07-23 11:46:33,087 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:33,088 [WARNING] Sleep for 4.986568 seconds and try again... (tryings = 10, bot id = 7706560271)
+2025-07-23 11:46:38,077 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:38,078 [WARNING] Sleep for 4.897130 seconds and try again... (tryings = 11, bot id = 7706560271)
+2025-07-23 11:46:42,978 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:42,979 [WARNING] Sleep for 5.172388 seconds and try again... (tryings = 12, bot id = 7706560271)
+2025-07-23 11:46:48,155 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:48,155 [WARNING] Sleep for 5.133798 seconds and try again... (tryings = 13, bot id = 7706560271)
+2025-07-23 11:46:53,292 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:53,294 [WARNING] Sleep for 4.936312 seconds and try again... (tryings = 14, bot id = 7706560271)
+2025-07-23 11:46:58,233 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:46:58,233 [WARNING] Sleep for 5.179547 seconds and try again... (tryings = 15, bot id = 7706560271)
+2025-07-23 11:47:03,416 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:03,416 [WARNING] Sleep for 4.913614 seconds and try again... (tryings = 16, bot id = 7706560271)
+2025-07-23 11:47:08,333 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:08,333 [WARNING] Sleep for 4.915234 seconds and try again... (tryings = 17, bot id = 7706560271)
+2025-07-23 11:47:13,252 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:13,253 [WARNING] Sleep for 5.046211 seconds and try again... (tryings = 18, bot id = 7706560271)
+2025-07-23 11:47:18,302 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:18,302 [WARNING] Sleep for 5.017189 seconds and try again... (tryings = 19, bot id = 7706560271)
+2025-07-23 11:47:23,322 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:23,323 [WARNING] Sleep for 4.966417 seconds and try again... (tryings = 20, bot id = 7706560271)
+2025-07-23 11:47:28,294 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+2025-07-23 11:47:28,295 [WARNING] Sleep for 5.052495 seconds and try again... (tryings = 21, bot id = 7706560271)
+2025-07-23 11:47:43,858 [INFO] Connection established (tryings = 22, bot id = 7706560271)
+2025-07-23 12:05:42,377 [ERROR] Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-07-23 12:05:42,380 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-23 12:05:53,753 [INFO] Connection established (tryings = 1, bot id = 7706560271)
+2025-07-23 13:46:18,151 [WARNING] Received SIGINT signal
+2025-07-23 13:46:18,169 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-23 13:46:18,170 [INFO] Polling stopped
+2025-07-23 10:23:09,324 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-23 10:23:09,325 [INFO] Start polling
+2025-07-23 10:23:09,382 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-23 10:23:14,494 [INFO] /start from user_id=1212795522
+2025-07-23 10:23:14,831 [INFO] Update id=464819135 is handled. Duration 337 ms by bot id=7706560271
+2025-07-23 10:23:17,623 [INFO] Update id=464819136 is handled. Duration 76 ms by bot id=7706560271
+2025-07-23 10:23:31,693 [INFO] Update id=464819137 is handled. Duration 188 ms by bot id=7706560271
+2025-07-23 10:23:38,518 [INFO] Update id=464819138 is handled. Duration 79 ms by bot id=7706560271
+2025-07-23 10:44:00,369 [INFO] Update id=464819139 is not handled. Duration 3 ms by bot id=7706560271
+2025-07-23 10:44:06,174 [INFO] /start from user_id=412216093
+2025-07-23 10:44:06,373 [INFO] Update id=464819140 is handled. Duration 199 ms by bot id=7706560271
+2025-07-23 10:44:07,893 [INFO] Update id=464819141 is handled. Duration 177 ms by bot id=7706560271
+2025-07-23 10:44:10,595 [INFO] Update id=464819142 is handled. Duration 239 ms by bot id=7706560271
+2025-07-23 10:44:12,004 [INFO] Update id=464819143 is handled. Duration 238 ms by bot id=7706560271
+2025-07-23 10:44:13,709 [INFO] Update id=464819144 is handled. Duration 453 ms by bot id=7706560271
+2025-07-23 10:44:17,074 [INFO] Update id=464819145 is handled. Duration 154 ms by bot id=7706560271
+2025-07-23 10:44:29,157 [INFO] Update id=464819146 is handled. Duration 83 ms by bot id=7706560271
+2025-07-23 10:44:32,324 [INFO] Update id=464819147 is handled. Duration 259 ms by bot id=7706560271
+2025-07-23 10:44:33,740 [INFO] Update id=464819148 is handled. Duration 337 ms by bot id=7706560271
+2025-07-23 10:44:38,610 [INFO] Update id=464819149 is handled. Duration 93 ms by bot id=7706560271
+2025-07-23 10:44:39,938 [INFO] Update id=464819150 is handled. Duration 139 ms by bot id=7706560271
+2025-07-23 10:44:41,367 [INFO] Update id=464819151 is handled. Duration 628 ms by bot id=7706560271
+2025-07-23 11:15:01,865 [INFO] /admin from user_id=412216093
+2025-07-23 11:15:02,073 [INFO] Update id=464819152 is handled. Duration 208 ms by bot id=7706560271
+2025-07-23 11:15:04,266 [INFO] Admin action: admin_date_settings from user_id=412216093
+2025-07-23 11:15:04,342 [INFO] Update id=464819153 is handled. Duration 77 ms by bot id=7706560271
+2025-07-23 11:15:07,242 [INFO] Update id=464819154 is handled. Duration 147 ms by bot id=7706560271
+2025-07-23 11:15:09,967 [INFO] /start from user_id=412216093
+2025-07-23 11:15:10,124 [INFO] Update id=464819155 is handled. Duration 157 ms by bot id=7706560271
+2025-07-23 11:15:12,668 [INFO] Update id=464819156 is handled. Duration 154 ms by bot id=7706560271
+2025-07-23 11:15:22,250 [INFO] Admin action: admin_list_car from user_id=412216093
+2025-07-23 11:15:22,374 [INFO] Update id=464819157 is handled. Duration 124 ms by bot id=7706560271
+2025-07-23 11:15:29,811 [INFO] /admin from user_id=412216093
+2025-07-23 11:15:29,925 [INFO] Update id=464819158 is handled. Duration 113 ms by bot id=7706560271
+2025-07-23 11:15:30,732 [INFO] Admin action: admin_list_car from user_id=412216093
+2025-07-23 11:15:30,864 [INFO] Update id=464819159 is handled. Duration 133 ms by bot id=7706560271
+2025-07-23 11:15:50,146 [INFO] Admin action: admin_add_car from user_id=412216093
+2025-07-23 11:15:50,236 [INFO] Update id=464819160 is handled. Duration 91 ms by bot id=7706560271
+2025-07-23 11:16:01,394 [INFO] Update id=464819161 is handled. Duration 79 ms by bot id=7706560271
+2025-07-23 11:16:05,018 [INFO] Admin action: admin_list_car from user_id=412216093
+2025-07-23 11:16:05,187 [INFO] Update id=464819162 is handled. Duration 170 ms by bot id=7706560271
+2025-07-23 11:16:09,862 [INFO] /start from user_id=412216093
+2025-07-23 11:16:10,006 [INFO] Update id=464819163 is handled. Duration 144 ms by bot id=7706560271
+2025-07-23 11:16:10,947 [INFO] Update id=464819164 is handled. Duration 155 ms by bot id=7706560271
+2025-07-23 11:16:13,702 [INFO] Update id=464819165 is handled. Duration 189 ms by bot id=7706560271
+2025-07-23 11:16:23,858 [INFO] Update id=464819166 is handled. Duration 106 ms by bot id=7706560271
+2025-07-23 11:16:28,400 [INFO] Update id=464819167 is handled. Duration 115 ms by bot id=7706560271
+2025-07-23 11:16:30,782 [INFO] Update id=464819168 is handled. Duration 211 ms by bot id=7706560271
+2025-07-23 11:16:37,577 [INFO] Admin action: admin_del_car from user_id=412216093
+2025-07-23 11:16:37,699 [INFO] Update id=464819169 is handled. Duration 123 ms by bot id=7706560271
+2025-07-23 11:16:42,179 [INFO] Update id=464819170 is handled. Duration 177 ms by bot id=7706560271
+2025-07-23 11:16:53,114 [INFO] Admin action: admin_del_car from user_id=412216093
+2025-07-23 11:16:53,236 [INFO] Update id=464819171 is handled. Duration 123 ms by bot id=7706560271
+2025-07-23 11:16:57,607 [INFO] Update id=464819172 is handled. Duration 94 ms by bot id=7706560271
+2025-07-23 11:17:02,456 [INFO] /start from user_id=412216093
+2025-07-23 11:17:02,691 [INFO] Update id=464819173 is handled. Duration 235 ms by bot id=7706560271
+2025-07-23 11:17:03,770 [INFO] Update id=464819174 is handled. Duration 196 ms by bot id=7706560271
+2025-07-23 11:17:08,730 [INFO] Update id=464819175 is handled. Duration 84 ms by bot id=7706560271
+2025-07-23 11:17:17,968 [INFO] Update id=464819176 is handled. Duration 88 ms by bot id=7706560271
+2025-07-23 11:17:21,606 [INFO] Update id=464819177 is handled. Duration 78 ms by bot id=7706560271
+2025-07-23 11:17:31,506 [INFO] Update id=464819178 is handled. Duration 172 ms by bot id=7706560271
+2025-07-23 11:17:33,089 [INFO] Update id=464819179 is handled. Duration 305 ms by bot id=7706560271
+2025-07-23 11:18:11,040 [INFO] Admin action: admin_list_route from user_id=412216093
+2025-07-23 11:18:11,220 [INFO] Update id=464819180 is handled. Duration 181 ms by bot id=7706560271
+2025-07-23 11:18:27,408 [INFO] /start from user_id=412216093
+2025-07-23 11:18:27,695 [INFO] Update id=464819181 is handled. Duration 287 ms by bot id=7706560271
+2025-07-23 11:18:30,695 [INFO] Update id=464819182 is handled. Duration 151 ms by bot id=7706560271
+2025-07-23 11:18:38,837 [INFO] Update id=464819183 is handled. Duration 81 ms by bot id=7706560271
+2025-07-23 11:18:42,975 [INFO] Update id=464819184 is handled. Duration 144 ms by bot id=7706560271
+2025-07-23 11:18:45,043 [INFO] Update id=464819185 is handled. Duration 238 ms by bot id=7706560271
+2025-07-23 11:18:46,703 [INFO] Update id=464819186 is handled. Duration 235 ms by bot id=7706560271
+2025-07-23 11:18:49,860 [INFO] Update id=464819187 is handled. Duration 85 ms by bot id=7706560271
+2025-07-23 11:18:51,737 [INFO] Update id=464819188 is handled. Duration 149 ms by bot id=7706560271
+2025-07-23 11:18:55,644 [INFO] Update id=464819189 is handled. Duration 517 ms by bot id=7706560271
+2025-07-23 11:19:37,320 [INFO] Update id=464819190 is handled. Duration 85 ms by bot id=7706560271
+2025-07-23 11:19:42,646 [INFO] Update id=464819191 is handled. Duration 112 ms by bot id=7706560271
+2025-07-23 11:19:45,786 [INFO] Update id=464819192 is handled. Duration 156 ms by bot id=7706560271
+2025-07-23 11:19:46,679 [INFO] Update id=464819193 is handled. Duration 140 ms by bot id=7706560271
+2025-07-23 11:19:50,822 [INFO] Update id=464819194 is handled. Duration 86 ms by bot id=7706560271
+2025-07-23 11:41:41,945 [INFO] /start from user_id=412216093
+2025-07-23 11:41:42,292 [INFO] Update id=464819195 is handled. Duration 347 ms by bot id=7706560271
+2025-07-23 14:51:34,725 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-23 14:51:34,726 [INFO] Start polling
+2025-07-23 14:51:34,782 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-23 14:51:34,843 [INFO] /start from user_id=412216093
+2025-07-23 14:51:34,845 [INFO] /start from user_id=412216093
+2025-07-23 14:51:34,847 [INFO] /start from user_id=1212795522
+2025-07-23 14:51:35,145 [INFO] Update id=464819199 is handled. Duration 298 ms by bot id=7706560271
+2025-07-23 14:51:35,145 [INFO] Update id=464819198 is handled. Duration 300 ms by bot id=7706560271
+2025-07-23 14:51:35,162 [INFO] Update id=464819197 is handled. Duration 318 ms by bot id=7706560271
+2025-07-23 14:52:14,751 [WARNING] Received SIGINT signal
+2025-07-23 14:52:14,752 [INFO] Polling stopped for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-23 14:52:14,752 [INFO] Polling stopped
+2025-07-23 14:52:18,177 [INFO] Bot polling rejimida ishga tushmoqda...
+2025-07-23 14:52:18,177 [INFO] Start polling
+2025-07-23 14:52:18,234 [INFO] Run polling for bot @XorazmBuxoro_taxi_bot id=7706560271 - 'Lider Taxi'
+2025-07-23 14:52:45,729 [INFO] /start from user_id=1212795522
+2025-07-23 14:52:45,994 [INFO] Update id=464819200 is handled. Duration 265 ms by bot id=7706560271
+2025-07-23 14:52:50,831 [INFO] /start from user_id=1212795522
+2025-07-23 14:52:50,978 [INFO] Update id=464819201 is handled. Duration 146 ms by bot id=7706560271
+2025-07-23 14:54:07,469 [INFO] /start from user_id=1212795522
+2025-07-23 14:54:07,617 [INFO] Update id=464819202 is handled. Duration 148 ms by bot id=7706560271
+2025-07-23 14:54:13,830 [INFO] /start from user_id=1212795522
+2025-07-23 14:54:13,970 [INFO] Update id=464819203 is handled. Duration 140 ms by bot id=7706560271
+2025-07-23 15:11:05,529 [INFO] Update id=464819204 is not handled. Duration 4 ms by bot id=7706560271
+2025-07-23 16:02:52,917 [INFO] Update id=464819205 is not handled. Duration 4 ms by bot id=7706560271
+2025-07-23 16:57:36,797 [INFO] /start from user_id=412216093
+2025-07-23 16:57:37,281 [INFO] Update id=464819206 is handled. Duration 485 ms by bot id=7706560271
+2025-07-23 16:57:38,774 [INFO] Update id=464819207 is handled. Duration 306 ms by bot id=7706560271
+2025-07-23 17:51:34,886 [INFO] /start from user_id=1212795522
+2025-07-23 17:51:35,368 [INFO] Update id=464819208 is handled. Duration 482 ms by bot id=7706560271
+2025-07-23 17:51:41,301 [INFO] Update id=464819209 is handled. Duration 134 ms by bot id=7706560271
+2025-07-24 01:11:21,232 [ERROR] Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2025-07-24 01:11:21,233 [WARNING] Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7706560271)
+2025-07-24 01:11:22,288 [ERROR] Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2025-07-24 01:11:22,288 [WARNING] Sleep for 1.268609 seconds and try again... (tryings = 1, bot id = 7706560271)
+2025-07-24 01:11:47,194 [INFO] Connection established (tryings = 2, bot id = 7706560271)
+2025-07-24 10:34:09,421 [INFO] /start from user_id=412216093
+2025-07-24 10:34:09,712 [INFO] Update id=464819210 is handled. Duration 292 ms by bot id=7706560271
+2025-07-24 10:34:11,381 [INFO] Update id=464819211 is handled. Duration 227 ms by bot id=7706560271
+2025-07-24 10:34:20,271 [INFO] Update id=464819212 is handled. Duration 102 ms by bot id=7706560271
+2025-07-24 10:34:29,288 [INFO] Update id=464819213 is handled. Duration 90 ms by bot id=7706560271
+2025-07-24 10:34:33,487 [INFO] Update id=464819214 is handled. Duration 599 ms by bot id=7706560271
+2025-07-24 10:34:35,348 [INFO] Update id=464819215 is handled. Duration 220 ms by bot id=7706560271
+2025-07-24 10:34:39,906 [INFO] Update id=464819216 is handled. Duration 99 ms by bot id=7706560271
+2025-07-24 10:34:42,665 [INFO] Update id=464819217 is handled. Duration 146 ms by bot id=7706560271
+2025-07-24 10:34:44,108 [INFO] Update id=464819218 is handled. Duration 345 ms by bot id=7706560271
+2025-07-24 20:27:39,525 [INFO] /start from user_id=1212795522
+2025-07-24 20:27:39,800 [INFO] Update id=464819219 is handled. Duration 275 ms by bot id=7706560271
+2025-07-27 07:08:29,855 [INFO] /start from user_id=1212795522
+2025-07-27 07:08:30,130 [INFO] Update id=464819220 is handled. Duration 275 ms by bot id=7706560271
+2025-07-27 10:45:04,908 [INFO] /start from user_id=1813672715
+2025-07-27 10:45:05,227 [INFO] Update id=464819221 is handled. Duration 320 ms by bot id=7706560271

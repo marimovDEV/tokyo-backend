@@ -1,0 +1,110 @@
+╔════════════════════════════════════════════════════════════╗
+║        🍽️  TOKYO KAFE - BEGET SERVER TEZKOR START        ║
+╚════════════════════════════════════════════════════════════╝
+
+📌 BIRINCHI QADAMLAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. SSH orqali Beget serverga ulanish:
+   ssh u1234567@tokyokafe.uz
+
+2. Loyiha papkasiga o'tish:
+   cd ~/public_html/backend
+
+3. Barcha skriptlarda BEGET_USER ni o'zgartirish:
+   
+   Ochish:           nano start_beget.sh
+   O'zgartirish:     BEGET_USER="u1234567"  ← O'zingiznikini yozing
+   Saqlash:          Ctrl+O, Enter, Ctrl+X
+   
+   Boshqa skriptlar ham shunday:
+   - stop_beget.sh
+   - status_beget.sh  
+   - check_and_restart.sh
+
+4. Virtual environment yaratish (agar yo'q bo'lsa):
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+
+5. Django sozlash:
+   python manage.py migrate
+   python manage.py collectstatic --noinput
+
+
+╔════════════════════════════════════════════════════════════╗
+║                    🚀 ASOSIY BUYRUQLAR                     ║
+╚════════════════════════════════════════════════════════════╝
+
+  ✅  Serverni ishga tushirish:
+      bash start_beget.sh
+
+  ⛔  Serverni to'xtatish:
+      bash stop_beget.sh
+
+  🔄  Serverni qayta ishga tushirish:
+      bash restart_beget.sh
+
+  📊  Server statusini ko'rish:
+      bash status_beget.sh
+
+  📝  Loglarni kuzatish:
+      tail -f logs/gunicorn_error.log
+
+
+╔════════════════════════════════════════════════════════════╗
+║                  🐛 MUAMMOLAR VA YECHIMLAR                 ║
+╚════════════════════════════════════════════════════════════╝
+
+❌ Server ishga tushmayapti?
+   → tail -50 logs/gunicorn_error.log
+
+❌ Port band?
+   → netstat -tuln | grep 8000
+
+❌ Eski jarayonlar?
+   → ps aux | grep gunicorn
+   → kill -9 <PID>
+
+❌ Virtual environment aktivmasmi?
+   → source venv/bin/activate
+   → which python
+
+❌ Permission denied?
+   → chmod +x *.sh
+   → chmod -R 755 logs/
+
+
+╔════════════════════════════════════════════════════════════╗
+║                   📚 TO'LIQ QOLLANMALAR                    ║
+╚════════════════════════════════════════════════════════════╝
+
+  📖 Qisqa qo'llanma:    BEGET_README.md
+  📖 To'liq qo'llanma:   BEGET_DEPLOY_GUIDE.md
+
+
+╔════════════════════════════════════════════════════════════╗
+║                     🎯 FOYDALI BUYRUQLAR                   ║
+╚════════════════════════════════════════════════════════════╝
+
+  # Hozirgi username ni ko'rish
+  whoami
+
+  # Server ishlayaptimi?
+  ps aux | grep gunicorn
+
+  # Disk joy'i
+  df -h
+
+  # RAM
+  free -h
+
+  # Barcha gunicorn jarayonlarni to'xtatish
+  pkill -9 gunicorn
+
+
+══════════════════════════════════════════════════════════════
+           Tokyo Kafe 🍽️  |  Beget Deploy 2025
+══════════════════════════════════════════════════════════════
+
+

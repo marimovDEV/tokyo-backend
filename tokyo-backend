@@ -1,0 +1,23 @@
+server {
+    listen 80;
+    server_name api.tokyokafe.uz;
+
+    # Statik fayllar uchun
+    location /static/ {
+        alias /opt/tokyo-backend/staticfiles/;
+    }
+
+    # Media fayllar (agar bo‘lsa)
+    location /media/ {
+        alias /opt/tokyo-backend/media/;
+    }
+
+    # Barcha boshqa so‘rovlar Django backend’ga yo‘naltiriladi
+    location / {
+        proxy_pass http://127.0.0.1:8000;  # Gunicorn ishlayotgan port
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}

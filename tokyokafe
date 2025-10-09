@@ -1,0 +1,16 @@
+server {
+    server_name api.tokyokafe.uz;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+
+    location /static/ {
+        root /opt/tokyo-backend;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/opt/tokyo-backend/gunicorn.sock;
+    }
+
+    client_max_body_size 50M;
+}
