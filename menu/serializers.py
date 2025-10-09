@@ -220,8 +220,7 @@ class CartItemSerializer(serializers.ModelSerializer):
     
     def get_menu_item_image(self, obj):
         if obj.menu_item.image and obj.menu_item.image.name:
-            # Return frontend URL instead of Django media URL
-            return f"/{obj.menu_item.image.name}"
+            return obj.menu_item.image.url
         return None
 
 
