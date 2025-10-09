@@ -182,11 +182,28 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3001",
     "http://192.168.1.11:3000",
     "http://192.168.1.11:3001",
+    "https://tokyokafe.uz",
+    "https://www.tokyokafe.uz",
+    "https://tokyo-eight-mu.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_ALL_ORIGINS = True  # Only for development
+CORS_ALLOW_ALL_ORIGINS = False  # Production uchun o'chirildi
+
+# CORS headers - Cache-Control qo'shish
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'cache-control',  # Frontend cache uchun
+]
 
 # Session settings
 SESSION_COOKIE_HTTPONLY = False  # Allow JavaScript access for debugging
