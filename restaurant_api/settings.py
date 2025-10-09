@@ -184,6 +184,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.11:3001",
     "https://tokyokafe.uz",
     "https://www.tokyokafe.uz",
+    "https://api.tokyokafe.uz",
     "https://tokyo-eight-mu.vercel.app",
 ]
 
