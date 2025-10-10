@@ -290,22 +290,28 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
                 reason = request.query_params.get('reason', '') or request.data.get('reason', '')
                 
                 # Create action record for state changes
-                if not was_approved and review.approved:
-                    # Review was approved
-                    ReviewAction.objects.create(
-                        review=review,
-                        action='approved',
-                        admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
-                        reason=reason
-                    )
-                elif was_approved and not review.approved:
-                    # Review was rejected
-                    ReviewAction.objects.create(
-                        review=review,
-                        action='rejected',
-                        admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
-                        reason=reason
-                    )
+                try:
+                    if not was_approved and review.approved:
+                        # Review was approved
+                        ReviewAction.objects.create(
+                            review=review,
+                            action='approved',
+                            admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
+                            reason=reason
+                        )
+                        print(f"Created approval action for review {review.id}")
+                    elif was_approved and not review.approved:
+                        # Review was rejected
+                        ReviewAction.objects.create(
+                            review=review,
+                            action='rejected',
+                            admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
+                            reason=reason
+                        )
+                        print(f"Created rejection action for review {review.id}")
+                except Exception as action_error:
+                    print(f"Warning: Could not create ReviewAction: {action_error}")
+                    # Continue even if action record fails
             
             return response
         except Exception as e:
@@ -321,20 +327,26 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
         """Actually delete the review from database"""
         try:
             review = self.get_object()
+            review_id = review.id
             
             # Get reason from query parameters or request data
             reason = request.query_params.get('reason', '') or request.data.get('reason', '')
             
-            # Create action record before deleting
-            ReviewAction.objects.create(
-                review=review,
-                action='deleted',
-                admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
-                reason=reason
-            )
+            # Try to create action record before deleting
+            try:
+                ReviewAction.objects.create(
+                    review=review,
+                    action='deleted',
+                    admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
+                    reason=reason
+                )
+            except Exception as action_error:
+                print(f"Warning: Could not create ReviewAction: {action_error}")
+                # Continue with deletion even if action record fails
             
-            # Actually delete the review
+            # Delete the review (this will cascade delete the ReviewAction)
             review.delete()
+            print(f"Successfully deleted review {review_id}")
             
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Exception as e:
