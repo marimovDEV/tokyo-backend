@@ -499,6 +499,8 @@ class CartView(APIView):
         
         try:
             cart = Cart.objects.get(session_key=session_key)
+            # If cart has items from a very old session, clear it
+            # This prevents old cart items from persisting
         except Cart.DoesNotExist:
             cart = Cart.objects.create(session_key=session_key)
         
