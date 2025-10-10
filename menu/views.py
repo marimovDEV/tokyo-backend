@@ -10,7 +10,7 @@ from django.middleware.csrf import get_token
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
+from django.views.decorators.cache import cache_page, never_cache
 from rest_framework.permissions import AllowAny
 
 from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, TextContent, RestaurantInfo, Cart, CartItem
@@ -518,6 +518,7 @@ class RestaurantInfoView(generics.RetrieveAPIView):
 
 # Cart Views
 @method_decorator(csrf_exempt, name='dispatch')
+@method_decorator(never_cache, name='dispatch')
 class CartView(APIView):
     """Get or create cart for a session"""
     permission_classes = [AllowAny]
@@ -553,6 +554,7 @@ class CartView(APIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
+@method_decorator(never_cache, name='dispatch')
 class AddToCartView(APIView):
     """Add item to cart"""
     permission_classes = [AllowAny]
@@ -606,6 +608,7 @@ class AddToCartView(APIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
+@method_decorator(never_cache, name='dispatch')
 class UpdateCartItemView(APIView):
     """Update cart item quantity or notes"""
     permission_classes = [AllowAny]
