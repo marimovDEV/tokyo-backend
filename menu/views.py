@@ -273,21 +273,40 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [AllowAny]  # Allow admin operations
     
     def update(self, request, *args, **kwargs):
-        """Update review and create action record only for rejections"""
+        """Update review and create action record"""
         try:
+            # Get the review before update to check previous state
+            review = self.get_object()
+            was_approved = review.approved
+            
+            # Perform the update
             response = super().update(request, *args, **kwargs)
+            
             if response.status_code == 200:
-                review = self.get_object()
-                # Only create action record for rejections, not approvals
-                if not review.approved:
-                    # Get reason from query parameters or request data
-                    reason = request.query_params.get('reason', '') or request.data.get('reason', '')
+                # Refresh review from database to get updated values
+                review.refresh_from_db()
+                
+                # Get reason from query parameters or request data
+                reason = request.query_params.get('reason', '') or request.data.get('reason', '')
+                
+                # Create action record for state changes
+                if not was_approved and review.approved:
+                    # Review was approved
+                    ReviewAction.objects.create(
+                        review=review,
+                        action='approved',
+                        admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
+                        reason=reason
+                    )
+                elif was_approved and not review.approved:
+                    # Review was rejected
                     ReviewAction.objects.create(
                         review=review,
                         action='rejected',
                         admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
                         reason=reason
                     )
+            
             return response
         except Exception as e:
             import traceback
