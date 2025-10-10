@@ -565,7 +565,7 @@ class UpdateCartItemView(APIView):
             cart_item = CartItem.objects.get(id=item_id)
         except CartItem.DoesNotExist:
             return Response(
-                {'error': 'Cart item not found'}, 
+                {'error': f'Cart item {item_id} not found'}, 
                 status=status.HTTP_404_NOT_FOUND
             )
         
@@ -588,7 +588,7 @@ class UpdateCartItemView(APIView):
             return Response(cart_serializer.data)
         except CartItem.DoesNotExist:
             return Response(
-                {'error': 'Cart item not found'}, 
+                {'error': f'Cart item {item_id} not found'}, 
                 status=status.HTTP_404_NOT_FOUND
             )
 
