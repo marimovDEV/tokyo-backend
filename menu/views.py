@@ -274,30 +274,44 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
     
     def update(self, request, *args, **kwargs):
         """Update review and create action record only for rejections"""
-        response = super().update(request, *args, **kwargs)
-        if response.status_code == 200:
-            review = self.get_object()
-            # Only create action record for rejections, not approvals
-            if not review.approved:
-                ReviewAction.objects.create(
-                    review=review,
-                    action='rejected',
-                    admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
-                    reason=request.data.get('reason', '')
-                )
-        return response
+        try:
+            response = super().update(request, *args, **kwargs)
+            if response.status_code == 200:
+                review = self.get_object()
+                # Only create action record for rejections, not approvals
+                if not review.approved:
+                    # Get reason from query parameters or request data
+                    reason = request.query_params.get('reason', '') or request.data.get('reason', '')
+                    ReviewAction.objects.create(
+                        review=review,
+                        action='rejected',
+                        admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
+                        reason=reason
+                    )
+            return response
+        except Exception as e:
+            import traceback
+            error_details = traceback.format_exc()
+            print(f"Error updating review: {error_details}")
+            return Response(
+                {'error': str(e), 'details': error_details}, 
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
     
     def destroy(self, request, *args, **kwargs):
         """Actually delete the review from database"""
         try:
             review = self.get_object()
             
+            # Get reason from query parameters or request data
+            reason = request.query_params.get('reason', '') or request.data.get('reason', '')
+            
             # Create action record before deleting
             ReviewAction.objects.create(
                 review=review,
                 action='deleted',
                 admin_user=request.META.get('HTTP_X_ADMIN_USER', 'admin'),
-                reason=request.data.get('reason', '')
+                reason=reason
             )
             
             # Actually delete the review
@@ -305,8 +319,11 @@ class ReviewDetailView(generics.RetrieveUpdateDestroyAPIView):
             
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Exception as e:
+            import traceback
+            error_details = traceback.format_exc()
+            print(f"Error deleting review: {error_details}")
             return Response(
-                {'error': str(e)}, 
+                {'error': str(e), 'details': error_details}, 
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
