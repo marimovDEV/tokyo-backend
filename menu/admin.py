@@ -426,7 +426,23 @@ class TextContentAdmin(ModelAdmin):
     content_type_display.short_description = 'Sahifa Turi'
     
     def key_display(self, obj):
-        return obj.key
+        # Convert snake_case keys to readable Uzbek
+        key_mapping = {
+            'welcome_text': 'Xush kelibsiz matni',
+            'hero_title': 'Bosh sarlavha',
+            'hero_subtitle': 'Bosh pastki sarlavha',
+            'about_title': 'Biz haqimizda sarlavha',
+            'about_description': 'Biz haqimizda tavsifi',
+            'menu_title': 'Menyu sarlavhasi',
+            'menu_subtitle': 'Menyu pastki sarlavha',
+            'view_menu': 'Menyuni ko\'rish',
+            'reviews_title': 'Izohlar sarlavhasi',
+            'leave_review': 'Izoh qoldirish',
+            'contact_title': 'Aloqa sarlavhasi',
+            'footer_text': 'Pastki qism matni',
+        }
+        readable_key = key_mapping.get(obj.key, obj.key.replace('_', ' ').title())
+        return f"{readable_key} ({obj.key})"
     key_display.short_description = 'Kalit'
     
     fieldsets = (
