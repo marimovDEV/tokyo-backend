@@ -254,7 +254,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Django Unfold Configuration
 UNFOLD = {
-    "SITE_TITLE": "🍽️ Tokyo Restaurant Admin",
+    "SITE_TITLE": "🍽️ Tokyo Restaurant - Boshqaruv",
     "SITE_HEADER": "Tokyo Restaurant - Boshqaruv Paneli",
     "SITE_URL": "/",
     "SITE_ICON": {
@@ -273,6 +273,20 @@ UNFOLD = {
     "LOGIN": {
         "image": lambda request: static("logo.png"),
         "redirect_after": lambda request: reverse_lazy("admin:index"),
+    },
+    "COLORS": {
+        "primary": {
+            "50": "248 250 252",
+            "100": "241 245 249",
+            "200": "226 232 240",
+            "300": "203 213 225",
+            "400": "148 163 184",
+            "500": "100 116 139",
+            "600": "71 85 105",
+            "700": "51 65 85",
+            "800": "30 41 59",
+            "900": "15 23 42",
+        }
     },
     "STYLES": [
         lambda request: static("css/custom-admin.css"),
