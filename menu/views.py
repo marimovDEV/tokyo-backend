@@ -457,6 +457,7 @@ def menu_stats(request):
 
 
 # Site Settings Views
+@method_decorator(never_cache, name='dispatch')
 class SiteSettingsView(generics.RetrieveAPIView):
     queryset = SiteSettings.objects.all()
     serializer_class = SiteSettingsSerializer
@@ -474,6 +475,7 @@ class SiteSettingsView(generics.RetrieveAPIView):
 
 
 # Text Content Views
+@method_decorator(never_cache, name='dispatch')
 class TextContentListView(generics.ListAPIView):
     queryset = TextContent.objects.filter(is_active=True)
     serializer_class = TextContentSerializer
@@ -500,6 +502,7 @@ class TextContentByTypeView(generics.ListAPIView):
 
 
 # Restaurant Info Views
+@method_decorator(never_cache, name='dispatch')
 class RestaurantInfoView(generics.RetrieveAPIView):
     queryset = RestaurantInfo.objects.all()
     serializer_class = RestaurantInfoSerializer
