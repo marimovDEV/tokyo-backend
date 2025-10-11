@@ -403,30 +403,50 @@ class SiteSettingsAdmin(ModelAdmin):
 
 @admin.register(TextContent)
 class TextContentAdmin(ModelAdmin):
-    list_display = ['content_type', 'key', 'title', 'is_active', 'order', 'updated_at']
+    list_display = ['content_type_display', 'key_display', 'title', 'is_active', 'order', 'updated_at']
     list_filter = ['content_type', 'is_active', 'created_at']
     search_fields = ['key', 'title', 'title_uz', 'title_ru', 'content']
     list_editable = ['is_active', 'order']
     
+    def content_type_display(self, obj):
+        type_mapping = {
+            'homepage': 'Bosh sahifa',
+            'menu': 'Menyu sahifasi',
+            'about': 'Biz haqimizda',
+            'contact': 'Aloqa',
+            'footer': 'Pastki qism',
+            'header': 'Yuqori qism',
+            'general': 'Umumiy',
+            'notifications': 'Bildirishnomalar',
+            'forms': 'Formalar',
+            'errors': 'Xatolar',
+            'success': 'Muvaffaqiyat',
+        }
+        return type_mapping.get(obj.content_type, obj.content_type)
+    content_type_display.short_description = 'Sahifa Turi'
+    
+    def key_display(self, obj):
+        return obj.key
+    key_display.short_description = 'Kalit'
+    
     fieldsets = (
-        ('📝 Basic Information', {
+        ('📝 Asosiy Ma\'lumot', {
             'fields': ('content_type', 'key', 'is_active', 'order'),
-            'description': 'Content type and basic settings'
+            'description': 'Matn turi va asosiy sozlamalar'
         }),
-        ('🇺🇸 English Content', {
-            'fields': ('title', 'subtitle', 'description', 'content', 'button_text'),
-            'classes': ('collapse',),
-            'description': 'English language content'
-        }),
-        ('🇺🇿 Uzbek Content', {
+        ('🇺🇿 O\'zbekcha Matn', {
             'fields': ('title_uz', 'subtitle_uz', 'description_uz', 'content_uz', 'button_text_uz'),
-            'classes': ('collapse',),
-            'description': 'Uzbek language content'
+            'description': 'O\'zbekcha tildagi mazmun'
         }),
-        ('🇷🇺 Russian Content', {
+        ('🇷🇺 Ruscha Matn', {
             'fields': ('title_ru', 'subtitle_ru', 'description_ru', 'content_ru', 'button_text_ru'),
             'classes': ('collapse',),
-            'description': 'Russian language content'
+            'description': 'Ruscha tildagi mazmun'
+        }),
+        ('🇺🇸 Inglizcha Matn', {
+            'fields': ('title', 'subtitle', 'description', 'content', 'button_text'),
+            'classes': ('collapse',),
+            'description': 'Inglizcha tildagi mazmun'
         }),
     )
 

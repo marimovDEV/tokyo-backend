@@ -255,47 +255,47 @@ class SiteSettings(models.Model):
 class TextContent(models.Model):
     """Dynamic text content for the website"""
     CONTENT_TYPES = [
-        ('homepage', 'Homepage'),
-        ('menu', 'Menu Page'),
-        ('about', 'About Section'),
-        ('contact', 'Contact Section'),
-        ('footer', 'Footer'),
-        ('header', 'Header'),
-        ('general', 'General'),
-        ('notifications', 'Notifications & Messages'),
-        ('forms', 'Form Labels & Buttons'),
-        ('errors', 'Error Messages'),
-        ('success', 'Success Messages'),
+        ('homepage', 'Bosh sahifa'),
+        ('menu', 'Menyu sahifasi'),
+        ('about', 'Biz haqimizda'),
+        ('contact', 'Aloqa'),
+        ('footer', 'Pastki qism'),
+        ('header', 'Yuqori qism'),
+        ('general', 'Umumiy'),
+        ('notifications', 'Bildirishnomalar'),
+        ('forms', 'Formalar'),
+        ('errors', 'Xatolar'),
+        ('success', 'Muvaffaqiyat'),
     ]
     
-    content_type = models.CharField(max_length=20, choices=CONTENT_TYPES)
-    key = models.CharField(max_length=100, help_text="Unique identifier for this text content")
+    content_type = models.CharField(max_length=20, choices=CONTENT_TYPES, verbose_name="Sahifa turi")
+    key = models.CharField(max_length=100, help_text="Bu matn uchun noyob identifikator", verbose_name="Kalit")
     
     # English content
-    title = models.CharField(max_length=200, blank=True, null=True)
-    subtitle = models.CharField(max_length=500, blank=True, null=True)
-    description = models.TextField(blank=True, null=True)
-    content = models.TextField(blank=True, null=True)
+    title = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (EN)")
+    subtitle = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (EN)")
+    description = models.TextField(blank=True, null=True, verbose_name="Tavsif (EN)")
+    content = models.TextField(blank=True, null=True, verbose_name="Kontent (EN)")
     
     # Uzbek content
-    title_uz = models.CharField(max_length=200, blank=True, null=True)
-    subtitle_uz = models.CharField(max_length=500, blank=True, null=True)
-    description_uz = models.TextField(blank=True, null=True)
-    content_uz = models.TextField(blank=True, null=True)
+    title_uz = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (UZ)")
+    subtitle_uz = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (UZ)")
+    description_uz = models.TextField(blank=True, null=True, verbose_name="Tavsif (UZ)")
+    content_uz = models.TextField(blank=True, null=True, verbose_name="Kontent (UZ)")
     
     # Russian content
-    title_ru = models.CharField(max_length=200, blank=True, null=True)
-    subtitle_ru = models.CharField(max_length=500, blank=True, null=True)
-    description_ru = models.TextField(blank=True, null=True)
-    content_ru = models.TextField(blank=True, null=True)
+    title_ru = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (RU)")
+    subtitle_ru = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (RU)")
+    description_ru = models.TextField(blank=True, null=True, verbose_name="Tavsif (RU)")
+    content_ru = models.TextField(blank=True, null=True, verbose_name="Kontent (RU)")
     
     # Additional fields
-    button_text = models.CharField(max_length=100, blank=True, null=True)
-    button_text_uz = models.CharField(max_length=100, blank=True, null=True)
-    button_text_ru = models.CharField(max_length=100, blank=True, null=True)
+    button_text = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (EN)")
+    button_text_uz = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (UZ)")
+    button_text_ru = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (RU)")
     
-    is_active = models.BooleanField(default=True)
-    order = models.PositiveIntegerField(default=0, help_text="Display order")
+    is_active = models.BooleanField(default=True, verbose_name="Faol")
+    order = models.PositiveIntegerField(default=0, help_text="Ko'rsatish tartibi", verbose_name="Tartib")
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
