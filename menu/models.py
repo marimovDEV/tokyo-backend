@@ -272,27 +272,27 @@ class TextContent(models.Model):
     key = models.CharField(max_length=100, help_text="Bu matn uchun noyob identifikator", verbose_name="Kalit")
     
     # English content
-    title = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (EN)")
-    subtitle = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (EN)")
-    description = models.TextField(blank=True, null=True, verbose_name="Tavsif (EN)")
-    content = models.TextField(blank=True, null=True, verbose_name="Kontent (EN)")
+    title = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (Inglizcha)")
+    subtitle = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (Inglizcha)")
+    description = models.TextField(blank=True, null=True, verbose_name="Tavsif (Inglizcha)")
+    content = models.TextField(blank=True, null=True, verbose_name="Kontent (Inglizcha)")
     
     # Uzbek content
-    title_uz = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (UZ)")
-    subtitle_uz = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (UZ)")
-    description_uz = models.TextField(blank=True, null=True, verbose_name="Tavsif (UZ)")
-    content_uz = models.TextField(blank=True, null=True, verbose_name="Kontent (UZ)")
+    title_uz = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (O'zbekcha)")
+    subtitle_uz = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (O'zbekcha)")
+    description_uz = models.TextField(blank=True, null=True, verbose_name="Tavsif (O'zbekcha)")
+    content_uz = models.TextField(blank=True, null=True, verbose_name="Kontent (O'zbekcha)")
     
     # Russian content
-    title_ru = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (RU)")
-    subtitle_ru = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (RU)")
-    description_ru = models.TextField(blank=True, null=True, verbose_name="Tavsif (RU)")
-    content_ru = models.TextField(blank=True, null=True, verbose_name="Kontent (RU)")
+    title_ru = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (Ruscha)")
+    subtitle_ru = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (Ruscha)")
+    description_ru = models.TextField(blank=True, null=True, verbose_name="Tavsif (Ruscha)")
+    content_ru = models.TextField(blank=True, null=True, verbose_name="Kontent (Ruscha)")
     
     # Additional fields
-    button_text = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (EN)")
-    button_text_uz = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (UZ)")
-    button_text_ru = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (RU)")
+    button_text = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (Inglizcha)")
+    button_text_uz = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (O'zbekcha)")
+    button_text_ru = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (Ruscha)")
     
     is_active = models.BooleanField(default=True, verbose_name="Faol")
     order = models.PositiveIntegerField(default=0, help_text="Ko'rsatish tartibi", verbose_name="Tartib")
