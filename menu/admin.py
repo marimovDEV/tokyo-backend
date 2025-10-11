@@ -469,20 +469,6 @@ class RestaurantInfoAdmin(ModelAdmin):
             'classes': ('collapse',),
             'description': 'Form field labels and text'
         }),
-        ('📍 Contact Information', {
-            'fields': ('phone', 'email', 'address', 'address_uz', 'address_ru', 'working_hours', 'working_hours_uz', 'working_hours_ru'),
-            'description': 'Contact details, address, and working hours'
-        }),
-        ('🌐 Social Media', {
-            'fields': ('facebook_url', 'instagram_url', 'telegram_url'),
-            'classes': ('collapse',),
-            'description': 'Social media links'
-        }),
-        ('🔍 SEO', {
-            'fields': ('meta_title', 'meta_title_uz', 'meta_title_ru', 'meta_description', 'meta_description_uz', 'meta_description_ru', 'meta_keywords'),
-            'classes': ('collapse',),
-            'description': 'SEO and meta information'
-        }),
     )
     
     def hero_image_preview(self, obj):
