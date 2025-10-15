@@ -13,14 +13,13 @@ class Category(models.Model):
     icon = models.CharField(max_length=10, default="🍽️")
     image = models.ImageField(upload_to='categories/', blank=True, null=True)
     is_active = models.BooleanField(default=True, verbose_name=_("Faol"))
-    sort_order = models.PositiveIntegerField(default=0, help_text="Display order")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = "Kategoriya"
         verbose_name_plural = "Kategoriyalar"
-        ordering = ['sort_order', 'name']
+        ordering = ['name']
 
     def __str__(self):
         return self.name
@@ -47,14 +46,13 @@ class MenuItem(models.Model):
     ingredients = models.JSONField(default=list, blank=True)
     ingredients_uz = models.JSONField(default=list, blank=True)
     ingredients_ru = models.JSONField(default=list, blank=True)
-    sort_order = models.PositiveIntegerField(default=0, help_text="Display order within category")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = "Menyu Mahsuloti"
         verbose_name_plural = "Menyu Mahsulotlari"
-        ordering = ['category', 'sort_order', 'name']
+        ordering = ['category', 'name']
 
     def clean(self):
         if self.category and not self.category.is_active and self.is_active:
@@ -76,7 +74,7 @@ class Promotion(models.Model):
     is_active = models.BooleanField(default=True, verbose_name=_("Faol"))
     link = models.URLField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True)
-    linked_dish = models.ForeignKey(MenuItem, on_delete=models.CASCADE, null=True, blank=True, related_name='promotions')
+    linked_dish = models.ForeignKey(MenuItem, on_delete=models.SET_NULL, null=True, blank=True, related_name='promotions')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -115,7 +113,7 @@ class ReviewAction(models.Model):
         ('deleted', 'Deleted'),
     ]
     
-    review = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='actions')
+    review = models.ForeignKey(Review, on_delete=models.PROTECT, related_name='actions')
     action = models.CharField(max_length=20, choices=ACTION_CHOICES, help_text="Action performed on review")
     admin_user = models.CharField(max_length=100, blank=True, null=True, help_text="Admin who performed the action")
     reason = models.TextField(blank=True, null=True, help_text="Reason for the action")
@@ -255,47 +253,47 @@ class SiteSettings(models.Model):
 class TextContent(models.Model):
     """Dynamic text content for the website"""
     CONTENT_TYPES = [
-        ('homepage', 'Bosh sahifa'),
-        ('menu', 'Menyu sahifasi'),
-        ('about', 'Biz haqimizda'),
-        ('contact', 'Aloqa'),
-        ('footer', 'Pastki qism'),
-        ('header', 'Yuqori qism'),
-        ('general', 'Umumiy'),
-        ('notifications', 'Bildirishnomalar'),
-        ('forms', 'Formalar'),
-        ('errors', 'Xatolar'),
-        ('success', 'Muvaffaqiyat'),
+        ('homepage', 'Homepage'),
+        ('menu', 'Menu Page'),
+        ('about', 'About Section'),
+        ('contact', 'Contact Section'),
+        ('footer', 'Footer'),
+        ('header', 'Header'),
+        ('general', 'General'),
+        ('notifications', 'Notifications & Messages'),
+        ('forms', 'Form Labels & Buttons'),
+        ('errors', 'Error Messages'),
+        ('success', 'Success Messages'),
     ]
     
-    content_type = models.CharField(max_length=20, choices=CONTENT_TYPES, verbose_name="Sahifa turi")
-    key = models.CharField(max_length=100, help_text="Bu matn uchun noyob identifikator", verbose_name="Kalit")
+    content_type = models.CharField(max_length=20, choices=CONTENT_TYPES)
+    key = models.CharField(max_length=100, help_text="Unique identifier for this text content")
     
     # English content
-    title = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (Inglizcha)")
-    subtitle = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (Inglizcha)")
-    description = models.TextField(blank=True, null=True, verbose_name="Tavsif (Inglizcha)")
-    content = models.TextField(blank=True, null=True, verbose_name="Kontent (Inglizcha)")
+    title = models.CharField(max_length=200, blank=True, null=True)
+    subtitle = models.CharField(max_length=500, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    content = models.TextField(blank=True, null=True)
     
     # Uzbek content
-    title_uz = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (O'zbekcha)")
-    subtitle_uz = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (O'zbekcha)")
-    description_uz = models.TextField(blank=True, null=True, verbose_name="Tavsif (O'zbekcha)")
-    content_uz = models.TextField(blank=True, null=True, verbose_name="Kontent (O'zbekcha)")
+    title_uz = models.CharField(max_length=200, blank=True, null=True)
+    subtitle_uz = models.CharField(max_length=500, blank=True, null=True)
+    description_uz = models.TextField(blank=True, null=True)
+    content_uz = models.TextField(blank=True, null=True)
     
     # Russian content
-    title_ru = models.CharField(max_length=200, blank=True, null=True, verbose_name="Sarlavha (Ruscha)")
-    subtitle_ru = models.CharField(max_length=500, blank=True, null=True, verbose_name="Pastki sarlavha (Ruscha)")
-    description_ru = models.TextField(blank=True, null=True, verbose_name="Tavsif (Ruscha)")
-    content_ru = models.TextField(blank=True, null=True, verbose_name="Kontent (Ruscha)")
+    title_ru = models.CharField(max_length=200, blank=True, null=True)
+    subtitle_ru = models.CharField(max_length=500, blank=True, null=True)
+    description_ru = models.TextField(blank=True, null=True)
+    content_ru = models.TextField(blank=True, null=True)
     
     # Additional fields
-    button_text = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (Inglizcha)")
-    button_text_uz = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (O'zbekcha)")
-    button_text_ru = models.CharField(max_length=100, blank=True, null=True, verbose_name="Tugma matni (Ruscha)")
+    button_text = models.CharField(max_length=100, blank=True, null=True)
+    button_text_uz = models.CharField(max_length=100, blank=True, null=True)
+    button_text_ru = models.CharField(max_length=100, blank=True, null=True)
     
-    is_active = models.BooleanField(default=True, verbose_name="Faol")
-    order = models.PositiveIntegerField(default=0, help_text="Ko'rsatish tartibi", verbose_name="Tartib")
+    is_active = models.BooleanField(default=True)
+    order = models.PositiveIntegerField(default=0, help_text="Display order")
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

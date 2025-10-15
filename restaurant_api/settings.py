@@ -186,6 +186,13 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.tokyokafe.uz",
     "https://api.tokyokafe.uz",
     "https://tokyo-eight-mu.vercel.app",
+    "https://tokyo-git-main-marimovdevs-projects.vercel.app",
+    "https://tokyo-marimovdevs-projects.vercel.app",
+]
+
+# Vercel preview URLlarni qo'llab-quvvatlash uchun
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://tokyo-.*\.vercel\.app$",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -250,6 +257,9 @@ CSRF_TRUSTED_ORIGINS = [
     "https://www.tokyokafe.uz",
     "https://api.tokyokafe.uz",
     "https://tokyo-eight-mu.vercel.app",
+    "https://tokyo-git-main-marimovdevs-projects.vercel.app",
+    "https://tokyo-marimovdevs-projects.vercel.app",
+    "https://*.vercel.app",
 ]
 
 # Django Unfold Configuration
