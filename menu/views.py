@@ -35,8 +35,8 @@ class CategoryListView(generics.ListCreateAPIView):
     serializer_class = CategorySerializer
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['name', 'name_uz', 'name_ru']
-    ordering_fields = ['sort_order', 'name', 'created_at']
-    ordering = ['sort_order', 'name']
+    ordering_fields = ['name', 'created_at']
+    ordering = ['name']
     permission_classes = [AllowAny]
     parser_classes = (MultiPartParser, FormParser)
     
@@ -48,17 +48,7 @@ class CategoryListView(generics.ListCreateAPIView):
         return Category.objects.filter(is_active=True)
 
     def perform_create(self, serializer):
-        sort_order = self.request.data.get('sort_order')
-        if sort_order is None or str(sort_order) == '':
-            max_order = Category.objects.aggregate(Max('sort_order'))['sort_order__max'] or 0
-            serializer.save(sort_order=max_order + 1)
-            return
-        try:
-            sort_order = int(sort_order)
-        except ValueError:
-            sort_order = 1
-        Category.objects.filter(sort_order__gte=sort_order).update(sort_order=F('sort_order') + 1)
-        serializer.save(sort_order=sort_order)
+        serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -85,28 +75,7 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         return Response(data)
 
     def perform_update(self, serializer):
-        instance = self.get_object()
-        old_order = instance.sort_order
-        new_order = self.request.data.get('sort_order')
-        updated = serializer.save()
-        if new_order is None or str(new_order) == '':
-            return
-        try:
-            new_order = int(new_order)
-        except ValueError:
-            return
-        if new_order == old_order:
-            return
-        if new_order < old_order:
-            # Shift down (make room)
-            Category.objects.filter(sort_order__gte=new_order, sort_order__lt=old_order).exclude(id=updated.id).update(sort_order=F('sort_order') + 1)
-            updated.sort_order = new_order
-            updated.save(update_fields=['sort_order'])
-        else:
-            # new_order > old_order: close gap
-            Category.objects.filter(sort_order__gt=old_order, sort_order__lte=new_order).exclude(id=updated.id).update(sort_order=F('sort_order') - 1)
-            updated.sort_order = new_order
-            updated.save(update_fields=['sort_order'])
+        serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -117,8 +86,8 @@ class MenuItemListView(generics.ListCreateAPIView):
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     filterset_fields = ['category', 'available']
     search_fields = ['name', 'name_uz', 'name_ru', 'description', 'description_uz', 'description_ru']
-    ordering_fields = ['sort_order', 'name', 'price', 'rating', 'created_at']
-    ordering = ['category', 'sort_order', 'name']
+    ordering_fields = ['name', 'price', 'rating', 'created_at']
+    ordering = ['category', 'name']
     permission_classes = [AllowAny]
     parser_classes = (MultiPartParser, FormParser)
     
@@ -130,29 +99,7 @@ class MenuItemListView(generics.ListCreateAPIView):
         return MenuItem.objects.filter(is_active=True, category__is_active=True)
 
     def perform_create(self, serializer):
-        category_id = self.request.data.get('category')
-        sort_order = self.request.data.get('sort_order')
-        try:
-            category_id_int = int(category_id) if category_id is not None else None
-        except (TypeError, ValueError):
-            category_id_int = None
-        if sort_order is None or str(sort_order) == '':
-            # append to end within category
-            if category_id_int:
-                max_order = MenuItem.objects.filter(category_id=category_id_int).aggregate(Max('sort_order'))['sort_order__max'] or 0
-            else:
-                max_order = MenuItem.objects.aggregate(Max('sort_order'))['sort_order__max'] or 0
-            serializer.save(sort_order=max_order + 1)
-            return
-        try:
-            sort_order_int = int(sort_order)
-        except ValueError:
-            sort_order_int = 1
-        if category_id_int:
-            MenuItem.objects.filter(category_id=category_id_int, sort_order__gte=sort_order_int).update(sort_order=F('sort_order') + 1)
-        else:
-            MenuItem.objects.filter(sort_order__gte=sort_order_int).update(sort_order=F('sort_order') + 1)
-        serializer.save(sort_order=sort_order_int)
+        serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -163,44 +110,7 @@ class MenuItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     parser_classes = (MultiPartParser, FormParser)
 
     def perform_update(self, serializer):
-        instance = self.get_object()
-        old_order = instance.sort_order
-        old_category_id = instance.category_id
-        new_order_raw = self.request.data.get('sort_order')
-        new_category_id_raw = self.request.data.get('category')
-        updated = serializer.save()
-
-        try:
-            new_order = int(new_order_raw) if new_order_raw is not None and str(new_order_raw) != '' else old_order
-        except ValueError:
-            new_order = old_order
-        try:
-            new_category_id = int(new_category_id_raw) if new_category_id_raw is not None and str(new_category_id_raw) != '' else old_category_id
-        except ValueError:
-            new_category_id = old_category_id
-
-        # If category changed, close gap in old category and insert in new
-        if new_category_id != old_category_id:
-            # close gap in old category
-            MenuItem.objects.filter(category_id=old_category_id, sort_order__gt=old_order).exclude(id=updated.id).update(sort_order=F('sort_order') - 1)
-            # make room in new category
-            MenuItem.objects.filter(category_id=new_category_id, sort_order__gte=new_order).exclude(id=updated.id).update(sort_order=F('sort_order') + 1)
-            updated.sort_order = new_order
-            updated.category_id = new_category_id
-            updated.save(update_fields=['sort_order', 'category'])
-            return
-
-        # Same category, order changed
-        if new_order == old_order:
-            return
-        if new_order < old_order:
-            MenuItem.objects.filter(category_id=old_category_id, sort_order__gte=new_order, sort_order__lt=old_order).exclude(id=updated.id).update(sort_order=F('sort_order') + 1)
-            updated.sort_order = new_order
-            updated.save(update_fields=['sort_order'])
-        else:
-            MenuItem.objects.filter(category_id=old_category_id, sort_order__gt=old_order, sort_order__lte=new_order).exclude(id=updated.id).update(sort_order=F('sort_order') - 1)
-            updated.sort_order = new_order
-            updated.save(update_fields=['sort_order'])
+        serializer.save()
 
 
 class MenuItemByCategoryView(generics.ListAPIView):
