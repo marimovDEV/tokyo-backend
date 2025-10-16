@@ -656,3 +656,71 @@ class CartManagementView(APIView):
             # Clear all carts
             Cart.objects.all().delete()
             return Response({'message': 'All carts cleared successfully'}, status=status.HTTP_200_OK)
+
+
+@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
+class TextContentListView(generics.ListAPIView):
+    """API endpoint for dynamic text content"""
+    queryset = TextContent.objects.filter(is_active=True)
+    serializer_class = TextContentSerializer
+    permission_classes = [AllowAny]
+    
+    def get_queryset(self):
+        content_type = self.request.GET.get('content_type', None)
+        key = self.request.GET.get('key', None)
+        
+        queryset = TextContent.objects.filter(is_active=True)
+        
+        if content_type:
+            queryset = queryset.filter(content_type=content_type)
+        
+        if key:
+            queryset = queryset.filter(key=key)
+            
+        return queryset.order_by('order', 'key')
+
+
+@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
+class TextContentDetailView(generics.RetrieveAPIView):
+    """API endpoint for specific text content"""
+    queryset = TextContent.objects.filter(is_active=True)
+    serializer_class = TextContentSerializer
+    permission_classes = [AllowAny]
+
+
+@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
+class TextContentByTypeView(generics.ListAPIView):
+    """API endpoint for text content by type"""
+    serializer_class = TextContentSerializer
+    permission_classes = [AllowAny]
+    
+    def get_queryset(self):
+        content_type = self.kwargs['content_type']
+        return TextContent.objects.filter(
+            is_active=True, 
+            content_type=content_type
+        ).order_by('order', 'key')
+
+
+@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache  
+class SiteSettingsView(generics.RetrieveAPIView):
+    """API endpoint for site settings"""
+    queryset = SiteSettings.objects.all()
+    serializer_class = SiteSettingsSerializer
+    permission_classes = [AllowAny]
+    
+    def get_object(self):
+        obj, created = SiteSettings.objects.get_or_create(pk=1)
+        return obj
+
+
+@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
+class RestaurantInfoView(generics.RetrieveAPIView):
+    """API endpoint for restaurant information"""
+    queryset = RestaurantInfo.objects.all()
+    serializer_class = RestaurantInfoSerializer
+    permission_classes = [AllowAny]
+    
+    def get_object(self):
+        obj, created = RestaurantInfo.objects.get_or_create(pk=1)
+        return obj

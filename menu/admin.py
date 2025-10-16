@@ -403,10 +403,11 @@ class SiteSettingsAdmin(ModelAdmin):
 
 @admin.register(TextContent)
 class TextContentAdmin(ModelAdmin):
-    list_display = ['content_type_display', 'key_display', 'title', 'is_active', 'order', 'updated_at']
+    list_display = ['content_type_display', 'key_display', 'title_preview', 'is_active', 'order', 'updated_at']
     list_filter = ['content_type', 'is_active', 'created_at']
-    search_fields = ['key', 'title', 'title_uz', 'title_ru', 'content']
+    search_fields = ['key', 'title', 'title_uz', 'title_ru', 'content', 'content_uz', 'content_ru']
     list_editable = ['is_active', 'order']
+    list_per_page = 25
     
     def content_type_display(self, obj):
         type_mapping = {
@@ -444,6 +445,21 @@ class TextContentAdmin(ModelAdmin):
         readable_key = key_mapping.get(obj.key, obj.key.replace('_', ' ').title())
         return f"{readable_key} ({obj.key})"
     key_display.short_description = 'Kalit'
+    
+    def title_preview(self, obj):
+        """Show title preview with language indicators"""
+        titles = []
+        if obj.title:
+            titles.append(f"🇺🇸 {obj.title[:30]}{'...' if len(obj.title) > 30 else ''}")
+        if obj.title_uz:
+            titles.append(f"🇺🇿 {obj.title_uz[:30]}{'...' if len(obj.title_uz) > 30 else ''}")
+        if obj.title_ru:
+            titles.append(f"🇷🇺 {obj.title_ru[:30]}{'...' if len(obj.title_ru) > 30 else ''}")
+        
+        if titles:
+            return format_html('<br>'.join(titles))
+        return "No title"
+    title_preview.short_description = 'Sarlavha'
     
     fieldsets = (
         ('📝 Asosiy Ma\'lumot', {
