@@ -12,6 +12,7 @@ class Category(models.Model):
     name_ru = models.CharField(max_length=100)
     icon = models.CharField(max_length=10, default="🍽️")
     image = models.ImageField(upload_to='categories/', blank=True, null=True)
+    order = models.PositiveIntegerField(default=0, help_text="Display order")
     is_active = models.BooleanField(default=True, verbose_name=_("Faol"))
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -19,7 +20,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = "Kategoriya"
         verbose_name_plural = "Kategoriyalar"
-        ordering = ['name']
+        ordering = ['order', 'name']
 
     def __str__(self):
         return self.name
@@ -33,6 +34,7 @@ class MenuItem(models.Model):
     description_uz = models.TextField()
     description_ru = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
+    weight = models.DecimalField(max_digits=8, decimal_places=2, validators=[MinValueValidator(0)], blank=True, null=True, help_text="Weight in grams")
     image = models.ImageField(upload_to='menu_items/', blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='menu_items')
     available = models.BooleanField(default=True)
