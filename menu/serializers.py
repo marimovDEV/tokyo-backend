@@ -50,7 +50,8 @@ class PromotionSerializer(serializers.ModelSerializer):
         model = Promotion
         fields = [
             'id', 'title', 'title_uz', 'title_ru', 'description', 'description_uz', 'description_ru',
-            'image', 'active', 'is_active', 'link', 'category', 'category_name', 'linked_dish', 'linked_dish_id', 'created_at', 'updated_at'
+            'image', 'discount_percentage', 'discount_amount', 'start_date', 'end_date',
+            'active', 'is_active', 'link', 'category', 'category_name', 'linked_dish', 'linked_dish_id', 'created_at', 'updated_at'
         ]
     
     def create(self, validated_data):
