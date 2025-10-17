@@ -78,7 +78,7 @@ class Promotion(models.Model):
     end_date = models.DateTimeField(blank=True, null=True, help_text="Promotion end date")
     is_active = models.BooleanField(default=True, verbose_name=_("Ko'rinadi"))
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True, help_text="Aksiya kategoriyasi")
-    linked_dish = models.ForeignKey(MenuItem, on_delete=models.SET_NULL, null=True, blank=True, related_name='promotions', help_text="Bog'langan taom")
+    linked_dish = models.ForeignKey(MenuItem, on_delete=models.CASCADE, null=True, blank=True, related_name='promotions', help_text="Bog'langan taom")
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)], help_text="Aksiya narxi")
     ingredients = models.JSONField(default=list, blank=True, help_text="Tarkibi")
     ingredients_uz = models.JSONField(default=list, blank=True, help_text="Tarkibi (O'zbekcha)")
