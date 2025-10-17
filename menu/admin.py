@@ -351,7 +351,7 @@ class OrderItemAdmin(ModelAdmin):
 @admin.register(SiteSettings)
 class SiteSettingsAdmin(ModelAdmin):
     form = SiteSettingsForm
-    list_display = ['site_name', 'phone', 'email', 'logo_preview', 'is_maintenance_mode', 'updated_at']
+    list_display = ['site_name', 'phone', 'delivery_phone', 'telegram_bot', 'email', 'logo_preview', 'is_maintenance_mode', 'updated_at']
     list_filter = ['is_maintenance_mode', 'created_at']
     search_fields = ['site_name', 'phone', 'email']
     readonly_fields = ['logo_preview', 'favicon_preview']
@@ -366,7 +366,7 @@ class SiteSettingsAdmin(ModelAdmin):
             'description': 'Site name and logo settings'
         }),
         ('📞 Contact Information', {
-            'fields': ('phone', 'email', 'address', 'address_uz', 'address_ru', 'working_hours', 'working_hours_uz', 'working_hours_ru'),
+            'fields': ('phone', 'delivery_phone', 'telegram_bot', 'email', 'address', 'address_uz', 'address_ru', 'working_hours', 'working_hours_uz', 'working_hours_ru'),
             'description': 'Contact details and working hours'
         }),
         ('📱 Social Media', {

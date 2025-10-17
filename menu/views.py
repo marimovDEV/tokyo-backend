@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
-from rest_framework.parsers import MultiPartParser, FormParser
+from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from django.db.models import Q, Avg, F, Max
 from django.middleware.csrf import get_token
 from django.http import JsonResponse
@@ -38,7 +38,7 @@ class CategoryListView(generics.ListCreateAPIView):
     ordering_fields = ['name', 'created_at']
     ordering = ['name']
     permission_classes = [AllowAny]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser, JSONParser)
     
     def get_queryset(self):
         """Return all categories for admin, only active for public"""
@@ -56,7 +56,7 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = [AllowAny]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser, JSONParser)
     
     def retrieve(self, request, *args, **kwargs):
         """Get category with items count and promotions count"""

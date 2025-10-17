@@ -192,8 +192,10 @@ class SiteSettings(models.Model):
     favicon = models.ImageField(upload_to='site/', blank=True, null=True, help_text="Site favicon")
     
     # Contact Information
-    phone = models.CharField(max_length=20, default="+998 90 123 45 67")
-    email = models.EmailField(default="info@tokyorestaurant.uz")
+    phone = models.CharField(max_length=20, default="+998 91 433 11 10", help_text="Bron uchun telefon raqami")
+    delivery_phone = models.CharField(max_length=20, default="+998 94 231 10 10", help_text="Dostavka uchun telefon raqami")
+    telegram_bot = models.CharField(max_length=50, default="@PizzaCentr_Bot", help_text="Telegram bot username")
+    email = models.EmailField(default="info@tokyokafe.uz")
     address = models.TextField(default="Toshkent sh., Amir Temur ko'chasi 15")
     address_uz = models.TextField(default="Toshkent sh., Amir Temur ko'chasi 15")
     address_ru = models.TextField(default="г. Ташкент, ул. Амира Темура 15")
