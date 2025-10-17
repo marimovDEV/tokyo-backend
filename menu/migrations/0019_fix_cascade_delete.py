@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('menu', '0014_add_promotion_discount_fields'),
+        ('menu', '0018_alter_promotion_price'),
     ]
 
     operations = [
