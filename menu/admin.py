@@ -193,10 +193,10 @@ class MenuItemAdmin(ModelAdmin):
 @admin.register(Promotion)
 class PromotionAdmin(ModelAdmin):
     form = PromotionForm
-    list_display = ['title', 'linked_dish', 'active', 'is_active', 'image_preview', 'created_at']
-    list_filter = ['active', 'is_active', 'category', 'created_at']
+    list_display = ['title', 'linked_dish', 'price', 'discount_percentage', 'discount_amount', 'is_active', 'image_preview', 'created_at']
+    list_filter = ['is_active', 'category', 'created_at']
     search_fields = ['title', 'title_uz', 'title_ru', 'linked_dish__name', 'linked_dish__name_uz', 'linked_dish__name_ru']
-    list_editable = ['active', 'is_active']
+    list_editable = ['is_active']
     readonly_fields = ['image_preview']
     # autocomplete_fields = ['linked_dish']  # Commented out to fix add button issue
     
@@ -206,7 +206,7 @@ class PromotionAdmin(ModelAdmin):
     
     fieldsets = (
         ('🎯 Basic Information', {
-            'fields': ('title', 'title_uz', 'title_ru', 'active', 'is_active'),
+            'fields': ('title', 'title_uz', 'title_ru', 'is_active'),
             'description': 'Main promotion information in all languages'
         }),
         ('📝 Description', {
@@ -214,9 +214,23 @@ class PromotionAdmin(ModelAdmin):
             'classes': ('collapse',),
             'description': 'Detailed promotion descriptions'
         }),
+        ('💰 Pricing & Discount', {
+            'fields': ('price', 'discount_percentage', 'discount_amount'),
+            'description': 'Promotion pricing and discount information'
+        }),
+        ('🍽️ Ingredients', {
+            'fields': ('ingredients', 'ingredients_uz', 'ingredients_ru'),
+            'classes': ('collapse',),
+            'description': 'Promotion ingredients in all languages'
+        }),
         ('🖼️ Image & Links', {
-            'fields': ('image', 'image_preview', 'link', 'category', 'linked_dish'),
+            'fields': ('image', 'image_preview', 'category', 'linked_dish'),
             'description': 'Promotion image and related content'
+        }),
+        ('📅 Dates', {
+            'fields': ('start_date', 'end_date'),
+            'classes': ('collapse',),
+            'description': 'Promotion start and end dates'
         }),
     )
     
