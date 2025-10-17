@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, TextContent, RestaurantInfo, Cart, CartItem
+from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -171,16 +171,6 @@ class SiteSettingsSerializer(serializers.ModelSerializer):
         ]
 
 
-class TextContentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TextContent
-        fields = [
-            'id', 'content_type', 'key', 'title', 'subtitle', 'description', 'content',
-            'title_uz', 'subtitle_uz', 'description_uz', 'content_uz',
-            'title_ru', 'subtitle_ru', 'description_ru', 'content_ru',
-            'button_text', 'button_text_uz', 'button_text_ru',
-            'is_active', 'order', 'created_at', 'updated_at'
-        ]
 
 
 class RestaurantInfoSerializer(serializers.ModelSerializer):

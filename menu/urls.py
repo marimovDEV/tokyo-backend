@@ -35,10 +35,6 @@ urlpatterns = [
     # Site Settings
     path('site-settings/', views.SiteSettingsView.as_view(), name='site-settings'),
     
-    # Text Content
-    path('text-content/', views.TextContentListView.as_view(), name='text-content-list'),
-    path('text-content/<int:pk>/', views.TextContentDetailView.as_view(), name='text-content-detail'),
-    path('text-content/type/<str:content_type>/', views.TextContentByTypeView.as_view(), name='text-content-by-type'),
     
     # Restaurant Info
     path('restaurant-info/', views.RestaurantInfoView.as_view(), name='restaurant-info'),

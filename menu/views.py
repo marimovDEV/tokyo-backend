@@ -13,11 +13,11 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page, never_cache
 from rest_framework.permissions import AllowAny
 
-from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, TextContent, RestaurantInfo, Cart, CartItem
+from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem
 from .serializers import (
     CategorySerializer, MenuItemSerializer, PromotionSerializer, 
     ReviewSerializer, ReviewActionSerializer, OrderSerializer, CreateOrderSerializer,
-    SiteSettingsSerializer, TextContentSerializer, RestaurantInfoSerializer,
+    SiteSettingsSerializer, RestaurantInfoSerializer,
     CartSerializer, CartItemSerializer, AddToCartSerializer, UpdateCartItemSerializer, CreateOrderFromCartSerializer
 )
 
@@ -384,31 +384,6 @@ class SiteSettingsView(generics.RetrieveAPIView):
         return obj
 
 
-# Text Content Views
-@method_decorator(never_cache, name='dispatch')
-class TextContentListView(generics.ListAPIView):
-    queryset = TextContent.objects.filter(is_active=True)
-    serializer_class = TextContentSerializer
-    filter_backends = [DjangoFilterBackend, OrderingFilter]
-    filterset_fields = ['content_type', 'is_active']
-    ordering_fields = ['order', 'created_at']
-    ordering = ['content_type', 'order']
-
-
-class TextContentDetailView(generics.RetrieveAPIView):
-    queryset = TextContent.objects.filter(is_active=True)
-    serializer_class = TextContentSerializer
-
-
-class TextContentByTypeView(generics.ListAPIView):
-    serializer_class = TextContentSerializer
-    filter_backends = [OrderingFilter]
-    ordering_fields = ['order', 'created_at']
-    ordering = ['order']
-
-    def get_queryset(self):
-        content_type = self.kwargs['content_type']
-        return TextContent.objects.filter(content_type=content_type, is_active=True)
 
 
 # Restaurant Info Views
@@ -658,48 +633,6 @@ class CartManagementView(APIView):
             return Response({'message': 'All carts cleared successfully'}, status=status.HTTP_200_OK)
 
 
-@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
-class TextContentListView(generics.ListAPIView):
-    """API endpoint for dynamic text content"""
-    queryset = TextContent.objects.filter(is_active=True)
-    serializer_class = TextContentSerializer
-    permission_classes = [AllowAny]
-    
-    def get_queryset(self):
-        content_type = self.request.GET.get('content_type', None)
-        key = self.request.GET.get('key', None)
-        
-        queryset = TextContent.objects.filter(is_active=True)
-        
-        if content_type:
-            queryset = queryset.filter(content_type=content_type)
-        
-        if key:
-            queryset = queryset.filter(key=key)
-            
-        return queryset.order_by('order', 'key')
-
-
-@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
-class TextContentDetailView(generics.RetrieveAPIView):
-    """API endpoint for specific text content"""
-    queryset = TextContent.objects.filter(is_active=True)
-    serializer_class = TextContentSerializer
-    permission_classes = [AllowAny]
-
-
-@method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache
-class TextContentByTypeView(generics.ListAPIView):
-    """API endpoint for text content by type"""
-    serializer_class = TextContentSerializer
-    permission_classes = [AllowAny]
-    
-    def get_queryset(self):
-        content_type = self.kwargs['content_type']
-        return TextContent.objects.filter(
-            is_active=True, 
-            content_type=content_type
-        ).order_by('order', 'key')
 
 
 @method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache  
