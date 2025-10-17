@@ -42,6 +42,8 @@ class LinkedDishSerializer(serializers.ModelSerializer):
 
 class PromotionSerializer(serializers.ModelSerializer):
     category_name = serializers.CharField(source='category.name', read_only=True)
+    category_name_uz = serializers.CharField(source='category.name_uz', read_only=True)
+    category_name_ru = serializers.CharField(source='category.name_ru', read_only=True)
     image = serializers.ImageField(required=False, allow_null=True)
     linked_dish = LinkedDishSerializer(read_only=True)
     linked_dish_id = serializers.IntegerField(write_only=True, required=False, allow_null=True)
@@ -51,7 +53,9 @@ class PromotionSerializer(serializers.ModelSerializer):
         fields = [
             'id', 'title', 'title_uz', 'title_ru', 'description', 'description_uz', 'description_ru',
             'image', 'discount_percentage', 'discount_amount', 'start_date', 'end_date',
-            'active', 'is_active', 'link', 'category', 'category_name', 'linked_dish', 'linked_dish_id', 'created_at', 'updated_at'
+            'is_active', 'category', 'category_name', 'category_name_uz', 'category_name_ru',
+            'linked_dish', 'linked_dish_id', 'price', 'ingredients', 'ingredients_uz', 'ingredients_ru',
+            'created_at', 'updated_at'
         ]
     
     def create(self, validated_data):
