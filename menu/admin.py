@@ -193,12 +193,12 @@ class MenuItemAdmin(ModelAdmin):
 @admin.register(Promotion)
 class PromotionAdmin(ModelAdmin):
     form = PromotionForm
-    list_display = ['title', 'linked_dish', 'price', 'discount_percentage', 'discount_amount', 'is_active', 'image_preview', 'created_at']
-    list_filter = ['is_active', 'category', 'created_at']
-    search_fields = ['title', 'title_uz', 'title_ru', 'linked_dish__name', 'linked_dish__name_uz', 'linked_dish__name_ru']
+    list_display = ['title', 'discount_type', 'linked_product', 'price', 'discount_percentage', 'discount_amount', 'is_active', 'image_preview', 'created_at']
+    list_filter = ['is_active', 'discount_type', 'promotion_category', 'created_at']
+    search_fields = ['title', 'title_uz', 'title_ru', 'linked_product__name', 'linked_product__name_uz', 'linked_product__name_ru']
     list_editable = ['is_active']
     readonly_fields = ['image_preview']
-    # autocomplete_fields = ['linked_dish']  # Commented out to fix add button issue
+    # autocomplete_fields = ['linked_product']  # Commented out to fix add button issue
     
     class Meta:
         verbose_name = "Aksiya"
@@ -206,7 +206,7 @@ class PromotionAdmin(ModelAdmin):
     
     fieldsets = (
         ('🎯 Basic Information', {
-            'fields': ('title', 'title_uz', 'title_ru', 'is_active'),
+            'fields': ('title', 'title_uz', 'title_ru', 'discount_type', 'is_active'),
             'description': 'Main promotion information in all languages'
         }),
         ('📝 Description', {
@@ -215,7 +215,7 @@ class PromotionAdmin(ModelAdmin):
             'description': 'Detailed promotion descriptions'
         }),
         ('💰 Pricing & Discount', {
-            'fields': ('price', 'discount_percentage', 'discount_amount'),
+            'fields': ('price', 'discount_percentage', 'discount_amount', 'bonus_info', 'bonus_info_uz', 'bonus_info_ru'),
             'description': 'Promotion pricing and discount information'
         }),
         ('🍽️ Ingredients', {
@@ -224,7 +224,7 @@ class PromotionAdmin(ModelAdmin):
             'description': 'Promotion ingredients in all languages'
         }),
         ('🖼️ Image & Links', {
-            'fields': ('image', 'image_preview', 'category', 'linked_dish'),
+            'fields': ('image', 'image_preview', 'promotion_category', 'linked_product'),
             'description': 'Promotion image and related content'
         }),
         ('📅 Dates', {
