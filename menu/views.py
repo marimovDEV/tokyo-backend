@@ -131,7 +131,7 @@ class PromotionListView(generics.ListCreateAPIView):
     queryset = Promotion.objects.filter(is_active=True)
     serializer_class = PromotionSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-    filterset_fields = ['is_active', 'category']
+    filterset_fields = ['is_active', 'promotion_category', 'discount_type']
     search_fields = ['title', 'title_uz', 'title_ru', 'description', 'description_uz', 'description_ru']
     ordering_fields = ['title', 'created_at']
     ordering = ['-created_at']
