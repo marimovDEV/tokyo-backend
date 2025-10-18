@@ -65,24 +65,120 @@ class MenuItem(models.Model):
 
 
 class Promotion(models.Model):
-    title = models.CharField(max_length=200)
-    title_uz = models.CharField(max_length=200)
-    title_ru = models.CharField(max_length=200)
-    description = models.TextField()
-    description_uz = models.TextField()
-    description_ru = models.TextField()
-    image = models.ImageField(upload_to='promotions/', blank=True, null=True)
-    discount_percentage = models.PositiveIntegerField(default=0, help_text="Discount percentage (0-100)")
-    discount_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0, help_text="Discount amount in so'm")
-    start_date = models.DateTimeField(blank=True, null=True, help_text="Promotion start date")
-    end_date = models.DateTimeField(blank=True, null=True, help_text="Promotion end date")
-    is_active = models.BooleanField(default=True, verbose_name=_("Ko'rinadi"))
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True, help_text="Aksiya kategoriyasi")
-    linked_dish = models.ForeignKey(MenuItem, on_delete=models.CASCADE, null=True, blank=True, related_name='promotions', help_text="Bog'langan taom")
-    price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)], help_text="Aksiya narxi")
+    # Aksiya turlari
+    DISCOUNT_TYPE_CHOICES = [
+        ('percent', 'Foizda'),
+        ('amount', 'Summada'),
+        ('bonus', 'Bonus'),
+        ('standalone', 'Mustaqil aksiya'),
+    ]
+    
+    # Asosiy ma'lumotlar
+    title = models.CharField(max_length=200, help_text="Aksiya nomi")
+    title_uz = models.CharField(max_length=200, help_text="Aksiya nomi (O'zbekcha)")
+    title_ru = models.CharField(max_length=200, help_text="Aksiya nomi (Ruscha)")
+    description = models.TextField(help_text="Aksiya tavsifi")
+    description_uz = models.TextField(help_text="Aksiya tavsifi (O'zbekcha)")
+    description_ru = models.TextField(help_text="Aksiya tavsifi (Ruscha)")
+    
+    # Aksiya turi
+    discount_type = models.CharField(
+        max_length=15, 
+        choices=DISCOUNT_TYPE_CHOICES, 
+        default='percent',
+        help_text="Aksiya turi"
+    )
+    
+    # Chegirma ma'lumotlari
+    discount_percentage = models.PositiveIntegerField(
+        default=0, 
+        help_text="Chegirma foizi (0-100)",
+        validators=[MinValueValidator(0), MaxValueValidator(100)]
+    )
+    discount_amount = models.DecimalField(
+        max_digits=10, 
+        decimal_places=2, 
+        default=0, 
+        help_text="Chegirma summasi (so'm)"
+    )
+    
+    # Bonus ma'lumotlari
+    bonus_info = models.CharField(
+        max_length=300, 
+        blank=True, 
+        help_text="Bonus ma'lumoti (masalan: 'Har 3 ta olganga 1 ta bepul')"
+    )
+    bonus_info_uz = models.CharField(
+        max_length=300, 
+        blank=True, 
+        help_text="Bonus ma'lumoti (O'zbekcha)"
+    )
+    bonus_info_ru = models.CharField(
+        max_length=300, 
+        blank=True, 
+        help_text="Bonus ma'lumoti (Ruscha)"
+    )
+    
+    # Rasm
+    image = models.ImageField(
+        upload_to='promotions/', 
+        blank=True, 
+        null=True,
+        help_text="Aksiya rasmi (bo'lmasa, mahsulot rasmi ishlatiladi)"
+    )
+    
+    # Muddati
+    start_date = models.DateTimeField(
+        blank=True, 
+        null=True, 
+        help_text="Aksiya boshlanish vaqti"
+    )
+    end_date = models.DateTimeField(
+        blank=True, 
+        null=True, 
+        help_text="Aksiya tugash vaqti"
+    )
+    
+    # Bog'lanish
+    linked_product = models.ForeignKey(
+        MenuItem, 
+        on_delete=models.CASCADE, 
+        null=True, 
+        blank=True, 
+        related_name='promotions',
+        help_text="Bog'langan mahsulot (bo'sh bo'lishi mumkin)"
+    )
+    
+    # Aksiya kategoriyasi
+    promotion_category = models.ForeignKey(
+        Category, 
+        on_delete=models.CASCADE, 
+        null=True, 
+        blank=True, 
+        help_text="Aksiya kategoriyasi"
+    )
+    
+    # Status
+    is_active = models.BooleanField(
+        default=True, 
+        verbose_name=_("Ko'rinadi"),
+        help_text="Aksiya faolmi?"
+    )
+    
+    # Tarkibi (bonus aksiyalar uchun)
     ingredients = models.JSONField(default=list, blank=True, help_text="Tarkibi")
     ingredients_uz = models.JSONField(default=list, blank=True, help_text="Tarkibi (O'zbekcha)")
     ingredients_ru = models.JSONField(default=list, blank=True, help_text="Tarkibi (Ruscha)")
+    
+    # Aksiya narxi (standalone aksiyalar uchun)
+    price = models.DecimalField(
+        max_digits=10, 
+        decimal_places=2, 
+        validators=[MinValueValidator(0)], 
+        default=0,
+        help_text="Aksiya narxi (standalone aksiyalar uchun)"
+    )
+    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -91,8 +187,48 @@ class Promotion(models.Model):
         verbose_name_plural = "Aksiyalar"
         ordering = ['-created_at']
 
+    def clean(self):
+        # Validatsiya
+        if self.start_date and self.end_date and self.start_date >= self.end_date:
+            raise ValidationError(_("Boshlanish vaqti tugash vaqtidan oldin bo'lishi kerak."))
+        
+        if self.discount_type == 'percent' and self.discount_percentage > 100:
+            raise ValidationError(_("Chegirma foizi 100% dan ko'p bo'lishi mumkin emas."))
+
+    @property
+    def get_image(self):
+        """Aksiya rasmini olish - agar yo'q bo'lsa mahsulot rasmini ishlatadi"""
+        if self.image:
+            return self.image.url
+        elif self.linked_product and self.linked_product.image:
+            return self.linked_product.image.url
+        else:
+            return '/media/defaults/promo.jpg'  # Default banner
+
+    @property
+    def get_discounted_price(self):
+        """Chegirilgan narxni hisoblash"""
+        if not self.linked_product:
+            return self.price
+        
+        original_price = self.linked_product.price
+        
+        if self.discount_type == 'percent':
+            return original_price * (1 - self.discount_percentage / 100)
+        elif self.discount_type == 'amount':
+            return max(0, original_price - self.discount_amount)
+        else:
+            return original_price
+
+    @property
+    def is_expired(self):
+        """Aksiya muddati tugaganmi?"""
+        if self.end_date:
+            return timezone.now() > self.end_date
+        return False
+
     def __str__(self):
-        return self.title
+        return f"{self.title} ({self.get_discount_type_display()})"
 
 
 class Review(models.Model):

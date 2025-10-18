@@ -41,47 +41,81 @@ class LinkedDishSerializer(serializers.ModelSerializer):
 
 
 class PromotionSerializer(serializers.ModelSerializer):
-    category_name = serializers.CharField(source='category.name', read_only=True)
-    category_name_uz = serializers.CharField(source='category.name_uz', read_only=True)
-    category_name_ru = serializers.CharField(source='category.name_ru', read_only=True)
-    image = serializers.ImageField(required=False, allow_null=True)
-    linked_dish = LinkedDishSerializer(read_only=True)
-    linked_dish_id = serializers.IntegerField(write_only=True, required=False, allow_null=True)
+    # Read-only fields
+    category_name = serializers.CharField(source='promotion_category.name', read_only=True)
+    category_name_uz = serializers.CharField(source='promotion_category.name_uz', read_only=True)
+    category_name_ru = serializers.CharField(source='promotion_category.name_ru', read_only=True)
+    linked_product_id = serializers.IntegerField(write_only=True, required=False)
+    linked_product_name = serializers.CharField(source='linked_product.name', read_only=True)
+    linked_product_name_uz = serializers.CharField(source='linked_product.name_uz', read_only=True)
+    linked_product_name_ru = serializers.CharField(source='linked_product.name_ru', read_only=True)
+    
+    # Computed fields
+    display_image = serializers.SerializerMethodField()
+    discounted_price = serializers.SerializerMethodField()
+    is_expired = serializers.SerializerMethodField()
+    discount_display = serializers.SerializerMethodField()
     
     class Meta:
         model = Promotion
         fields = [
             'id', 'title', 'title_uz', 'title_ru', 'description', 'description_uz', 'description_ru',
-            'image', 'discount_percentage', 'discount_amount', 'start_date', 'end_date',
-            'is_active', 'category', 'category_name', 'category_name_uz', 'category_name_ru',
-            'linked_dish', 'linked_dish_id', 'price', 'ingredients', 'ingredients_uz', 'ingredients_ru',
+            'discount_type', 'discount_percentage', 'discount_amount', 'bonus_info', 'bonus_info_uz', 'bonus_info_ru',
+            'image', 'display_image', 'start_date', 'end_date', 'is_active', 'is_expired',
+            'promotion_category', 'category_name', 'category_name_uz', 'category_name_ru',
+            'linked_product', 'linked_product_id', 'linked_product_name', 'linked_product_name_uz', 'linked_product_name_ru',
+            'price', 'discounted_price', 'discount_display',
+            'ingredients', 'ingredients_uz', 'ingredients_ru',
             'created_at', 'updated_at'
         ]
     
+    def get_display_image(self, obj):
+        """Aksiya rasmini olish - agar yo'q bo'lsa mahsulot rasmini ishlatadi"""
+        return obj.get_image
+    
+    def get_discounted_price(self, obj):
+        """Chegirilgan narxni hisoblash"""
+        return obj.get_discounted_price
+    
+    def get_is_expired(self, obj):
+        """Aksiya muddati tugaganmi?"""
+        return obj.is_expired
+    
+    def get_discount_display(self, obj):
+        """Chegirma ko'rinishi"""
+        if obj.discount_type == 'percent':
+            return f"-{obj.discount_percentage}%"
+        elif obj.discount_type == 'amount':
+            return f"-{obj.discount_amount} so'm"
+        elif obj.discount_type == 'bonus':
+            return obj.bonus_info or "Bonus"
+        else:
+            return "Aksiya"
+    
     def create(self, validated_data):
-        linked_dish_id = validated_data.pop('linked_dish_id', None)
+        linked_product_id = validated_data.pop('linked_product_id', None)
         promotion = Promotion.objects.create(**validated_data)
-        if linked_dish_id:
+        if linked_product_id:
             try:
-                promotion.linked_dish = MenuItem.objects.get(id=linked_dish_id)
+                promotion.linked_product = MenuItem.objects.get(id=linked_product_id)
                 promotion.save()
             except MenuItem.DoesNotExist:
                 pass
         return promotion
     
     def update(self, instance, validated_data):
-        linked_dish_id = validated_data.pop('linked_dish_id', None)
+        linked_product_id = validated_data.pop('linked_product_id', None)
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
         
-        if linked_dish_id is not None:
-            if linked_dish_id:
+        if linked_product_id is not None:
+            if linked_product_id:
                 try:
-                    instance.linked_dish = MenuItem.objects.get(id=linked_dish_id)
+                    instance.linked_product = MenuItem.objects.get(id=linked_product_id)
                 except MenuItem.DoesNotExist:
-                    instance.linked_dish = None
+                    pass
             else:
-                instance.linked_dish = None
+                instance.linked_product = None
         
         instance.save()
         return instance
