@@ -6,10 +6,10 @@ from io import BytesIO
 
 
 class Command(BaseCommand):
-    help = 'Setup Tokyo Kafe data with categories, menu items, and promotions'
+    help = 'Setup Tokyo Kafe data with categories, menu items, promotions and images'
 
     def handle(self, *args, **options):
-        self.stdout.write('🍣 Starting Tokyo Kafe data setup...')
+        self.stdout.write('🍣 Starting Tokyo Kafe data setup with images...')
         
         # Clear existing data
         self.clear_existing_data()
@@ -17,14 +17,14 @@ class Command(BaseCommand):
         # Create categories
         categories = self.create_categories()
         
-        # Create menu items
-        self.create_menu_items(categories)
+        # Create menu items with images
+        self.create_menu_items_with_images(categories)
         
-        # Create promotions
-        self.create_promotions(categories)
+        # Create promotions with images
+        self.create_promotions_with_images(categories)
         
         self.stdout.write(
-            self.style.SUCCESS('✅ Tokyo Kafe data setup completed successfully!')
+            self.style.SUCCESS('✅ Tokyo Kafe data setup with images completed successfully!')
         )
 
     def clear_existing_data(self):
@@ -88,9 +88,9 @@ class Command(BaseCommand):
         
         return categories
 
-    def create_menu_items(self, categories):
-        """Create Tokyo Kafe menu items"""
-        self.stdout.write('🍽️ Creating menu items...')
+    def create_menu_items_with_images(self, categories):
+        """Create Tokyo Kafe menu items with images"""
+        self.stdout.write('🍽️ Creating menu items with images...')
         
         menu_items_data = [
             # Sushi & Rolls
@@ -108,8 +108,8 @@ class Command(BaseCommand):
                 'ingredients': ['Crab', 'Avocado', 'Cucumber', 'Nori', 'Rice'],
                 'ingredients_uz': ['Qisqichbaqa', 'Avokado', 'Bodring', 'Nori', 'Guruch'],
                 'ingredients_ru': ['Краб', 'Авокадо', 'Огурец', 'Нори', 'Рис'],
-                'image': 'menu_items/california_roll.jpg',
-                'category': categories[0]  # Sushi & Rolls
+                'image_path': 'menu_items/california_roll.jpg',
+                'category': categories[0]
             },
             {
                 'name': 'Salmon Nigiri',
@@ -125,7 +125,7 @@ class Command(BaseCommand):
                 'ingredients': ['Salmon', 'Rice', 'Wasabi'],
                 'ingredients_uz': ['Salmon', 'Guruch', 'Wasabi'],
                 'ingredients_ru': ['Лосось', 'Рис', 'Васаби'],
-                'image': 'menu_items/salmon_nigiri.jpg',
+                'image_path': 'menu_items/salmon_nigiri.jpg',
                 'category': categories[0]
             },
             {
@@ -142,7 +142,7 @@ class Command(BaseCommand):
                 'ingredients': ['Tuna', 'Spicy Mayo', 'Cucumber', 'Scallions'],
                 'ingredients_uz': ['Tuna', 'Achchiq Mayo', 'Bodring', 'Yashil Piyoz'],
                 'ingredients_ru': ['Тунец', 'Острый майонез', 'Огурец', 'Зеленый лук'],
-                'image': 'menu_items/spicy_tuna_roll.jpg',
+                'image_path': 'menu_items/spicy_tuna_roll.jpg',
                 'category': categories[0]
             },
             {
@@ -159,7 +159,7 @@ class Command(BaseCommand):
                 'ingredients': ['Eel', 'Cucumber', 'Avocado', 'Eel Sauce'],
                 'ingredients_uz': ['Ilon Baliq', 'Bodring', 'Avokado', 'Eel Sous'],
                 'ingredients_ru': ['Угорь', 'Огурец', 'Авокадо', 'Соус угря'],
-                'image': 'menu_items/dragon_roll.jpg',
+                'image_path': 'menu_items/dragon_roll.jpg',
                 'category': categories[0]
             },
             
@@ -178,7 +178,8 @@ class Command(BaseCommand):
                 'ingredients': ['Pork Bone Broth', 'Chashu Pork', 'Soft Egg', 'Noodles', 'Green Onions'],
                 'ingredients_uz': ['Cho\'chqa Suyagi Sho\'rvasi', 'Chashu Cho\'chqa', 'Yumshoq Tuxum', 'Lagmon', 'Yashil Piyoz'],
                 'ingredients_ru': ['Бульон из свиных костей', 'Чашу свинина', 'Яйцо всмятку', 'Лапша', 'Зеленый лук'],
-                'category': categories[1]  # Ramen & Noodles
+                'image_path': 'menu_items/tonkotsu_ramen.jpg',
+                'category': categories[1]
             },
             {
                 'name': 'Shoyu Ramen',
@@ -194,6 +195,7 @@ class Command(BaseCommand):
                 'ingredients': ['Soy Sauce Broth', 'Chicken', 'Noodles', 'Vegetables'],
                 'ingredients_uz': ['Soya Sous Sho\'rvasi', 'Tovuq', 'Lagmon', 'Sabzavotlar'],
                 'ingredients_ru': ['Бульон с соевым соусом', 'Курица', 'Лапша', 'Овощи'],
+                'image_path': 'menu_items/shoyu_ramen.jpg',
                 'category': categories[1]
             },
             {
@@ -210,6 +212,7 @@ class Command(BaseCommand):
                 'ingredients': ['Miso Paste', 'Pork', 'Corn', 'Noodles'],
                 'ingredients_uz': ['Miso Pastasi', 'Cho\'chqa', 'Makkajo\'xori', 'Lagmon'],
                 'ingredients_ru': ['Паста мисо', 'Свинина', 'Кукуруза', 'Лапша'],
+                'image_path': 'menu_items/miso_ramen.jpg',
                 'category': categories[1]
             },
             
@@ -228,7 +231,8 @@ class Command(BaseCommand):
                 'ingredients': ['Pork', 'Vegetables', 'Dumpling Wrapper', 'Soy Sauce'],
                 'ingredients_uz': ['Cho\'chqa', 'Sabzavotlar', 'Dumpling Qopqog\'i', 'Soya Sous'],
                 'ingredients_ru': ['Свинина', 'Овощи', 'Обертка для пельменей', 'Соевый соус'],
-                'category': categories[2]  # Appetizers
+                'image_path': 'menu_items/gyoza.jpg',
+                'category': categories[2]
             },
             {
                 'name': 'Edamame',
@@ -244,6 +248,7 @@ class Command(BaseCommand):
                 'ingredients': ['Soybeans', 'Sea Salt'],
                 'ingredients_uz': ['Soya Loviyasi', 'Dengiz Tuzi'],
                 'ingredients_ru': ['Соевые бобы', 'Морская соль'],
+                'image_path': 'menu_items/edamame.jpg',
                 'category': categories[2]
             },
             {
@@ -260,6 +265,7 @@ class Command(BaseCommand):
                 'ingredients': ['Vegetables', 'Shrimp', 'Tempura Batter'],
                 'ingredients_uz': ['Sabzavotlar', 'Qisqichbaqa', 'Tempura Xamiri'],
                 'ingredients_ru': ['Овощи', 'Креветки', 'Кляр для тэмпуры'],
+                'image_path': 'menu_items/tempura.jpg',
                 'category': categories[2]
             },
             
@@ -278,7 +284,8 @@ class Command(BaseCommand):
                 'ingredients': ['Green Tea Leaves', 'Hot Water'],
                 'ingredients_uz': ['Yashil Choy Barglari', 'Issiq Suv'],
                 'ingredients_ru': ['Листья зеленого чая', 'Горячая вода'],
-                'category': categories[3]  # Drinks
+                'image_path': 'menu_items/green_tea.jpg',
+                'category': categories[3]
             },
             {
                 'name': 'Japanese Sake',
@@ -294,6 +301,7 @@ class Command(BaseCommand):
                 'ingredients': ['Rice Wine', 'Water'],
                 'ingredients_uz': ['Guruch Vinosi', 'Suv'],
                 'ingredients_ru': ['Рисовое вино', 'Вода'],
+                'image_path': 'menu_items/japanese_sake.jpg',
                 'category': categories[3]
             },
             {
@@ -310,6 +318,7 @@ class Command(BaseCommand):
                 'ingredients': ['Fresh Oranges'],
                 'ingredients_uz': ['Taza Apelsinlar'],
                 'ingredients_ru': ['Свежие апельсины'],
+                'image_path': 'menu_items/fresh_orange_juice.jpg',
                 'category': categories[3]
             },
             
@@ -328,7 +337,8 @@ class Command(BaseCommand):
                 'ingredients': ['Rice Cake', 'Ice Cream', 'Sweet Bean Paste'],
                 'ingredients_uz': ['Guruch Keki', 'Muzqaymoq', 'Shirin Loviya Pastasi'],
                 'ingredients_ru': ['Рисовый пирог', 'Мороженое', 'Сладкая бобовая паста'],
-                'category': categories[4]  # Desserts
+                'image_path': 'menu_items/mochi_ice_cream.jpg',
+                'category': categories[4]
             },
             {
                 'name': 'Green Tea Ice Cream',
@@ -344,17 +354,38 @@ class Command(BaseCommand):
                 'ingredients': ['Matcha Powder', 'Cream', 'Milk', 'Sugar'],
                 'ingredients_uz': ['Matcha Kukuni', 'Krem', 'Sut', 'Shakar'],
                 'ingredients_ru': ['Порошок матча', 'Сливки', 'Молоко', 'Сахар'],
+                'image_path': 'menu_items/green_tea_ice_cream.jpg',
                 'category': categories[4]
             }
         ]
         
         for item_data in menu_items_data:
+            # Remove image_path from data before creating object
+            image_path = item_data.pop('image_path')
+            
+            # Create menu item
             item = MenuItem.objects.create(**item_data)
-            self.stdout.write(f'  ✅ Created menu item: {item.name}')
+            
+            # Add image if file exists
+            try:
+                import os
+                full_image_path = f'/root/tokyo/media/{image_path}'
+                if os.path.exists(full_image_path):
+                    with open(full_image_path, 'rb') as f:
+                        item.image.save(
+                            os.path.basename(image_path),
+                            ContentFile(f.read()),
+                            save=True
+                        )
+                    self.stdout.write(f'  ✅ Created menu item with image: {item.name}')
+                else:
+                    self.stdout.write(f'  ✅ Created menu item: {item.name} (no image)')
+            except Exception as e:
+                self.stdout.write(f'  ✅ Created menu item: {item.name} (image error: {e})')
 
-    def create_promotions(self, categories):
-        """Create Tokyo Kafe promotions"""
-        self.stdout.write('🎯 Creating promotions...')
+    def create_promotions_with_images(self, categories):
+        """Create Tokyo Kafe promotions with images"""
+        self.stdout.write('🎯 Creating promotions with images...')
         
         promotions_data = [
             {
@@ -369,7 +400,8 @@ class Command(BaseCommand):
                 'bonus_info': 'Daily from 14:00 to 17:00',
                 'bonus_info_uz': 'Har kuni 14:00 dan 17:00 gacha',
                 'bonus_info_ru': 'Ежедневно с 14:00 до 17:00',
-                'promotion_category': categories[0],  # Sushi & Rolls
+                'promotion_category': categories[0],
+                'image_path': 'defaults/promo.jpg',
                 'is_active': True
             },
             {
@@ -384,13 +416,14 @@ class Command(BaseCommand):
                 'bonus_info': 'Perfect for sharing with friends',
                 'bonus_info_uz': 'Do\'stlar bilan baham ko\'rish uchun mukammal',
                 'bonus_info_ru': 'Идеально для совместного употребления с друзьями',
-                'promotion_category': categories[0],  # Sushi & Rolls
+                'promotion_category': categories[0],
+                'image_path': 'defaults/promo.jpg',
                 'is_active': True
             },
             {
                 'title': 'Family Pack',
                 'title_uz': 'Oilaviy To\'plam',
-                'title_ru': 'Семейный набор',
+                'name_ru': 'Семейный набор',
                 'description': 'Special family pack with ramen, gyoza, and drinks',
                 'description_uz': 'Ramen, gyoza va ichimliklar bilan maxsus oilaviy to\'plam',
                 'description_ru': 'Специальный семейный набор с раменом, гёдза и напитками',
@@ -399,7 +432,8 @@ class Command(BaseCommand):
                 'bonus_info': 'Feeds 4 people comfortably',
                 'bonus_info_uz': '4 kishini qoniqarli quyadi',
                 'bonus_info_ru': 'Комфортно накормит 4 человек',
-                'promotion_category': categories[1],  # Ramen & Noodles
+                'promotion_category': categories[1],
+                'image_path': 'defaults/promo.jpg',
                 'is_active': True
             },
             {
@@ -414,7 +448,8 @@ class Command(BaseCommand):
                 'bonus_info': 'Valid for first-time customers only',
                 'bonus_info_uz': 'Faqat birinchi marta kelgan mijozlar uchun',
                 'bonus_info_ru': 'Действует только для новых клиентов',
-                'promotion_category': categories[0],  # Sushi & Rolls
+                'promotion_category': categories[0],
+                'image_path': 'defaults/promo.jpg',
                 'is_active': True
             },
             {
@@ -428,21 +463,32 @@ class Command(BaseCommand):
                 'bonus_info': 'Buy 1 get 1 at 50% off',
                 'bonus_info_uz': '1 ta oling, 1 tasini 50% chegirma bilan oling',
                 'bonus_info_ru': 'Купите 1, получите 1 со скидкой 50%',
-                'promotion_category': categories[4],  # Desserts
+                'promotion_category': categories[4],
+                'image_path': 'defaults/promo.jpg',
                 'is_active': True
             }
         ]
         
         for promo_data in promotions_data:
+            # Remove image_path from data before creating object
+            image_path = promo_data.pop('image_path')
+            
+            # Create promotion
             promotion = Promotion.objects.create(**promo_data)
-            self.stdout.write(f'  ✅ Created promotion: {promotion.title}')
-
-    def download_image(self, url, filename):
-        """Download image from URL"""
-        try:
-            response = requests.get(url, timeout=10)
-            if response.status_code == 200:
-                return ContentFile(response.content, name=filename)
-        except Exception as e:
-            self.stdout.write(f'  ⚠️ Could not download image: {e}')
-        return None
+            
+            # Add image if file exists
+            try:
+                import os
+                full_image_path = f'/root/tokyo/media/{image_path}'
+                if os.path.exists(full_image_path):
+                    with open(full_image_path, 'rb') as f:
+                        promotion.image.save(
+                            os.path.basename(image_path),
+                            ContentFile(f.read()),
+                            save=True
+                        )
+                    self.stdout.write(f'  ✅ Created promotion with image: {promotion.title}')
+                else:
+                    self.stdout.write(f'  ✅ Created promotion: {promotion.title} (no image)')
+            except Exception as e:
+                self.stdout.write(f'  ✅ Created promotion: {promotion.title} (image error: {e})')
