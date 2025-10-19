@@ -423,7 +423,7 @@ class Command(BaseCommand):
             {
                 'title': 'Family Pack',
                 'title_uz': 'Oilaviy To\'plam',
-                'name_ru': 'Семейный набор',
+                'title_ru': 'Семейный набор',
                 'description': 'Special family pack with ramen, gyoza, and drinks',
                 'description_uz': 'Ramen, gyoza va ichimliklar bilan maxsus oilaviy to\'plam',
                 'description_ru': 'Специальный семейный набор с раменом, гёдза и напитками',
