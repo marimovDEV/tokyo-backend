@@ -13,12 +13,13 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page, never_cache
 from rest_framework.permissions import AllowAny
 
-from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem
+from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem, Feedback
 from .serializers import (
     CategorySerializer, MenuItemSerializer, PromotionSerializer, 
     ReviewSerializer, ReviewActionSerializer, OrderSerializer, CreateOrderSerializer,
     SiteSettingsSerializer, RestaurantInfoSerializer,
-    CartSerializer, CartItemSerializer, AddToCartSerializer, UpdateCartItemSerializer, CreateOrderFromCartSerializer
+    CartSerializer, CartItemSerializer, AddToCartSerializer, UpdateCartItemSerializer, CreateOrderFromCartSerializer,
+    FeedbackSerializer
 )
 
 
@@ -657,3 +658,22 @@ class RestaurantInfoView(generics.RetrieveAPIView):
     def get_object(self):
         obj, created = RestaurantInfo.objects.get_or_create(pk=1)
         return obj
+
+
+class FeedbackListView(generics.ListCreateAPIView):
+    """API endpoint for feedback list and creation"""
+    queryset = Feedback.objects.all()
+    serializer_class = FeedbackSerializer
+    permission_classes = [AllowAny]
+    filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
+    filterset_fields = ['feedback_type', 'is_read']
+    search_fields = ['name', 'message']
+    ordering_fields = ['created_at', 'rating']
+    ordering = ['-created_at']
+
+
+class FeedbackDetailView(generics.RetrieveUpdateDestroyAPIView):
+    """API endpoint for feedback detail operations"""
+    queryset = Feedback.objects.all()
+    serializer_class = FeedbackSerializer
+    permission_classes = [AllowAny]

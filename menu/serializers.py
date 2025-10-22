@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem
+from .models import Category, MenuItem, Promotion, Review, ReviewAction, Order, OrderItem, SiteSettings, RestaurantInfo, Cart, CartItem, Feedback
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -293,3 +293,13 @@ class CreateOrderFromCartSerializer(serializers.Serializer):
     table_number = serializers.IntegerField()
     customer_name = serializers.CharField(required=False, allow_blank=True)
     notes = serializers.CharField(required=False, allow_blank=True)
+
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Feedback
+        fields = [
+            'id', 'feedback_type', 'name', 'email', 'phone', 'message', 
+            'rating', 'is_read', 'created_at', 'updated_at'
+        ]
+        read_only_fields = ['id', 'created_at', 'updated_at']

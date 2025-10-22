@@ -52,4 +52,8 @@ urlpatterns = [
     # Cart Management (Admin)
     path('admin/carts/', views.CartManagementView.as_view(), name='cart-management'),
     path('admin/carts/<int:cart_id>/', views.CartManagementView.as_view(), name='cart-management-detail'),
+    
+    # Feedback
+    path('feedback/', views.FeedbackListView.as_view(), name='feedback-list'),
+    path('feedback/<int:pk>/', views.FeedbackDetailView.as_view(), name='feedback-detail'),
 ]
