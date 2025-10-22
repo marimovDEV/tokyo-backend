@@ -357,7 +357,7 @@ def menu_stats(request):
         'total_categories': Category.objects.count(),
         'total_menu_items': MenuItem.objects.count(),
         'available_menu_items': MenuItem.objects.filter(available=True).count(),
-        'total_promotions': Promotion.objects.filter(active=True).count(),
+        'total_promotions': Promotion.objects.filter(is_active=True).count(),
         'total_reviews': Review.objects.filter(approved=True).count(),
         'average_rating': MenuItem.objects.filter(rating__isnull=False).aggregate(
             avg_rating=Avg('rating')
