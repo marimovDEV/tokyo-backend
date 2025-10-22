@@ -637,7 +637,7 @@ class CartManagementView(APIView):
 
 
 @method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache  
-class SiteSettingsView(generics.RetrieveAPIView):
+class SiteSettingsView(generics.RetrieveUpdateAPIView):
     """API endpoint for site settings"""
     queryset = SiteSettings.objects.all()
     serializer_class = SiteSettingsSerializer
