@@ -88,7 +88,7 @@ class MenuItemListView(generics.ListCreateAPIView):
     filterset_fields = ['category', 'available']
     search_fields = ['name', 'name_uz', 'name_ru', 'description', 'description_uz', 'description_ru']
     ordering_fields = ['name', 'price', 'rating', 'created_at']
-    ordering = ['category', 'name']
+    ordering = ['category', 'order', 'name']
     permission_classes = [AllowAny]
     parser_classes = (MultiPartParser, FormParser)
     
@@ -100,6 +100,17 @@ class MenuItemListView(generics.ListCreateAPIView):
         return MenuItem.objects.filter(is_active=True, category__is_active=True)
 
     def perform_create(self, serializer):
+        # Agar order kiritilmagan bo'lsa, avtomatik ravishda oxirgi o'rindan keyin qo'shish
+        if not serializer.validated_data.get('order'):
+            category = serializer.validated_data.get('category')
+            if category:
+                # Shu kategoriyadagi eng katta order raqamini topish
+                from django.db import models
+                max_order = MenuItem.objects.filter(category=category).aggregate(
+                    max_order=models.Max('order')
+                )['max_order'] or 0
+                serializer.validated_data['order'] = max_order + 1
+        
         serializer.save()
 
 
@@ -118,8 +129,8 @@ class MenuItemByCategoryView(generics.ListAPIView):
     serializer_class = MenuItemSerializer
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['name', 'name_uz', 'name_ru']
-    ordering_fields = ['name', 'price', 'rating']
-    ordering = ['name']
+    ordering_fields = ['name', 'price', 'rating', 'order']
+    ordering = ['order', 'name']
 
     def get_queryset(self):
         category_id = self.kwargs['category_id']
@@ -637,7 +648,7 @@ class CartManagementView(APIView):
 
 
 @method_decorator(cache_page(60 * 30), name='dispatch')  # 30 daqiqa cache  
-class SiteSettingsView(generics.RetrieveUpdateAPIView):
+class SiteSettingsView(generics.RetrieveAPIView):
     """API endpoint for site settings"""
     queryset = SiteSettings.objects.all()
     serializer_class = SiteSettingsSerializer

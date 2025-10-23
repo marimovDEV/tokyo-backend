@@ -38,6 +38,7 @@ class MenuItem(models.Model):
     weight = models.DecimalField(max_digits=8, decimal_places=2, validators=[MinValueValidator(0)], blank=True, null=True, help_text="Weight in grams")
     image = models.ImageField(upload_to='menu_items/', blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='menu_items')
+    order = models.PositiveIntegerField(default=0, help_text="Kategoriyadagi tartib raqami")
     available = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True, verbose_name=_("Faol"))
     prep_time = models.CharField(max_length=20, blank=True, null=True)  # e.g., "15-20"
@@ -55,7 +56,7 @@ class MenuItem(models.Model):
     class Meta:
         verbose_name = "Menyu Mahsuloti"
         verbose_name_plural = "Menyu Mahsulotlari"
-        ordering = ['category', 'name']
+        ordering = ['category', 'order', 'name']
 
     def clean(self):
         if self.category and not self.category.is_active and self.is_active:
