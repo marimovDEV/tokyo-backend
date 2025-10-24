@@ -49,6 +49,8 @@ class CategoryListView(generics.ListCreateAPIView):
         return Category.objects.filter(is_active=True)
 
     def perform_create(self, serializer):
+        # Yangi kategoriyani active qilish
+        serializer.validated_data['is_active'] = True
         serializer.save()
 
 
