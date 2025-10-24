@@ -99,16 +99,29 @@ class MenuItemListView(generics.ListCreateAPIView):
         return MenuItem.objects.filter(is_active=True, category__is_active=True)
 
     def perform_create(self, serializer):
-        # Agar order kiritilmagan bo'lsa, avtomatik ravishda oxirgi o'rindan keyin qo'shish
-        if not serializer.validated_data.get('order'):
-            category = serializer.validated_data.get('category')
+        from django.db import models, transaction
+        
+        order = serializer.validated_data.get('order', 0)
+        category = serializer.validated_data.get('category')
+        
+        # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
+        if not order or order == 0:
             if category:
                 # Shu kategoriyadagi eng katta order raqamini topish
-                from django.db import models
                 max_order = MenuItem.objects.filter(category=category).aggregate(
                     max_order=models.Max('order')
                 )['max_order'] or 0
-                serializer.validated_data['order'] = max_order + 1
+                order = max_order + 1
+                serializer.validated_data['order'] = order
+        
+        # Agar order kiritilgan bo'lsa, boshqa item'larni siljitish
+        if order and order > 0:
+            with transaction.atomic():
+                # Shu kategoriyada order dan katta yoki teng bo'lgan item'larni siljitish
+                MenuItem.objects.filter(
+                    category=category,
+                    order__gte=order
+                ).update(order=models.F('order') + 1)
         
         serializer.save()
 
@@ -121,7 +134,55 @@ class MenuItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     parser_classes = (MultiPartParser, FormParser)
 
     def perform_update(self, serializer):
+        from django.db import models, transaction
+        
+        order = serializer.validated_data.get('order', 0)
+        category = serializer.validated_data.get('category')
+        instance = self.get_object()
+        old_order = instance.order
+        old_category = instance.category
+        
+        # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
+        if not order or order == 0:
+            if category:
+                # Shu kategoriyadagi eng katta order raqamini topish
+                max_order = MenuItem.objects.filter(category=category).aggregate(
+                    max_order=models.Max('order')
+                )['max_order'] or 0
+                order = max_order + 1
+                serializer.validated_data['order'] = order
+        
+        with transaction.atomic():
+            # Eski kategoriyada order'ni qayta tartiblash
+            if old_category and old_order:
+                MenuItem.objects.filter(
+                    category=old_category,
+                    order__gt=old_order
+                ).update(order=models.F('order') - 1)
+            
+            # Yangi kategoriyada order'ni joylashtirish
+            if order and order > 0 and category:
+                # Yangi kategoriyada order dan katta yoki teng bo'lgan item'larni siljitish
+                MenuItem.objects.filter(
+                    category=category,
+                    order__gte=order
+                ).exclude(id=instance.id).update(order=models.F('order') + 1)
+        
         serializer.save()
+
+    def perform_destroy(self, instance):
+        from django.db import models, transaction
+        
+        with transaction.atomic():
+            # O'chirilayotgan item'ning order'ini qayta tartiblash
+            if instance.order:
+                MenuItem.objects.filter(
+                    category=instance.category,
+                    order__gt=instance.order
+                ).update(order=models.F('order') - 1)
+            
+            # Item'ni o'chirish
+            instance.delete()
 
 
 class MenuItemByCategoryView(generics.ListAPIView):
