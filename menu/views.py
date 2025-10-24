@@ -80,7 +80,6 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
-@method_decorator(cache_page(60 * 15), name='dispatch')  # 15 daqiqa cache
 class MenuItemListView(generics.ListCreateAPIView):
     queryset = MenuItem.objects.filter(is_active=True, category__is_active=True)
     serializer_class = MenuItemSerializer
@@ -138,7 +137,6 @@ class MenuItemByCategoryView(generics.ListAPIView):
 
 
 @method_decorator(csrf_exempt, name='dispatch')
-@method_decorator(cache_page(60 * 10), name='dispatch')  # 10 daqiqa cache
 class PromotionListView(generics.ListCreateAPIView):
     queryset = Promotion.objects.filter(is_active=True)
     serializer_class = PromotionSerializer
