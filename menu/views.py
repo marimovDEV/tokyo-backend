@@ -104,8 +104,6 @@ class MenuItemListView(generics.ListCreateAPIView):
         order = serializer.validated_data.get('order', 0)
         category = serializer.validated_data.get('category')
         
-        print(f"DEBUG: Creating menu item with order={order}, category={category}")
-        
         # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
         if not order or order == 0:
             if category:
@@ -115,19 +113,19 @@ class MenuItemListView(generics.ListCreateAPIView):
                 )['max_order'] or 0
                 order = max_order + 1
                 serializer.validated_data['order'] = order
-                print(f"DEBUG: Auto-assigned order={order} (max was {max_order})")
         
         # Agar order kiritilgan bo'lsa, boshqa item'larni siljitish
         if order and order > 0:
-            print(f"DEBUG: Shifting items with order >= {order} in category {category}")
             with transaction.atomic():
                 # Shu kategoriyada order dan katta yoki teng bo'lgan item'larni siljitish
-                affected_items = MenuItem.objects.filter(
+                MenuItem.objects.filter(
                     category=category,
                     order__gte=order
-                )
-                print(f"DEBUG: Found {affected_items.count()} items to shift")
-                affected_items.update(order=models.F('order') + 1)
+                ).update(order=models.F('order') + 1)
+        
+        # Yangi item'ni active qilish
+        serializer.validated_data['is_active'] = True
+        serializer.validated_data['available'] = True
         
         serializer.save()
 
