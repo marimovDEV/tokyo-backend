@@ -178,44 +178,45 @@ class MenuItemListView(generics.ListCreateAPIView):
         category_order = serializer.validated_data.get('category_order', 0)
         category = serializer.validated_data.get('category')
         
-        # Global order ni avtomatik belgilash
-        if not global_order or global_order == 0:
-            max_global_order = MenuItem.objects.aggregate(
-                max_order=models.Max('global_order')
-            )['max_order'] or 0
-            global_order = max_global_order + 1
-            serializer.validated_data['global_order'] = global_order
-        
-        # Category order ni avtomatik belgilash
-        if not category_order or category_order == 0:
-            if category:
-                max_category_order = MenuItem.objects.filter(
-                    category=category
-                ).aggregate(
-                    max_order=models.Max('category_order')
+        with transaction.atomic():
+            # Global order ni avtomatik belgilash
+            if not global_order or global_order == 0:
+                max_global_order = MenuItem.objects.aggregate(
+                    max_order=models.Max('global_order')
                 )['max_order'] or 0
-                category_order = max_category_order + 1
-                serializer.validated_data['category_order'] = category_order
-        
-        # Agar order raqamlari kiritilgan bo'lsa, boshqa item'larni siljitish
-        if global_order and global_order > 0:
-            # Global order dan katta yoki teng bo'lgan item'larni siljitish
-            MenuItem.objects.filter(
-                global_order__gte=global_order
-            ).update(global_order=models.F('global_order') + 1)
-        
-        if category_order and category_order > 0 and category:
-            # Shu kategoriyada category_order dan katta yoki teng bo'lgan item'larni siljitish
-            MenuItem.objects.filter(
-                category=category,
-                category_order__gte=category_order
-            ).update(category_order=models.F('category_order') + 1)
-        
-        # Yangi item'ni active qilish
-        serializer.validated_data['is_active'] = True
-        serializer.validated_data['available'] = True
-        
-        serializer.save()
+                global_order = max_global_order + 1
+                serializer.validated_data['global_order'] = global_order
+            
+            # Category order ni avtomatik belgilash
+            if not category_order or category_order == 0:
+                if category:
+                    max_category_order = MenuItem.objects.filter(
+                        category=category
+                    ).aggregate(
+                        max_order=models.Max('category_order')
+                    )['max_order'] or 0
+                    category_order = max_category_order + 1
+                    serializer.validated_data['category_order'] = category_order
+            
+            # Agar order raqamlari kiritilgan bo'lsa, boshqa item'larni siljitish
+            if global_order and global_order > 0:
+                # Global order dan katta yoki teng bo'lgan item'larni siljitish
+                MenuItem.objects.filter(
+                    global_order__gte=global_order
+                ).update(global_order=models.F('global_order') + 1)
+            
+            if category_order and category_order > 0 and category:
+                # Shu kategoriyada category_order dan katta yoki teng bo'lgan item'larni siljitish
+                MenuItem.objects.filter(
+                    category=category,
+                    category_order__gte=category_order
+                ).update(category_order=models.F('category_order') + 1)
+            
+            # Yangi item'ni active qilish
+            serializer.validated_data['is_active'] = True
+            serializer.validated_data['available'] = True
+            
+            serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -223,7 +224,7 @@ class MenuItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
     permission_classes = [AllowAny]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser, JSONParser)
 
     def perform_update(self, serializer):
         from django.db import models, transaction
@@ -262,9 +263,15 @@ class MenuItemDetailView(generics.RetrieveUpdateDestroyAPIView):
                     serializer.validated_data['category_order'] = max_category_order + 1
             
             serializer.save()
+            
+            # Instance ni qayta yuklash va serializer ni yangilash
+            instance.refresh_from_db()
+            serializer.instance = instance
     
     def _handle_global_order_change(self, instance, old_order, new_order):
         """Global order o'zgarishini boshqarish"""
+        from django.db import models
+        
         if old_order < new_order:
             # Pastdan yuqoriga siljitish (1 → 3)
             MenuItem.objects.filter(
@@ -280,6 +287,8 @@ class MenuItemDetailView(generics.RetrieveUpdateDestroyAPIView):
     
     def _handle_category_order_change(self, instance, old_order, new_order, category):
         """Category order o'zgarishini boshqarish"""
+        from django.db import models
+        
         if old_order < new_order:
             # Pastdan yuqoriga siljitish (1 → 3)
             MenuItem.objects.filter(
