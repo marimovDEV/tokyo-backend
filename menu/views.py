@@ -69,10 +69,14 @@ class CategoryListView(generics.ListCreateAPIView):
                 Category.objects.filter(
                     order__gte=order
                 ).update(order=models.F('order') + 1)
-        
-        # Yangi kategoriyani active qilish
-        serializer.validated_data['is_active'] = True
-        serializer.save()
+                
+                # Yangi kategoriyani active qilish va saqlash
+                serializer.validated_data['is_active'] = True
+                serializer.save()
+        else:
+            # Yangi kategoriyani active qilish va saqlash
+            serializer.validated_data['is_active'] = True
+            serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
