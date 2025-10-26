@@ -37,7 +37,7 @@ class CategoryListView(generics.ListCreateAPIView):
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['name', 'name_uz', 'name_ru']
     ordering_fields = ['name', 'created_at']
-    ordering = ['name']
+    ordering = ['order', 'name']
     permission_classes = [AllowAny]
     parser_classes = (MultiPartParser, FormParser, JSONParser)
     
@@ -49,6 +49,27 @@ class CategoryListView(generics.ListCreateAPIView):
         return Category.objects.filter(is_active=True)
 
     def perform_create(self, serializer):
+        from django.db import models, transaction
+        
+        order = serializer.validated_data.get('order', 0)
+        
+        # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
+        if not order or order == 0:
+            # Eng katta order raqamini topish
+            max_order = Category.objects.aggregate(
+                max_order=models.Max('order')
+            )['max_order'] or 0
+            order = max_order + 1
+            serializer.validated_data['order'] = order
+        
+        # Agar order kiritilgan bo'lsa, boshqa kategoriyalarni siljitish
+        if order and order > 0:
+            with transaction.atomic():
+                # Order dan katta yoki teng bo'lgan kategoriyalarni siljitish
+                Category.objects.filter(
+                    order__gte=order
+                ).update(order=models.F('order') + 1)
+        
         # Yangi kategoriyani active qilish
         serializer.validated_data['is_active'] = True
         serializer.save()
@@ -78,7 +99,49 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         return Response(data)
 
     def perform_update(self, serializer):
+        from django.db import models, transaction
+        
+        order = serializer.validated_data.get('order', 0)
+        instance = self.get_object()
+        old_order = instance.order
+        
+        # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
+        if not order or order == 0:
+            # Eng katta order raqamini topish
+            max_order = Category.objects.aggregate(
+                max_order=models.Max('order')
+            )['max_order'] or 0
+            order = max_order + 1
+            serializer.validated_data['order'] = order
+        
+        with transaction.atomic():
+            # Eski order'ni qayta tartiblash
+            if old_order:
+                Category.objects.filter(
+                    order__gt=old_order
+                ).update(order=models.F('order') - 1)
+            
+            # Yangi order'ni joylashtirish
+            if order and order > 0:
+                # Order dan katta yoki teng bo'lgan kategoriyalarni siljitish
+                Category.objects.filter(
+                    order__gte=order
+                ).exclude(id=instance.id).update(order=models.F('order') + 1)
+        
         serializer.save()
+
+    def perform_destroy(self, instance):
+        from django.db import models, transaction
+        
+        with transaction.atomic():
+            # O'chirilayotgan kategoriyani order'ini qayta tartiblash
+            if instance.order:
+                Category.objects.filter(
+                    order__gt=instance.order
+                ).update(order=models.F('order') - 1)
+            
+            # Kategoriyani o'chirish
+            instance.delete()
 
 
 @method_decorator(csrf_exempt, name='dispatch')

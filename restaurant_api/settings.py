@@ -211,7 +211,7 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
     'cache-control',  # Frontend cache uchun
-# ]
+]
 
 # Session settings
 SESSION_COOKIE_HTTPONLY = False  # Allow JavaScript access for debugging
