@@ -37,7 +37,7 @@ class CategoryListView(generics.ListCreateAPIView):
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['name', 'name_uz', 'name_ru']
     ordering_fields = ['name', 'created_at']
-    ordering = ['order', 'name']
+    ordering = ['name']
     permission_classes = [AllowAny]
     parser_classes = (MultiPartParser, FormParser, JSONParser)
     
@@ -55,7 +55,6 @@ class CategoryListView(generics.ListCreateAPIView):
         
         # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
         if not order or order == 0:
-            # Eng katta order raqamini topish
             max_order = Category.objects.aggregate(
                 max_order=models.Max('order')
             )['max_order'] or 0
@@ -69,14 +68,10 @@ class CategoryListView(generics.ListCreateAPIView):
                 Category.objects.filter(
                     order__gte=order
                 ).update(order=models.F('order') + 1)
-                
-                # Yangi kategoriyani active qilish va saqlash
-                serializer.validated_data['is_active'] = True
-                serializer.save()
-        else:
-            # Yangi kategoriyani active qilish va saqlash
-            serializer.validated_data['is_active'] = True
-            serializer.save()
+        
+        # Yangi kategoriyani active qilish
+        serializer.validated_data['is_active'] = True
+        serializer.save()
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -100,8 +95,6 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         promotions_count = Promotion.objects.filter(category=instance).count()
         data['promotions_count'] = promotions_count
         
-        return Response(data)
-
     def perform_update(self, serializer):
         from django.db import models, transaction
         
@@ -111,7 +104,6 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         
         # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
         if not order or order == 0:
-            # Eng katta order raqamini topish
             max_order = Category.objects.aggregate(
                 max_order=models.Max('order')
             )['max_order'] or 0
@@ -127,13 +119,13 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
             
             # Yangi order'ni joylashtirish
             if order and order > 0:
-                # Order dan katta yoki teng bo'lgan kategoriyalarni siljitish
+                # Yangi order dan katta yoki teng bo'lgan kategoriyalarni siljitish
                 Category.objects.filter(
                     order__gte=order
                 ).exclude(id=instance.id).update(order=models.F('order') + 1)
         
         serializer.save()
-
+    
     def perform_destroy(self, instance):
         from django.db import models, transaction
         
