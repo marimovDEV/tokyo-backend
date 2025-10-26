@@ -98,39 +98,45 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     def perform_update(self, serializer):
         from django.db import models, transaction
         
-        order = serializer.validated_data.get('order', 0)
+        new_order = serializer.validated_data.get('order', 0)
         instance = self.get_object()
         old_order = instance.order
         
-        # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
-        if not order or order == 0:
-            max_order = Category.objects.aggregate(
-                max_order=models.Max('order')
-            )['max_order'] or 0
-            order = max_order + 1
-            serializer.validated_data['order'] = order
+        # Agar order o'zgarish bo'lmasa, oddiy saqlash
+        if old_order == new_order:
+            serializer.save()
+            return
         
         with transaction.atomic():
-            # Agar order o'zgarish bo'lmasa, hech narsa qilmaymiz
-            if old_order == order:
-                serializer.save()
-                return
+            # Agar order 0 yoki kiritilmagan bo'lsa, oxiriga qo'shish
+            if not new_order or new_order == 0:
+                max_order = Category.objects.aggregate(
+                    max_order=models.Max('order')
+                )['max_order'] or 0
+                new_order = max_order + 1
+                serializer.validated_data['order'] = new_order
             
-            # Oddiy yondashuv: barcha kategoriyalarni qayta tartiblaymiz
-            # Avval barcha kategoriyalarni order dan yuqori raqamga o'tkazamiz
-            Category.objects.exclude(id=instance.id).update(order=models.F('order') + 1000)
+            # Order o'zgarishini amalga oshirish
+            if old_order < new_order:
+                # Pastdan yuqoriga siljitish (1 → 3)
+                # Eski order va yangi order orasidagi kategoriyalarni -1 qilish
+                Category.objects.filter(
+                    order__gt=old_order,
+                    order__lte=new_order
+                ).exclude(id=instance.id).update(order=models.F('order') - 1)
+            else:
+                # Yuqoridan pastga siljitish (3 → 1)
+                # Yangi order va eski order orasidagi kategoriyalarni +1 qilish
+                Category.objects.filter(
+                    order__gte=new_order,
+                    order__lt=old_order
+                ).exclude(id=instance.id).update(order=models.F('order') + 1)
             
-            # Yangi order ni o'rnatamiz
-            instance.order = order
+            # Yangi order ni o'rnatish
+            instance.order = new_order
             instance.save()
             
-            # Endi barcha kategoriyalarni qayta tartiblaymiz
-            categories = Category.objects.all().order_by('order', 'id')
-            for i, cat in enumerate(categories, 1):
-                cat.order = i
-                cat.save()
-            
-            # Serializer ni qayta yuklash
+            # Serializer ni qayta yuklash va saqlash
             serializer.instance = instance
             serializer.save()
     
@@ -138,13 +144,11 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
         from django.db import models, transaction
         
         with transaction.atomic():
-            # O'chirilayotgan kategoriyani order'ini qayta tartiblash
-            if instance.order:
-                Category.objects.filter(
-                    order__gt=instance.order
-                ).update(order=models.F('order') - 1)
+            # O'chirilayotgan kategoriyadan yuqori order larni -1 qilish
+            Category.objects.filter(
+                order__gt=instance.order
+            ).update(order=models.F('order') - 1)
             
-            # Kategoriyani o'chirish
             instance.delete()
 
 
