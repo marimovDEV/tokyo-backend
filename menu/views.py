@@ -111,20 +111,28 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
             serializer.validated_data['order'] = order
         
         with transaction.atomic():
-            # Eski order'ni qayta tartiblash
-            if old_order:
-                Category.objects.filter(
-                    order__gt=old_order
-                ).update(order=models.F('order') - 1)
+            # Agar order o'zgarish bo'lmasa, hech narsa qilmaymiz
+            if old_order == order:
+                serializer.save()
+                return
             
-            # Yangi order'ni joylashtirish
-            if order and order > 0:
-                # Yangi order dan katta yoki teng bo'lgan kategoriyalarni siljitish
-                Category.objects.filter(
-                    order__gte=order
-                ).exclude(id=instance.id).update(order=models.F('order') + 1)
-        
-        serializer.save()
+            # Oddiy yondashuv: barcha kategoriyalarni qayta tartiblaymiz
+            # Avval barcha kategoriyalarni order dan yuqori raqamga o'tkazamiz
+            Category.objects.exclude(id=instance.id).update(order=models.F('order') + 1000)
+            
+            # Yangi order ni o'rnatamiz
+            instance.order = order
+            instance.save()
+            
+            # Endi barcha kategoriyalarni qayta tartiblaymiz
+            categories = Category.objects.all().order_by('order', 'id')
+            for i, cat in enumerate(categories, 1):
+                cat.order = i
+                cat.save()
+            
+            # Serializer ni qayta yuklash
+            serializer.instance = instance
+            serializer.save()
     
     def perform_destroy(self, instance):
         from django.db import models, transaction
