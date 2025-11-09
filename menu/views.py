@@ -162,7 +162,7 @@ class MenuItemListView(generics.ListCreateAPIView):
     ordering_fields = ['name', 'price', 'rating', 'created_at']
     ordering = ['global_order', 'name']
     permission_classes = [AllowAny]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser, JSONParser)
     
     def get_queryset(self):
         """Return all menu items for admin, only active for public"""
@@ -170,6 +170,22 @@ class MenuItemListView(generics.ListCreateAPIView):
         if show_all:
             return MenuItem.objects.all()
         return MenuItem.objects.filter(is_active=True, category__is_active=True)
+    
+    def paginate_queryset(self, queryset):
+        """Disable pagination when show_all=true"""
+        show_all = self.request.GET.get('show_all', 'false').lower() == 'true'
+        if show_all:
+            return None  # Disable pagination
+        return super().paginate_queryset(queryset)
+    
+    def list(self, request, *args, **kwargs):
+        """Override list to handle non-paginated responses"""
+        show_all = request.GET.get('show_all', 'false').lower() == 'true'
+        if show_all:
+            queryset = self.filter_queryset(self.get_queryset())
+            serializer = self.get_serializer(queryset, many=True)
+            return Response(serializer.data)
+        return super().list(request, *args, **kwargs)
 
     def perform_create(self, serializer):
         from django.db import models, transaction

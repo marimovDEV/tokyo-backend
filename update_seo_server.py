@@ -55,3 +55,6 @@ def update_seo_on_server():
 if __name__ == '__main__':
     update_seo_on_server()
 
+
+
+
