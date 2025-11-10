@@ -1,0 +1,41 @@
+# ============================================
+# Backend Restart Qilish - Terminal Qamandalari
+# ============================================
+
+# 1. SSH serverga ulanish
+ssh root@api.tokyokafe.uz
+
+# 2. Backend papkasiga o'tish
+cd /root/tokyo/backend
+
+# 3. (Ixtiyoriy) Backup olish
+bash backup_database.sh
+
+# 4. Git'dan yangi kodlarni olish
+git pull origin main
+
+# 5. Backend'ni restart qilish
+bash restart_beget.sh
+
+# Yoki qo'lda:
+# bash stop_beget.sh
+# sleep 3
+# bash start_beget.sh
+
+# 6. Server holatini tekshirish
+ps aux | grep gunicorn
+
+# 7. Loglarni ko'rish
+tail -f logs/gunicorn_error.log
+
+# ============================================
+# Tekshirish Qamandalari
+# ============================================
+
+# API test
+curl "https://api.tokyokafe.uz/api/menu-items/?show_all=true" | python3 -m json.tool | head -30
+
+# Database ma'lumotlarini tekshirish
+python manage.py shell -c "from menu.models import Category, MenuItem; print(f'Kategoriyalar: {Category.objects.count()}, Taomlar: {MenuItem.objects.count()}')"
+
+

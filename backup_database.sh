@@ -76,3 +76,4 @@ echo -e "\n${YELLOW}Eski backup'larni tozalash (30 kundan eski)...${NC}"
 find $BACKUP_DIR -type f -mtime +30 -delete
 echo -e "${GREEN}✅ Eski backup'lar tozalandi${NC}"
 
+

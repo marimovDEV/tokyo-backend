@@ -133,3 +133,4 @@ Ma'lumotlar faqat quyidagi hollarda yo'qoladi:
 
 Bu restart faqat **kod yangilanishi** uchun. Database va media fayllar **qoladi**. Agar migration bor bo'lsa, u ham ma'lumotlarni o'chirmaydi, faqat jadval strukturasini o'zgartiradi.
 
+
