@@ -172,10 +172,14 @@ class MenuItemListView(generics.ListCreateAPIView):
         return MenuItem.objects.filter(is_active=True, category__is_active=True)
     
     def paginate_queryset(self, queryset):
-        """Disable pagination when show_all=true"""
+        """
+        Disable pagination by default so the public menu receives the full dataset.
+        Clients can explicitly request pagination via ?paginate=true.
+        """
         show_all = self.request.GET.get('show_all', 'false').lower() == 'true'
-        if show_all:
-            return None  # Disable pagination
+        paginate = self.request.GET.get('paginate', 'false').lower() == 'true'
+        if show_all or not paginate:
+            return None  # Disable pagination unless explicitly requested
         return super().paginate_queryset(queryset)
     
     def list(self, request, *args, **kwargs):
