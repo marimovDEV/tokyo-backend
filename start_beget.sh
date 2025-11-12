@@ -13,10 +13,8 @@ echo -e "${GREEN}========================================${NC}"
 echo -e "${GREEN}Tokyo Kafe - Beget Server Ishga Tushirish${NC}"
 echo -e "${GREEN}========================================${NC}"
 
-# Beget server yo'llari (o'zingiznikini kiriting)
-BEGET_USER="u1234567"  # O'zingizning Beget username
-BEGET_HOME="/home/$BEGET_USER"
-PROJECT_DIR="$BEGET_HOME/public_html/backend"
+# Server yo'llari (production server uchun absolut yo'l)
+PROJECT_DIR="/root/tokyo/backend"
 VENV_DIR="$PROJECT_DIR/venv"
 GUNICORN_PID="$PROJECT_DIR/gunicorn.pid"
 LOGS_DIR="$PROJECT_DIR/logs"

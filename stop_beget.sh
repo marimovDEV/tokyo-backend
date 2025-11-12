@@ -13,10 +13,8 @@ echo -e "${YELLOW}========================================${NC}"
 echo -e "${YELLOW}Tokyo Kafe - Beget Server To'xtatish${NC}"
 echo -e "${YELLOW}========================================${NC}"
 
-# Beget server yo'llari
-BEGET_USER="u1234567"  # O'zingizning Beget username
-BEGET_HOME="/home/$BEGET_USER"
-PROJECT_DIR="$BEGET_HOME/public_html/backend"
+# Server yo'llari
+PROJECT_DIR="/root/tokyo/backend"
 GUNICORN_PID="$PROJECT_DIR/gunicorn.pid"
 
 echo -e "\n${YELLOW}[1/2]${NC} PID fayldan jarayonni to'xtatish..."
