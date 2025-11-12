@@ -140,7 +140,7 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.JSONRenderer',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 20,
+    'PAGE_SIZE': 200,
     
     # Throttling - "Too many requests" ni oldini olish
     'DEFAULT_THROTTLE_CLASSES': [
